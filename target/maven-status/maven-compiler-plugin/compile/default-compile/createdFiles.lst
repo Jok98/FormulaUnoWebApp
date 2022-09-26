@@ -1,0 +1,3 @@
+org\generationitaly\f1\repository\CrudRepository.class
+org\generationitaly\f1\util\PersistenceUtil.class
+org\generationitaly\f1\repository\impl\CrudRepositoryImpl.class
