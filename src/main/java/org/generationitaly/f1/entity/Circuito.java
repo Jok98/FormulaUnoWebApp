@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="circuito")
+@Table(name="Circuito")
 public class Circuito {
 	
 	@Id
@@ -16,10 +16,10 @@ public class Circuito {
 	@Column(name="lunghezza", nullable=false)
 	private int lunghezza;
 	
-	@Column(name="Citta", length=45, nullable=false)
+	@Column(name="citta", length=45, nullable=false)
 	private String citta;
 	
-	@Column(name="Nazione", length=45, nullable=false)
+	@Column(name="nazione", length=45, nullable=false)
 	private String nazione;
 	
 	
