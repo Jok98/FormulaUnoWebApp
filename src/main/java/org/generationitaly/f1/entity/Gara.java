@@ -56,15 +56,15 @@ public class Gara {
 	private Circuito circuito;
 	
 	
-//	@Column(name="lsitaPiloti", nullable=false)
-//	private List<Pilota> listaPiloti;
+	@Column(name="lsitaPiloti", nullable=false)
+	private List<Pilota> listaPiloti;
 	
-//	@Column(name="grigliaDiPartenza", nullable=false)
-//	private List<Pilota> grigliaDiPartenza;
+	@Column(name="grigliaDiPartenza", nullable=false)
+	private List<Pilota> grigliaDiPartenza;
 	
-//	@ManyToOne
-//	@JoinColumn(name="pilotaNumero", nullable=false)
-//	private Pilota pilota;
+	@ManyToOne
+	@JoinColumn(name="pilotaNumero", nullable=false)
+	private Pilota pilota;
 
 
 	public int getIdGara() {
