@@ -5,6 +5,9 @@ import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -24,11 +27,13 @@ public class Monoposto {
 		@Column(name = "annoProduzione", nullable = false)
 		private Date annoProduzione;
 		
-		@Column(name = "Pilota_Numero", nullable = false)
-		private int pilota;
+		@OneToOne
+		@JoinColumn(name = "numeroPilota", nullable = false)
+		private Pilota pilota;
 		
-		@Column(name = "Scuderia_nomeScuderia", nullable = false)
-		private String scuderia;
+		@ManyToOne
+		@JoinColumn(name = "Scuderia_nomeScuderia", nullable = false)
+		private Scuderia scuderia;
 		
 		@Column(name = "fotoMonoposto", nullable = false)
 		private String fotoMonoposto;
@@ -65,19 +70,19 @@ public class Monoposto {
 			this.annoProduzione = annoProduzione;
 		}
 
-		public int getPilota() {
+		public Pilota getPilota() {
 			return pilota;
 		}
 
-		public void setPilota(int pilota) {
+		public void setPilota(Pilota pilota) {
 			this.pilota = pilota;
 		}
 
-		public String getScuderia() {
+		public Scuderia getScuderia() {
 			return scuderia;
 		}
 
-		public void setScuderia(String scuderia) {
+		public void setScuderia(Scuderia scuderia) {
 			this.scuderia = scuderia;
 		}
 
@@ -87,14 +92,5 @@ public class Monoposto {
 
 		public void setFotoMonoposto(String fotoMonoposto) {
 			this.fotoMonoposto = fotoMonoposto;
-		}
-
-		@Override
-		public String toString() {
-			return "Monoposto [idVettura=" + idVettura + ", motore=" + motore + ", numeroVittorie=" + numeroVittorie
-					+ ", annoProduzione=" + annoProduzione + ", pilota=" + pilota + ", scuderia=" + scuderia
-					+ ", fotoMonoposto=" + fotoMonoposto + "]";
-		}
-		
-		
+		}		
 }
