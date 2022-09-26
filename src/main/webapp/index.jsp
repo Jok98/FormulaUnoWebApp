@@ -10,6 +10,7 @@
 <link href="bootstrap-5.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+	<p>Hello World!</p>
 	<script src="bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
