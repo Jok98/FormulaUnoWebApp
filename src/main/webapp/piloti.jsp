@@ -31,6 +31,12 @@
 					<td><f:out value="${pilota.nome}"></f:out></td>
 					<td><img src="${pilota.foto}"></td>
 					<td><f:out value="${pilota.scuderia.nomeScuderia}"></f:out></td>
+					<td>
+						<form action="pilota" method="get">
+							<input type="hidden" value="${pilota.numeroPilota}">
+							<button type="submit">Info</button>
+						</form>
+					</td>
 				</tr>
 			</f:forEach>
 		</tbody>
