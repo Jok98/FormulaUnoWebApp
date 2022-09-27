@@ -1,0 +1,5 @@
+
+src/main/resources/META-INF/persistence.xml
+target/classes/META-INF/persistence.xml
+target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+target/m2e-wtp/web-resources/META-INF/maven/org.generationitaly/f1/pom.properties
