@@ -15,7 +15,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
+//@Entity
 @Table(name = "gara")
 public class Gara {
 
@@ -50,9 +50,9 @@ public class Gara {
 	@Column(name = "numeroGiri", nullable = false)
 	private int numeroGiri;
 
-	@OneToOne
-	@JoinColumn(name = "nomeCircuito", nullable = false)
-	private Circuito circuito;
+//	@OneToOne
+//	@JoinColumn(name = "nomeCircuito", nullable = false)
+//	private Circuito circuito;
 
 	@Column(name = "listaPiloti", nullable = false)
 	private List<Pilota> listaPiloti;
@@ -60,9 +60,9 @@ public class Gara {
 	@Column(name = "grigliaDiPartenza", nullable = false)
 	private List<Pilota> grigliaDiPartenza;
 
-	@ManyToOne
-	@JoinColumn(name = "pilotaNumero", nullable = false)
-	private Pilota pilota;
+//	@ManyToOne
+//	@JoinColumn(name = "pilotaNumero", nullable = false)
+//	private Pilota pilota;
 
 	public int getIdGara() {
 		return idGara;
@@ -88,13 +88,13 @@ public class Gara {
 		this.grigliaDiPartenza = grigliaDiPartenza;
 	}
 
-	public Pilota getPilota() {
-		return pilota;
-	}
-
-	public void setPilota(Pilota pilota) {
-		this.pilota = pilota;
-	}
+//	public Pilota getPilota() {
+//		return pilota;
+//	}
+//
+//	public void setPilota(Pilota pilota) {
+//		this.pilota = pilota;
+//	}
 
 	public Date getDate() {
 		return date;
@@ -112,17 +112,17 @@ public class Gara {
 		this.numeroGiri = numeroGiri;
 	}
 
-	public Circuito getCircuito() {
-		return circuito;
-	}
+//	public Circuito getCircuito() {
+//		return circuito;
+//	}
+//
+//	public void setCircuito(Circuito circuito) {
+//		this.circuito = circuito;
+//	}
 
-	public void setCircuito(Circuito circuito) {
-		this.circuito = circuito;
-	}
-
-	@Override
-	public String toString() {
-		return "Gara [idGara=" + idGara + ", date=" + date + ", numeroGiri=" + numeroGiri + ", circuito=" + circuito
-				+ "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "Gara [idGara=" + idGara + ", date=" + date + ", numeroGiri=" + numeroGiri + ", circuito=" + circuito
+//				+ "]";
+//	}
 }

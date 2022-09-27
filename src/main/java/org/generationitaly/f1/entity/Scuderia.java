@@ -57,16 +57,16 @@ public class Scuderia {
 		this.piloti = piloti;
 	}
 
-	public List<Monoposto> getMonoposti() {
-		return monoposti;
-	}
+//	public List<Monoposto> getMonoposti() {
+//		return monoposti;
+//	}
+//
+//	public void setMonoposti(List<Monoposto> monoposti) {
+//		this.monoposti = monoposti;
+//	}
 
-	public void setMonoposti(List<Monoposto> monoposti) {
-		this.monoposti = monoposti;
-	}
-
-	@OneToMany(mappedBy = "scuderia")
-	private List<Monoposto> monoposti;
+//	@OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
+//	private List<Monoposto> monoposti;
 
 //	@OneToOne(mappedBy="scuderia")
 //	private ClassificaCostruttori classificaCostruttori;

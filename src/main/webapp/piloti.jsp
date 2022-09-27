@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Scuderie</title>
+<title>Piloti</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -18,14 +18,14 @@
 		<thead>
 			<tr>
 				<th>Nome</th>
-				<th>Logo</th>
+				<th>Img</th>
 			</tr>
 		</thead>
 		<tbody>
-			<f:forEach items="${scuderie}" var="scuderia">
+			<f:forEach items="${piloti}" var="pilota">
 				<tr>
-					<td><f:out value="${scuderia.nome}"></f:out></td>
-					<td><f:out value="${scuderia.logo}"></f:out></td>
+					<td><f:out value="${pilota.nome}"></f:out></td>
+					<td><img src="${pilota.foto}"></td>
 				</tr>
 			</f:forEach>
 		</tbody>

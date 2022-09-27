@@ -1,7 +1,9 @@
 package org.generationitaly.f1.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.generationitaly.f1.entity.Pilota;
 import org.generationitaly.f1.entity.Scuderia;
 import org.generationitaly.f1.repository.CircuitoRepository;
 import org.generationitaly.f1.repository.GaraRepository;
@@ -26,17 +28,33 @@ public class F1ServiceImpl implements F1Service {
 
 	@Override
 	public List<Scuderia> findAllScuderie() {
-		List<Scuderia> scuderie = null;
+		List<Scuderia> proprietari = null;
 		try {
 			PersistenceUtil.beginTransaction();
-			scuderie = scuderiaRepository.findAll();
+			proprietari = scuderiaRepository.findAll();
 			PersistenceUtil.commitTransaction();
 		} catch (Exception e) {
-			System.err.println();
+			System.err.println(e.getMessage());
 			PersistenceUtil.rollbackTransaction();
 		} finally {
-//			PersistenceUtil.closeEntityManager();
+			PersistenceUtil.closeEntityManager();
 		}
-		return scuderie;
+		return proprietari;
+	}
+
+	@Override
+	public List<Pilota> findAllPiloti() {
+		List<Pilota> piloti = null;
+		try {
+			PersistenceUtil.beginTransaction();
+			piloti = pilotaRepository.findAll();
+			PersistenceUtil.commitTransaction();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			PersistenceUtil.rollbackTransaction();
+		} finally {
+			PersistenceUtil.closeEntityManager();
+		}
+		return piloti;
 	}
 }

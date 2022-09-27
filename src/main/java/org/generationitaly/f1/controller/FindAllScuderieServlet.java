@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.generationitaly.f1.entity.Pilota;
 import org.generationitaly.f1.entity.Scuderia;
 import org.generationitaly.f1.service.F1Service;
 import org.generationitaly.f1.service.impl.F1ServiceImpl;
@@ -27,9 +28,9 @@ public class FindAllScuderieServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		List<Scuderia> scuderie = f1Service.findAllScuderie();
-		request.setAttribute("scuderie", scuderie);
-		request.getRequestDispatcher("scuderie.jsp").forward(request, response);
+		List<Pilota> piloti = f1Service.findAllPiloti();
+		request.setAttribute("piloti", piloti);
+		request.getRequestDispatcher("piloti.jsp").forward(request, response);
 	}
 
 }

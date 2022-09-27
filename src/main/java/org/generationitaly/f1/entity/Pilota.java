@@ -9,6 +9,7 @@ import org.generationitaly.f1.entity.Scuderia;
 import org.generationitaly.f1.entity.Monoposto;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -58,11 +59,11 @@ public class Pilota {
 	@JoinColumn(name = "nomeScuderia", nullable = false)
 	private Scuderia scuderia;
 
-	@OneToMany(mappedBy = "pilota")
-	private List<Gara> gare;
-
-	@OneToOne(mappedBy = "pilota")
-	private Monoposto monoposto;
+//	@OneToMany(mappedBy = "pilota", fetch = FetchType.EAGER)
+//	private List<Gara> gare;
+//
+//	@OneToOne(mappedBy = "pilota", fetch = FetchType.EAGER)
+//	private Monoposto monoposto;
 
 //	@OneToOne(mappedBy = "pilota")
 //	private ClassificaPiloti classificaPiloti;
@@ -155,21 +156,21 @@ public class Pilota {
 		this.scuderia = scuderia;
 	}
 
-	public List<Gara> getGare() {
-		return gare;
-	}
-
-	public void setGare(List<Gara> gare) {
-		this.gare = gare;
-	}
-
-	public Monoposto getMonoposto() {
-		return monoposto;
-	}
-
-	public void setMonoposto(Monoposto monoposto) {
-		this.monoposto = monoposto;
-	}
+//	public List<Gara> getGare() {
+//		return gare;
+//	}
+//
+//	public void setGare(List<Gara> gare) {
+//		this.gare = gare;
+//	}
+//
+//	public Monoposto getMonoposto() {
+//		return monoposto;
+//	}
+//
+//	public void setMonoposto(Monoposto monoposto) {
+//		this.monoposto = monoposto;
+//	}
 
 //	public ClassificaPiloti getClassificaPiloti() {
 //		return classificaPiloti;
