@@ -1,9 +1,10 @@
 package org.generationitaly.f1.entity;
 
-import java.sql.Date;
+import java.util.Date;
+import java.util.List;
 
 import org.generationitaly.f1.entity.Gara;
-import org.generationitaly.f1.entity.ClassificaPiloti;
+//import org.generationitaly.f1.entity.ClassificaPiloti;
 import org.generationitaly.f1.entity.Scuderia;
 import org.generationitaly.f1.entity.Monoposto;
 import javax.persistence.Column;
@@ -58,13 +59,13 @@ public class Pilota {
 	private Scuderia scuderia;
 
 	@OneToMany(mappedBy = "pilota")
-	private Gara gara;
+	private List<Gara> gare;
 
 	@OneToOne(mappedBy = "pilota")
 	private Monoposto monoposto;
 
-	@OneToOne(mappedBy = "pilota")
-	private ClassificaPiloti classificaPiloti;
+//	@OneToOne(mappedBy = "pilota")
+//	private ClassificaPiloti classificaPiloti;
 
 	public String getFoto() {
 		return foto;
@@ -154,12 +155,12 @@ public class Pilota {
 		this.scuderia = scuderia;
 	}
 
-	public Gara getGara() {
-		return gara;
+	public List<Gara> getGare() {
+		return gare;
 	}
 
-	public void setGara(Gara gara) {
-		this.gara = gara;
+	public void setGare(List<Gara> gare) {
+		this.gare = gare;
 	}
 
 	public Monoposto getMonoposto() {
@@ -170,13 +171,13 @@ public class Pilota {
 		this.monoposto = monoposto;
 	}
 
-	public ClassificaPiloti getClassificaPiloti() {
-		return classificaPiloti;
-	}
-
-	public void setClassificaPiloti(ClassificaPiloti classificaPiloti) {
-		this.classificaPiloti = classificaPiloti;
-	}
+//	public ClassificaPiloti getClassificaPiloti() {
+//		return classificaPiloti;
+//	}
+//
+//	public void setClassificaPiloti(ClassificaPiloti classificaPiloti) {
+//		this.classificaPiloti = classificaPiloti;
+//	}
 
 	@Override
 	public String toString() {

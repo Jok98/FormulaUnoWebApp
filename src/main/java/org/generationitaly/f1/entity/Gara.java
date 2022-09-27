@@ -1,6 +1,6 @@
 package org.generationitaly.f1.entity;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 import org.generationitaly.f1.entity.Pilota;
