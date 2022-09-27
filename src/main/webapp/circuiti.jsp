@@ -5,7 +5,6 @@
 	${circuiti} -->
 <!-- Il richiamo al servlet FindCircuitiByNome e' 'circuito' tipo get-->
 <!-- Il nome della variabile da mandare con il form e' 'nomeCircuito' ed e' il nomCircuito -->
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +22,8 @@
 			<f:out value="${circuito}" />
 		</p>
 		<form action="circuito" method="get">
-			<input type="hidden" name="nomeCircuito" value="${cicuito.nomeCircuito}">
+			<input type="hidden" name="nomeCircuito"
+				value="${circuito.nomeCircuito}">
 			<button type="submit">Info</button>
 		</form>
 	</f:forEach>
