@@ -2,6 +2,7 @@ package org.generationitaly.f1.service.impl;
 
 import java.util.List;
 
+import org.generationitaly.f1.entity.Circuito;
 import org.generationitaly.f1.entity.Pilota;
 import org.generationitaly.f1.entity.Scuderia;
 import org.generationitaly.f1.repository.CircuitoRepository;
@@ -56,4 +57,21 @@ public class F1ServiceImpl implements F1Service {
 		}
 		return piloti;
 	}
+
+	@Override
+	public List<Circuito> findAllCircuiti() {
+		List<Circuito> circuiti = null;
+		try {
+			PersistenceUtil.beginTransaction();
+			circuiti = circuitoRepository.findAll();
+			PersistenceUtil.commitTransaction();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			PersistenceUtil.rollbackTransaction();
+		} finally {
+			PersistenceUtil.closeEntityManager();
+		}
+		return circuiti;
+	}
+
 }

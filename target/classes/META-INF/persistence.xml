@@ -12,7 +12,7 @@
 		<class>org.generationitaly.f1.entity.Pilota</class>
 		<!-- <class>org.generationitaly.f1.entity.Monoposto</class> -->
 		<!-- <class>org.generationitaly.f1.entity.Gara</class> -->
-		<!-- <class>org.generationitaly.f1.entity.Circuito</class> -->
+		<class>org.generationitaly.f1.entity.Circuito</class>
 		<class>org.generationitaly.f1.entity.Admin</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver"

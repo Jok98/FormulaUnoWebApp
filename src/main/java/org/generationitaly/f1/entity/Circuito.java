@@ -9,7 +9,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import org.generationitaly.f1.entity.Gara;
 
-//@Entity
+@Entity
 @Table(name = "circuito")
 public class Circuito {
 

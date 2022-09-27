@@ -2,6 +2,9 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
+<!-- setAttribute("piloti", piloti) usando jstl ottente la lista di piloti 
+	${piloti}
+-->
 <html>
 <head>
 <meta charset="ISO-8859-1">
