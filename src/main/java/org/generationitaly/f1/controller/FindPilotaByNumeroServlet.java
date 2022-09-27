@@ -18,14 +18,14 @@ import org.generationitaly.f1.service.impl.F1ServiceImpl;
 public class FindPilotaByNumeroServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	private F1Service pilotaService = new F1ServiceImpl();
+	private F1Service f1Service = new F1ServiceImpl();
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int numeroPilota = Integer.parseInt(request.getParameter("numeroPilota"));
-		Pilota pilota = pilotaService.findByNumeroPilota(numeroPilota);
+		Pilota pilota = f1Service.findPilotaByNumero(numeroPilota);
 		request.setAttribute("pilota", pilota);
 		request.getRequestDispatcher("pilota.jsp").forward(request, response);
 	}

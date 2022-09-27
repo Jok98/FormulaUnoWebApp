@@ -75,7 +75,7 @@ public class F1ServiceImpl implements F1Service {
 	}
 
 	@Override
-	public Pilota findByNumeroPilota(int numeroPilota) {
+	public Pilota findPilotaByNumero(int numeroPilota) {
 		Pilota pilota = null;
 		try {
 			PersistenceUtil.beginTransaction();
@@ -104,6 +104,22 @@ public class F1ServiceImpl implements F1Service {
 			PersistenceUtil.closeEntityManager();
 		}
 		return scuderia;
+	}
+
+	@Override
+	public Circuito findCircuitoByNome(String nomeCircuito) {
+		Circuito circuito = null;
+		try {
+			PersistenceUtil.beginTransaction();
+			circuito = circuitoRepository.findById(nomeCircuito);
+			PersistenceUtil.commitTransaction();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			PersistenceUtil.rollbackTransaction();
+		} finally {
+			PersistenceUtil.closeEntityManager();
+		}
+		return circuito;
 	}
 
 }
