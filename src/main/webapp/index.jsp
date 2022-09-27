@@ -14,7 +14,10 @@
 	crossorigin="anonymous">
 </head>
 <body>
-	<a href="find-all">find-all</a>
+	<a href="scuderie">scuderie</a>
+	<a href="piloti">piloti</a>
+	<a href="circuiti">circuiti</a>
+	<a href="monoposto">monoposto</a>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

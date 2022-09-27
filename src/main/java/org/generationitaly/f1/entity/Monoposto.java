@@ -32,13 +32,13 @@ public class Monoposto {
 	@Temporal(TemporalType.DATE)
 	private Date annoProduzione;
 
-//	@OneToOne
-//	@JoinColumn(name = "numeroPilota", nullable = false)
-//	private Pilota pilota;
+	@OneToOne
+	@JoinColumn(name = "numeroPilota", nullable = false)
+	private Pilota pilota;
 
-//	@ManyToOne
-//	@JoinColumn(name = "nomeScuderia", nullable = false)
-//	private Scuderia scuderia;
+	@ManyToOne
+	@JoinColumn(name = "nomeScuderia", nullable = false)
+	private Scuderia scuderia;
 
 	@Column(name = "fotoMonoposto", length = 6000, nullable = false)
 	private String fotoMonoposto;
@@ -75,21 +75,21 @@ public class Monoposto {
 		this.annoProduzione = annoProduzione;
 	}
 
-//	public Pilota getPilota() {
-//		return pilota;
-//	}
-//
-//	public void setPilota(Pilota pilota) {
-//		this.pilota = pilota;
-//	}
-//
-//	public Scuderia getScuderia() {
-//		return scuderia;
-//	}
-//
-//	public void setScuderia(Scuderia scuderia) {
-//		this.scuderia = scuderia;
-//	}
+	public Pilota getPilota() {
+		return pilota;
+	}
+
+	public void setPilota(Pilota pilota) {
+		this.pilota = pilota;
+	}
+
+	public Scuderia getScuderia() {
+		return scuderia;
+	}
+
+	public void setScuderia(Scuderia scuderia) {
+		this.scuderia = scuderia;
+	}
 
 	public String getFotoMonoposto() {
 		return fotoMonoposto;
