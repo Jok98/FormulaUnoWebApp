@@ -31,5 +31,4 @@ public class FindAllScuderieServlet extends HttpServlet {
 		request.setAttribute("scuderie", scuderie);
 		request.getRequestDispatcher("scuderie.jsp").forward(request, response);
 	}
-
 }

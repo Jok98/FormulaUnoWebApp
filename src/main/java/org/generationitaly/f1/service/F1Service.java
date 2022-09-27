@@ -13,4 +13,6 @@ public interface F1Service {
 	List<Pilota> findAllPiloti();
 
 	List<Circuito> findAllCircuiti();
+	
+	Pilota findByNumeroPilota(int numeroPilota );
 }

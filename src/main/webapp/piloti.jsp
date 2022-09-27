@@ -2,8 +2,10 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<!-- setAttribute("piloti", piloti) usando jstl ottente la lista di piloti 
-	${piloti}
+<!-- setAttribute("piloti", piloti) usando jstl ottenete la lista di piloti 
+	${piloti}.
+	Il richiamo alla servlet FindPilotaByNumeroPilota è 'pilota' di tipo get.
+	name form= numeroPilota ; value form= "${pilota.numeroPilota}"
 -->
 <html>
 <head>
@@ -33,7 +35,7 @@
 					<td><f:out value="${pilota.scuderia.nomeScuderia}"></f:out></td>
 					<td>
 						<form action="pilota" method="get">
-							<input type="hidden" value="${pilota.numeroPilota}">
+							<input type="hidden" name="numeroPilota" value="${pilota.numeroPilota}">
 							<button type="submit">Info</button>
 						</form>
 					</td>
