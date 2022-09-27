@@ -17,6 +17,8 @@ public interface F1Service {
 	Pilota findPilotaByNumero(int numeroPilota);
 
 	Scuderia findScuderiaByNome(String nomeScuderia);
-	
+
 	Circuito findCircuitoByNome(String nomeCircuito);
+
+	Pilota findPilotaByNomeECognome(String search);
 }

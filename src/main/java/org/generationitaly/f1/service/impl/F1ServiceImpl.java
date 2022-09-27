@@ -122,4 +122,20 @@ public class F1ServiceImpl implements F1Service {
 		return circuito;
 	}
 
+	@Override
+	public Pilota findPilotaByNomeECognome(String search) {
+		Pilota pilota = null;
+		try {
+			PersistenceUtil.beginTransaction();
+			pilota = pilotaRepository.findByNomeECognome(search);
+			PersistenceUtil.commitTransaction();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			PersistenceUtil.rollbackTransaction();
+		} finally {
+			PersistenceUtil.closeEntityManager();
+		}
+		return pilota;
+	}
+
 }
