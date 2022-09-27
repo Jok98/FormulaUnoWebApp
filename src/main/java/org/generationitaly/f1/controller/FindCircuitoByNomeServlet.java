@@ -14,7 +14,7 @@ import org.generationitaly.f1.service.impl.F1ServiceImpl;
 /**
  * Servlet implementation class FindCircuitoByNomeServlet
  */
-@WebServlet("/FindCircuitoByNomeServlet")
+@WebServlet("/circuito")
 public class FindCircuitoByNomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
