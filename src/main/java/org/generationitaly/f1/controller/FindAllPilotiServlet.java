@@ -17,8 +17,8 @@ import org.generationitaly.f1.service.impl.F1ServiceImpl;
 /**
  * Servlet implementation class FindAllScuderieServlet
  */
-@WebServlet("/proprietari")
-public class FindAllScuderieServlet extends HttpServlet {
+@WebServlet("/piloti")
+public class FindAllPilotiServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private F1Service f1Service = new F1ServiceImpl();
 
