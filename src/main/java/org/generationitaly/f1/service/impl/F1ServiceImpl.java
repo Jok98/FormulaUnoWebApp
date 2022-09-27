@@ -1,6 +1,5 @@
 package org.generationitaly.f1.service.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.generationitaly.f1.entity.Pilota;

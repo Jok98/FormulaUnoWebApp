@@ -19,6 +19,7 @@
 			<tr>
 				<th>Nome</th>
 				<th>Img</th>
+				<th>Scuderia</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -26,6 +27,7 @@
 				<tr>
 					<td><f:out value="${pilota.nome}"></f:out></td>
 					<td><img src="${pilota.foto}"></td>
+					<td><f:out value="${pilota.scuderia.nomeScuderia}"></f:out></td>
 				</tr>
 			</f:forEach>
 		</tbody>
