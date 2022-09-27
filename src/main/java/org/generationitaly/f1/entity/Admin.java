@@ -6,14 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table()
+@Table(name = "admin")
 public class Admin {
-	
+
 	@Id
-	@Column(name="useriD", nullable=false)
+	@Column(name = "userID", nullable = false)
 	private int userId;
-	
-	@Column(name="password", length=45, nullable=false)
+
+	@Column(name = "password", length = 45, nullable = false)
 	private String password;
 
 	public int getUserId() {
@@ -36,8 +36,7 @@ public class Admin {
 	public String toString() {
 		return "Admin [userId=" + userId + ", password=" + password + "]";
 	}
-	
-	
+
 //	CREATE TABLE IF NOT EXISTS `F1`.`Admin` (
 //			  `userId` INT NOT NULL,
 //			  `password` VARCHAR(45) NOT NULL,
