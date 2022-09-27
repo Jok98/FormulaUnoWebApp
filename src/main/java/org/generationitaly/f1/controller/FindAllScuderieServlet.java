@@ -20,8 +20,10 @@ import org.generationitaly.f1.service.impl.F1ServiceImpl;
 public class FindAllScuderieServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private F1Service f1Service = new F1ServiceImpl();
+
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -29,6 +31,5 @@ public class FindAllScuderieServlet extends HttpServlet {
 		request.setAttribute("scuderie", scuderie);
 		request.getRequestDispatcher("scuderie.jsp").forward(request, response);
 	}
-
 
 }
