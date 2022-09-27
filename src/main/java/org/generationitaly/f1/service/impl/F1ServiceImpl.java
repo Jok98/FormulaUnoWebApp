@@ -74,4 +74,20 @@ public class F1ServiceImpl implements F1Service {
 		return circuiti;
 	}
 
+	@Override
+	public Pilota findByNumeroPilota(int numeroPilota) {
+		Pilota pilota = null;
+		try {
+			PersistenceUtil.beginTransaction();
+			pilota = pilotaRepository.findById(numeroPilota);
+			PersistenceUtil.commitTransaction();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			PersistenceUtil.rollbackTransaction();
+		} finally {
+			PersistenceUtil.closeEntityManager();
+		}
+		return pilota;
+	}
+
 }
