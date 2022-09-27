@@ -1,6 +1,5 @@
 package org.generationitaly.f1.repository;
 
-
 import java.util.List;
 
 public interface CrudRepository<T, ID> {
