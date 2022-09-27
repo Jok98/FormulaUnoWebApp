@@ -1,9 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/core"%>
+<!-- L'attributo restituito dalla servlet 'FindAllScuderieServlet' è 'scuderie' -->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Scuderia</title>
+<title>Scuderie</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -11,9 +13,9 @@
 	crossorigin="anonymous">
 </head>
 <body>
-	<f:forEach items="${circuiti}" var="circuito">
+	<f:forEach items="${scuderie}" var="scuderia">
 		<p>
-			<f:out value="${circuito}" />
+			<f:out value="${scuderia}" />
 		</p>
 	</f:forEach>
 	<script
