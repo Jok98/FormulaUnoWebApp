@@ -1,8 +1,13 @@
 package org.generationitaly.f1.entity;
 
+import org.generationitaly.f1.entity.Pilota;
+import org.generationitaly.f1.entity.Monoposto;
+import org.generationitaly.f1.entity.ClassificaCostruttori;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -39,6 +44,15 @@ public class Scuderia {
 	
 	@Column(name = "storia", length = 6000, nullable = false)
 	private String storia;
+	
+	@OneToMany(mappedBy="scuderia")
+	private Pilota pilota;
+	
+	@OneToMany(mappedBy="scuderia")
+	private Monoposto monoposto;
+	
+	@OneToOne(mappedBy="scuderia")
+	private ClassificaCostruttori classificaCostruttori;
 
 	public String getLogo() {
 		return logo;
