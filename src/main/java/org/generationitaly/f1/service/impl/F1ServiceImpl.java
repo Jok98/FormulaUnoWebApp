@@ -27,10 +27,10 @@ public class F1ServiceImpl implements F1Service {
 
 	@Override
 	public List<Scuderia> findAllScuderie() {
-		List<Scuderia> proprietari = null;
+		List<Scuderia> scuderie = null;
 		try {
 			PersistenceUtil.beginTransaction();
-			proprietari = scuderiaRepository.findAll();
+			scuderie = scuderiaRepository.findAll();
 			PersistenceUtil.commitTransaction();
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
@@ -38,7 +38,7 @@ public class F1ServiceImpl implements F1Service {
 		} finally {
 			PersistenceUtil.closeEntityManager();
 		}
-		return proprietari;
+		return scuderie;
 	}
 
 	@Override
