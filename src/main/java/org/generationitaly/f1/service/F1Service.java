@@ -13,6 +13,8 @@ public interface F1Service {
 	List<Pilota> findAllPiloti();
 
 	List<Circuito> findAllCircuiti();
-	
-	Pilota findByNumeroPilota(int numeroPilota );
+
+	Pilota findByNumeroPilota(int numeroPilota);
+
+	Scuderia findScuderiaByNome(String nomeScuderia);
 }

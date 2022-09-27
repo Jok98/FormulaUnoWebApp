@@ -90,4 +90,20 @@ public class F1ServiceImpl implements F1Service {
 		return pilota;
 	}
 
+	@Override
+	public Scuderia findScuderiaByNome(String nomeScuderia) {
+		Scuderia scuderia = null;
+		try {
+			PersistenceUtil.beginTransaction();
+			scuderia = scuderiaRepository.findById(nomeScuderia);
+			PersistenceUtil.commitTransaction();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			PersistenceUtil.rollbackTransaction();
+		} finally {
+			PersistenceUtil.closeEntityManager();
+		}
+		return scuderia;
+	}
+
 }

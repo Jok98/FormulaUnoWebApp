@@ -27,7 +27,7 @@ public class FindScuderiaByNomeServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String nome = request.getParameter("id");
-		Scuderia scuderia = f1Service.findScuderiaByName();
+		Scuderia scuderia = f1Service.findScuderiaByNome(nome);
 		request.setAttribute("scuderia", scuderia);
 		request.getRequestDispatcher("scuderia.jsp").forward(request, response);
 	}
