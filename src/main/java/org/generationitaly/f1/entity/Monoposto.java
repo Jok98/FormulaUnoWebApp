@@ -1,6 +1,6 @@
 package org.generationitaly.f1.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 import org.generationitaly.f1.entity.Pilota;
 import org.generationitaly.f1.entity.Scuderia;
@@ -14,7 +14,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
+//@Entity
 @Table(name = "monoposto")
 public class Monoposto {
 

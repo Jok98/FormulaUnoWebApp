@@ -1,12 +1,10 @@
 package org.generationitaly.f1.util;
 
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class PersistenceUtil {
-
 	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistence");
 	private static ThreadLocal<EntityManager> threadLocal = new ThreadLocal<EntityManager>();
 
@@ -38,5 +36,4 @@ public class PersistenceUtil {
 	public static void rollbackTransaction() {
 		getEntityManager().getTransaction().rollback();
 	}
-
 }

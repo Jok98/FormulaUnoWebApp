@@ -1,6 +1,5 @@
 package org.generationitaly.f1.repository.impl;
 
-
 import java.util.List;
 
 import javax.persistence.EntityManager;

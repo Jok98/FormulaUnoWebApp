@@ -2,6 +2,7 @@ package org.generationitaly.f1.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -31,16 +32,16 @@ public class Circuito {
 	@Column(name = "fotoCircuito", length = 6000, nullable = false)
 	private String fotoCircuito;
 
-	@OneToOne(mappedBy = "circuito")
-	private Gara gara;
+//	@OneToOne(mappedBy = "circuito", fetch = FetchType.EAGER)
+//	private Gara gara;
 
-	public Gara getGara() {
-		return gara;
-	}
-
-	public void setGara(Gara gara) {
-		this.gara = gara;
-	}
+//	public Gara getGara() {
+//		return gara;
+//	}
+//
+//	public void setGara(Gara gara) {
+//		this.gara = gara;
+//	}
 
 	public String getNomeCircuito() {
 		return nomeCircuito;

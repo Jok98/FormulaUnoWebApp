@@ -1,58 +1,75 @@
 package org.generationitaly.f1.entity;
 
-import org.generationitaly.f1.entity.Pilota;
-import org.generationitaly.f1.entity.Monoposto;
-import org.generationitaly.f1.entity.ClassificaCostruttori;
+import java.util.List;
+
+//import org.generationitaly.f1.entity.ClassificaCostruttori;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+//import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "scuderia")
 public class Scuderia {
-	
+
 	@Column(name = "logo", length = 6000, nullable = false)
 	private String logo;
-	
+
 	@Id
 	@Column(name = "nomeScuderia", length = 45, nullable = false)
 	private String nomeScuderia;
-	
+
 	@Column(name = "annoEsordio", nullable = false)
 	private int annoEsordio;
-	
+
 	@Column(name = "nazionalita", length = 45, nullable = false)
 	private String nazionalita;
-	
+
 	@Column(name = "numeroVittorie", nullable = false)
 	private int numeroVittorie;
-	
+
 	@Column(name = "primoPilota", length = 45, nullable = false)
 	private String primoPilota;
-	
+
 	@Column(name = "secondoPilota", length = 45, nullable = false)
 	private String secondoPilota;
-	
+
 	@Column(name = "teamPrincipal", length = 45, nullable = false)
 	private String teamPrincipal;
-	
+
 	@Column(name = "sitoWeb", length = 6000, nullable = false)
 	private String sitoWeb;
-	
+
 	@Column(name = "storia", length = 6000, nullable = false)
 	private String storia;
-	
-	@OneToMany(mappedBy="scuderia")
-	private Pilota pilota;
-	
-	@OneToMany(mappedBy="scuderia")
-	private Monoposto monoposto;
-	
-	@OneToOne(mappedBy="scuderia")
-	private ClassificaCostruttori classificaCostruttori;
+
+	@OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
+	private List<Pilota> piloti;
+
+	public List<Pilota> getPiloti() {
+		return piloti;
+	}
+
+	public void setPiloti(List<Pilota> piloti) {
+		this.piloti = piloti;
+	}
+
+//	public List<Monoposto> getMonoposti() {
+//		return monoposti;
+//	}
+//
+//	public void setMonoposti(List<Monoposto> monoposti) {
+//		this.monoposti = monoposti;
+//	}
+
+//	@OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
+//	private List<Monoposto> monoposti;
+
+//	@OneToOne(mappedBy="scuderia")
+//	private ClassificaCostruttori classificaCostruttori;
 
 	public String getLogo() {
 		return logo;
@@ -141,6 +158,5 @@ public class Scuderia {
 				+ ", secondoPilota=" + secondoPilota + ", teamPrincipal=" + teamPrincipal + ", sitoWeb=" + sitoWeb
 				+ ", storia=" + storia + "]";
 	}
-	
-	
+
 }
