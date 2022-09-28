@@ -40,24 +40,24 @@ public class Gara {
 //	    REFERENCES `F1`.`Pilota` (`numeroPilota`)
 
 	@Id
-	@Column(name = "idGara", nullable = false)
+	@Column(name = "id_gara", nullable = false)
 	private int idGara;
 
 	@Column(name = "date", nullable = false)
 	@Temporal(TemporalType.DATE)
 	private Date date;
 
-	@Column(name = "numeroGiri", nullable = false)
+	@Column(name = "numero_giri", nullable = false)
 	private int numeroGiri;
 
 //	@OneToOne
 //	@JoinColumn(name = "nomeCircuito", nullable = false)
 //	private Circuito circuito;
 
-	@Column(name = "listaPiloti", nullable = false)
+	@Column(name = "lista_piloti", nullable = false)
 	private List<Pilota> listaPiloti;
 
-	@Column(name = "grigliaDiPartenza", nullable = false)
+	@Column(name = "griglia_di_partenza", nullable = false)
 	private List<Pilota> grigliaDiPartenza;
 
 //	@ManyToOne

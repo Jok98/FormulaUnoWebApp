@@ -20,28 +20,28 @@ public class Scuderia {
 	private String logo;
 
 	@Id
-	@Column(name = "nomeScuderia", length = 45, nullable = false)
+	@Column(name = "nome_scuderia", length = 45, nullable = false)
 	private String nomeScuderia;
 
-	@Column(name = "annoEsordio", nullable = false)
+	@Column(name = "anno_esordio", nullable = false)
 	private int annoEsordio;
 
 	@Column(name = "nazionalita", length = 45, nullable = false)
 	private String nazionalita;
 
-	@Column(name = "numeroVittorie", nullable = false)
+	@Column(name = "numero_vittorie", nullable = false)
 	private int numeroVittorie;
 
-	@Column(name = "primoPilota", length = 45, nullable = false)
+	@Column(name = "primo_pilota", length = 45, nullable = false)
 	private String primoPilota;
 
-	@Column(name = "secondoPilota", length = 45, nullable = false)
+	@Column(name = "secondo_pilota", length = 45, nullable = false)
 	private String secondoPilota;
 
-	@Column(name = "teamPrincipal", length = 45, nullable = false)
+	@Column(name = "team_principal", length = 45, nullable = false)
 	private String teamPrincipal;
 
-	@Column(name = "sitoWeb", length = 6000, nullable = false)
+	@Column(name = "sito_web", length = 6000, nullable = false)
 	private String sitoWeb;
 
 	@Column(name = "storia", length = 6000, nullable = false)
@@ -51,24 +51,8 @@ public class Scuderia {
 	private List<Pilota> piloti;
 
 	@OneToOne
-	@JoinColumn(name = "idVettura", nullable = false)
+	@JoinColumn(name = "id_vettura", referencedColumnName = "id_vettura", nullable = false)
 	private Monoposto monoposto;
-
-	public List<Pilota> getPiloti() {
-		return piloti;
-	}
-
-	public void setPiloti(List<Pilota> piloti) {
-		this.piloti = piloti;
-	}
-
-	public Monoposto getMonoposto() {
-		return monoposto;
-	}
-
-	public void setMonoposto(Monoposto monoposto) {
-		this.monoposto = monoposto;
-	}
 
 	public String getLogo() {
 		return logo;
@@ -150,12 +134,28 @@ public class Scuderia {
 		this.storia = storia;
 	}
 
+	public List<Pilota> getPiloti() {
+		return piloti;
+	}
+
+	public void setPiloti(List<Pilota> piloti) {
+		this.piloti = piloti;
+	}
+
+	public Monoposto getMonoposto() {
+		return monoposto;
+	}
+
+	public void setMonoposto(Monoposto monoposto) {
+		this.monoposto = monoposto;
+	}
+
 	@Override
 	public String toString() {
 		return "Scuderia [logo=" + logo + ", nomeScuderia=" + nomeScuderia + ", annoEsordio=" + annoEsordio
 				+ ", nazionalita=" + nazionalita + ", numeroVittorie=" + numeroVittorie + ", primoPilota=" + primoPilota
 				+ ", secondoPilota=" + secondoPilota + ", teamPrincipal=" + teamPrincipal + ", sitoWeb=" + sitoWeb
-				+ ", storia=" + storia + ", piloti=" + piloti + ", monoposto=" + monoposto.getIdVettura() + "]";
+				+ ", storia=" + storia + ", monoposto=" + monoposto + "]";
 	}
 
 }

@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class Admin {
 
 	@Id
-	@Column(name = "userID", nullable = false)
+	@Column(name = "user_id", nullable = false)
 	private int userId;
 
 	@Column(name = "password", length = 45, nullable = false)

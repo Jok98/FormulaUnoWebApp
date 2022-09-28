@@ -18,9 +18,7 @@
 </head>
 <body>
 	<f:forEach items="${circuiti}" var="circuito">
-		<p>
-			<f:out value="${circuito}" />
-		</p>
+		<f:out value="${circuito}" />
 		<form action="circuito" method="get">
 			<input type="hidden" name="nomeCircuito"
 				value="${circuito.nomeCircuito}">

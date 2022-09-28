@@ -25,38 +25,32 @@ public class Pilota {
 	@Column(name = "cognome", length = 45, nullable = false)
 	private String cognome;
 
-	@Column(name = "dataNascita", nullable = false)
+	@Column(name = "data_nascita", nullable = false)
 	@Temporal(TemporalType.DATE)
 	private Date dataNascita;
 
-	@Column(name = "luogoNascita", length = 45, nullable = false)
+	@Column(name = "luogo_nascita", length = 45, nullable = false)
 	private String luogoNascita;
 
 	@Column(name = "nazionalita", length = 45, nullable = false)
 	private String nazionalita;
 
 	@Id
-	@Column(name = "numeroPilota", nullable = false)
+	@Column(name = "numero_pilota", nullable = false)
 	private int numeroPilota;
 
-	@Column(name = "titoliMondiali", nullable = false)
+	@Column(name = "titoli_mondiali", nullable = false)
 	private int titoliMondiali;
 
-	@Column(name = "profiloSocial", length = 6000, nullable = false)
+	@Column(name = "profilo_social", length = 6000, nullable = false)
 	private String profiloSocial;
 
 	@Column(name = "biografia", length = 6000, nullable = false)
 	private String biografia;
 
 	@ManyToOne
-	@JoinColumn(name = "nomeScuderia", nullable = false)
+	@JoinColumn(name = "nome_scuderia", nullable = false)
 	private Scuderia scuderia;
-
-//	@OneToMany(mappedBy = "pilota", fetch = FetchType.EAGER)
-//	private List<Gara> gare;
-
-//	@OneToOne(mappedBy = "pilota")
-//	private ClassificaPiloti classificaPiloti;
 
 	public String getFoto() {
 		return foto;
@@ -146,26 +140,10 @@ public class Pilota {
 		this.scuderia = scuderia;
 	}
 
-//	public List<Gara> getGare() {
-//		return gare;
-//	}
-//
-//	public void setGare(List<Gara> gare) {
-//		this.gare = gare;
-//	}
-
-//	public ClassificaPiloti getClassificaPiloti() {
-//		return classificaPiloti;
-//	}
-//
-//	public void setClassificaPiloti(ClassificaPiloti classificaPiloti) {
-//		this.classificaPiloti = classificaPiloti;
-//	}
-
 	@Override
 	public String toString() {
-		return "Pilota [numeroPilota=" + numeroPilota + ", foto=" + foto + ", nome=" + nome + ", cognome=" + cognome
-				+ ", dataNascita=" + dataNascita + ", luogoNascita=" + luogoNascita + ", nazionalita=" + nazionalita
+		return "Pilota [foto=" + foto + ", nome=" + nome + ", cognome=" + cognome + ", dataNascita=" + dataNascita
+				+ ", luogoNascita=" + luogoNascita + ", nazionalita=" + nazionalita + ", numeroPilota=" + numeroPilota
 				+ ", titoliMondiali=" + titoliMondiali + ", profiloSocial=" + profiloSocial + ", biografia=" + biografia
 				+ "]";
 	}

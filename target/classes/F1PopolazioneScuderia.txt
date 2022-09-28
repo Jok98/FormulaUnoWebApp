@@ -1,0 +1,40 @@
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/mercedes-logo_2.png?itok=j0WaUHFO","Mercedes AMG Petronas","1970","Italia","115","Lewis Hamilton","George Russell","Toto Wolff",
+"https://www.mercedesamgf1.com/en/","https://it.wikipedia.org/wiki/Mercedes_AMG_F1","W10");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/red_bull_logo_2021.jpg?itok=GmGCjpwM","Red Bull Racing","1997","Austria","75","Max Verstappen","Sergio Perez","Christian Horner",
+"https://www.redbullracing.com/int-en","https://www.redbull.com/it-it/red-bull-racing-storia-f1","RB15");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/ferrari-logo_3.2.jpg?itok=gGcc0Ycm","Ferrari","1950","Italia","239","Charles Leclerc","Carlos Saniz","Mattia Binotto",
+"https://www.ferrari.com/it-IT/formula1","https://www.ferrari.com/it-IT/formula1/storia","SF90");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/mclaren_logo_2022.jpg?itok=fIAzg5Fk","McLaren F1","1966","Gran Bretagna","182","Lando Norris","Daniel Richardo","Andreas Seidl",
+"https://www.mclaren.com/racing/","https://it.wikipedia.org/wiki/McLaren_F1","MCL34");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/alpine_logo_2022_rit.jpg?itok=4Yr5FD8z","BWT Alpine F1","1986","Francia","20","Fernando Alonso","Esteban Ocon","Otmar Szafnauer",
+"-","https://it.wikipedia.org/wiki/Renault_F1","R.S. 19");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/alpha-tauri-logo.jpg?itok=LQ7yPPAF","Scuderia AlphaTauri Honda","1985","Italia","2","Pierre Gasly","Yuki Tsunoda","Franz Tost",
+"https://scuderia.alphatauri.com/it/","https://scuderia.alphatauri.com/it/la-storia-di-honda-in-f1/","STR14");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/aston_martin_logo_2021.png?itok=vzJdzBgF","Aston Martin Cognizant F1 Team","2018","Regno Unito","1","Lance Stroll","Sebastian Vettel", "Mike Krack",
+"https://www.astonmartinf1.com/en-GB/","https://it.wikipedia.org/wiki/Aston_Martin_F1_Team","RP19");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/logo_williams_racing.jpg?itok=FcEqjnPJ","Williams Racing","1978","Regno Unito","114","Nicolas Latifi","Alexander Albon","Jost Capito",
+"https://www.williamsf1.com/","https://it.wikipedia.org/wiki/Williams_F1","FW42");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_half/public/f1_logo/alfa_romeo_logo_2022_rit_.jpg?itok=I3GblMtG","Alfa Romeo F1 Team ORLEN","1993","Svizzera","1","Zhou Guanyu","Valtteri Bottas","Peter Sauber",
+"https://www.alfaromeo.it/alfa-romeo-racing","https://it.wikipedia.org/wiki/Sauber_F1_Team","Alfa Romeo Racing C38");
+
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal,sito_web,storia,id_vettura)
+VALUES("https://www.formula1.it/admin/foto/Scuderie/Scuderia_248.gif.png","Haas F1 Team","2016","USA","0","Kevin Magnussen","Mick Schumacher","	Gene Haas",
+"https://www.haasf1team.com/","https://it.wikipedia.org/wiki/Haas_F1_Team","VF-19");

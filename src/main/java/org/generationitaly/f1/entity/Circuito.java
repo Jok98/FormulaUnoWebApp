@@ -14,7 +14,7 @@ import org.generationitaly.f1.entity.Gara;
 public class Circuito {
 
 	@Id
-	@Column(name = "nomeCircuito", length = 45, nullable = false)
+	@Column(name = "nome_circuito", length = 45, nullable = false)
 	private String nomeCircuito;
 
 	@Column(name = "lunghezza", nullable = false)
@@ -26,22 +26,31 @@ public class Circuito {
 	@Column(name = "nazione", length = 45, nullable = false)
 	private String nazione;
 
-	@Column(name = "migliorTempo", nullable = false)
+	@Column(name = "miglior_tempo", nullable = false)
 	private float migliorTempo;
 
-	@Column(name = "fotoCircuito", length = 6000, nullable = false)
+	@Column(name = "foto_circuito", length = 6000, nullable = false)
 	private String fotoCircuito;
 
-//	@OneToOne(mappedBy = "circuito", fetch = FetchType.EAGER)
-//	private Gara gara;
+	@Column(name = "numero_giri", nullable = false)
+	private int numeroGiri;
 
-//	public Gara getGara() {
-//		return gara;
-//	}
-//
-//	public void setGara(Gara gara) {
-//		this.gara = gara;
-//	}
+	@Column(name = "pole_position", length = 45, nullable = false)
+	private String polePosition;
+
+	@Column(name = "vincitore", length = 45, nullable = false)
+	private String vincitore;
+
+	@Column(name = "indirizzo", length = 100, nullable = false)
+	private String indirizzo;
+
+	@Override
+	public String toString() {
+		return "Circuito [nomeCircuito=" + nomeCircuito + ", lunghezza=" + lunghezza + ", citta=" + citta + ", nazione="
+				+ nazione + ", migliorTempo=" + migliorTempo + ", fotoCircuito=" + fotoCircuito + ", numeroGiri="
+				+ numeroGiri + ", polePosition=" + polePosition + ", vincitore=" + vincitore + ", indirizzo="
+				+ indirizzo + "]";
+	}
 
 	public String getNomeCircuito() {
 		return nomeCircuito;
@@ -91,18 +100,35 @@ public class Circuito {
 		this.fotoCircuito = fotoCircuito;
 	}
 
-	@Override
-	public String toString() {
-		return "Circuito [nomeCircuito=" + nomeCircuito + ", lunghezza=" + lunghezza + ", citta=" + citta + ", nazione="
-				+ nazione + ", migliorTempo=" + migliorTempo + ", fotoCircuito=" + fotoCircuito + "]";
+	public int getNumeroGiri() {
+		return numeroGiri;
 	}
 
-//	CREATE TABLE IF NOT EXISTS `F1`.`Circuito` (
-//			  `nomeCircuito` VARCHAR(45) NOT NULL,
-//			  `lunghezza` INT NOT NULL,
-//			  `Citta` VARCHAR(45) NOT NULL,
-//			  `Nazione` VARCHAR(45) NOT NULL,
-//			  `migliorTempo` FLOAT NOT NULL,
-//			  `fotoCircuito` VARCHAR(6000) NOT NULL,
-//			  PRIMARY KEY (`nomeCircuito`))
+	public void setNumeroGiri(int numeroGiri) {
+		this.numeroGiri = numeroGiri;
+	}
+
+	public String getPolePosition() {
+		return polePosition;
+	}
+
+	public void setPolePosition(String polePosition) {
+		this.polePosition = polePosition;
+	}
+
+	public String getVincitore() {
+		return vincitore;
+	}
+
+	public void setVincitore(String vincitore) {
+		this.vincitore = vincitore;
+	}
+
+	public String getIndirizzo() {
+		return indirizzo;
+	}
+
+	public void setIndirizzo(String indirizzo) {
+		this.indirizzo = indirizzo;
+	}
 }

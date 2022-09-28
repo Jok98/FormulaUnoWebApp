@@ -1,0 +1,93 @@
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Barhain International Circuit","5412","57","Sakhir","Gate 255 Gulf of Bahrain Avenue Umm Jidar","Barhain","131.447",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/04-bahrain_sakhir.png?itok=5aSVadXl","Max Verstappen","Lewis Hamilton");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Jeddah Street Circuit","6174","50","Jeddah","طريق الكورنيش،، الشاطئ","Arabia Saudita","130.734",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2021/jeddah_street_circuit_as.png?itok=znPgWKCl","Lewis Hamilton","Lewis Hamilton");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Melbourne Grand Prix Circuit","5303","58","Melbourne","12 Aughtie Dr Albert Park VIC 3206","Australia","124.125",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/01-australia_melbourne.png?itok=4u-M9Dq-","Lewis Hamilton","Valtteri Bottas");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Autodromo Enzo e Dino Ferrari","4909","63","Imola","Piazza Ayrton Senna da Silva","Italia","115.484",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2020/imola_autodromo_enzo_dino_ferrari_schema.png?itok=ctXFRgq-","Valtteri Bottas","Max Verstappen");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Miami international Autodrome","541","57","Miami","Hard Rock Stadium, Miami Gardens,","USA","134.240",
+"https://upload.wikimedia.org/wikipedia/commons/4/49/Hard_Rock_Stadium_Circuit_2022.svg","Max Verstappen","Max Verstappen");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Circuit de Barcelona- Catalunya","4655","66","Barcellona","Carrer Mas Moreneta","Spagna","118.149",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/05-spagna_catalunya.png?itok=CYBk5i6F","Lewis Hamilton","Lewis Hamilton");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Circuit de Monaco","3337","78","Montecarlo","Monaco","Monaco","112.909",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/06-monaco_monte-carlo.png?itok=2xYTHXyz","Charles Leclerc","Max Verstappen");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Baku City Circuit","6003","51","Baku","9VF3+577 Zarifa Aliyeva","Azerbaijan","143.009",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/azerbaijan_baku-city-circuit.png?itok=iCTsONwy","Valtteri Bottas","Valtteri Bottas");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Circuit Gilles Villeneuve","4361","70","Montreal","Parc Jean-Drapeau","Canada","113.078",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/07-canada_montreal.png?itok=KgN_n91F","Sebastian Vettel","Lewis Hamilton");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Silverstone Circuit","5891","52","Silverstone","Towcester NN12 8TN","Gran Bretagna","127.097",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/09-gran-bretagna_silverston.png?itok=2yCgBSOj","Valtteri Bottas","Lewis Hamilton");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Red Bull Ring","4318","71","Spielberg","Red Bull Ring Str. 1 8724 Spielberg","Austria","105.619",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/08-austria_spielberg.png?itok=_IC59_jw","Valtteri Bottas","Valtteri Bottas");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Circuit Paul Ricard","5842","53","Le Castellet","2760 Rte des Hauts du Camp","Francia","132.740",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2018/paul-ricard-circuito-francia-2018-3-2.jpg?itok=eiY8xoev","Lewis Hamilton","Lewis Hamilton");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Hungaroring","4381","70","Mogyrod","Hungaroring utca 10","Ungheria","116.627",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/11-ungheria_budapest.png?itok=vVEEIqVh","Lewis Hamilton","Lewis Hamilton");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Circuit de Spa-Francorchamps","7004","44","Francorchamps","Rte du Circuit 55 4970 Stavelot","Belgio","146.286",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/12-belgio_spa-francorchamps.png?itok=w10YJ4SK","Charles Leclerc","Charles Leclerc");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Circuit Zandvoort","4252","72","Zandvoort","Burgemeester van Alphenstraat 108","Paesi Bassi","111.097",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2020/zandvoort_circuit-nederlands-schema.jpg?itok=WbyxwKoA","Max Verstappen","Max Verstappen");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Autodromo Nazionale di Monza","5793","53","Monza","20900 Monza MB","Italia","121.046",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/13-italia_monza.png?itok=tdlCj56v","Charles Leclerc","Charles Leclerc");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Marina Bay Street Circuit","5065","61","Singapore","Marina Bay","Repubblica di Singapore","141.905",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/14-singapore_singapore.png?itok=xcR79MAY","Charles Leclerc","Sebastian Vettel");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Suzuka International Racing Course","5807","53","Suzuka","7992 Inoucho Mie 510-0295","Giappone","130.983",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/15-giappone_suzuka.png?itok=8SbDz4fw","Valtteri Bottas","Valtteri Bottas");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Circuit of the Americas","5513","56","Austin","9201 Circuit of the Americas Blvd","USA","136.169",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/17-stati-uniti_austin.png?itok=WtS35gPB","Valtteri Bottas","Valtteri Bottas");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Autodromo Hernanos Rodriguez","4304","71","Città del Messico","Viad. Río de la Piedad S/n, Granjas México Iztacalco","Messico","11.774",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/18-messico_mexico-city.png?itok=9ntlO-hV","Charles Leclerc","Lewis Hamilton");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Autodromo José Carlos Pace","4309","71","Interlagos","Av. Sen. Teotônio Vilela, 261","Brasile","110.540",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/19-brasile_sao-paulo.png?itok=I1bukyqZ","Max Verstappen","Max Verstappen");
+
+INSERT INTO circuito(nome_circuito,lunghezza,numero_giri,citta,indirizzo,nazione,miglior_tempo,foto_circuito,pole_position,vincitore)
+VALUES("Yas Marina Circuit","5554","58","Isola Yas","Yas Central Yas Marina Circuit Yas Island","Emirati Arabi","126.103",
+"https://immagini.alvolante.it/sites/default/files/styles/f1_larghezza_full/public/f1_anteprima/2017/20-abu-dhabi_yas-marina.png?itok=85vdQ3l4","Lewis Hamilton","Lewis Hamilton");
+
+
+
+
+
