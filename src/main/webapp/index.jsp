@@ -24,9 +24,13 @@
 	<a href="piloti">piloti</a>
 	<a href="circuiti">circuiti</a>
 	<form action="search" method="get">
-		<label> <input type="text" name="search">
+		<select name="ricerca" id="ricerca">
+			<option value="piloti">Piloti</option>
+			<option value="circuiti">Circuiti</option>
+			<option value="scuderie">Scuderie</option>
+		</select> 
+			<input type="text" name="search">
 			<button type="submit">Search</button>
-		</label>
 	</form>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

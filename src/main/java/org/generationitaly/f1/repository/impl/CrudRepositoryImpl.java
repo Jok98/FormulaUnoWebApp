@@ -50,5 +50,4 @@ public abstract class CrudRepositoryImpl<T, ID> implements CrudRepository<T, ID>
 		EntityManager em = PersistenceUtil.getEntityManager();
 		return em.createQuery("select count(*) from " + entityClass.getName(), Long.class).getSingleResult();
 	}
-
 }

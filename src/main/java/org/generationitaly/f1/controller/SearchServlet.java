@@ -28,7 +28,8 @@ public class SearchServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String search = request.getParameter("search");
-		Pilota pilota = f1Service.findPilotaByNomeECognome(search);
+		String searchType= request.getParameter("ricerca");
+		Pilota pilota = f1Service.findBySearch(search);
 		request.setAttribute("pilota", pilota);
 		request.getRequestDispatcher("pilota.jsp").forward(request, response);
 	}

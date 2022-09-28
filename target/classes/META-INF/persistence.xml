@@ -21,7 +21,7 @@
 				value="jdbc:mysql://localhost:3306/f1" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password"
-				value="admin" />
+				value="Basket_98" />
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQL8Dialect" />
 			<property name="hibernate.hbm2ddl.auto" value="none" />

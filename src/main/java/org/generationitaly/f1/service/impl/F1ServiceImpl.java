@@ -123,11 +123,20 @@ public class F1ServiceImpl implements F1Service {
 	}
 
 	@Override
-	public Pilota findPilotaByNomeECognome(String search) {
+	public Pilota findBySearchType(String search,String searchType) {
 		Pilota pilota = null;
 		try {
 			PersistenceUtil.beginTransaction();
-			pilota = pilotaRepository.findByNomeECognome(search);
+			switch(searchType){
+			case"piloti":
+				pilota = pilotaRepository.findBySearch(search);
+				break;
+			case "circuiti":
+				break;
+			case "scuderie":
+				break;
+				
+			}
 			PersistenceUtil.commitTransaction();
 		} catch (Exception e) {
 			System.err.println(e.getMessage());

@@ -15,13 +15,24 @@ public class PilotaRepositoryImpl extends CrudRepositoryImpl<Pilota, Integer> im
 	}
 
 	@Override
-	public Pilota findByNomeECognome(String search) {
+	public Pilota findBySearch(String search) {
 		EntityManager em = PersistenceUtil.getEntityManager();
 		int indice = search.indexOf(" ");
 		String nome = search.substring(0, indice);
 		String cognome = search.substring(indice + 1, search.length());
-		return em.createQuery("select p from Pilota p where p.nome=:nome and p.cognome=:cognome", Pilota.class)
+		return (Pilota) em.createQuery("select p from pilota p where p.nome=:nome and p.cognome=:cognome ", Pilota.class)
 				.setParameter("nome", nome).setParameter("cognome", cognome).getSingleResult();
+		
 	}
+
+//	@Override
+//	public Pilota findByNomeECognome(String search) {
+//		EntityManager em = PersistenceUtil.getEntityManager();
+//		int indice = search.indexOf(" ");
+//		String nome = search.substring(0, indice);
+//		String cognome = search.substring(indice + 1, search.length());
+//		return em.createQuery("select p from Pilota p where p.nome=:nome and p.cognome=:cognome", Pilota.class)
+//				.setParameter("nome", nome).setParameter("cognome", cognome).getSingleResult();
+//	}
 
 }
