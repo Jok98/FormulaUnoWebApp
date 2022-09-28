@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.generationitaly.f1.entity.Circuito;
 import org.generationitaly.f1.entity.Pilota;
+import org.generationitaly.f1.entity.Scuderia;
 import org.generationitaly.f1.service.F1Service;
 import org.generationitaly.f1.service.impl.F1ServiceImpl;
 
@@ -29,9 +31,25 @@ public class SearchServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String search = request.getParameter("search");
 		String searchType= request.getParameter("ricerca");
-		Pilota pilota = f1Service.findBySearch(search);
-		request.setAttribute("pilota", pilota);
-		request.getRequestDispatcher("pilota.jsp").forward(request, response);
+		switch(searchType){
+		case"piloti":
+			Pilota pilota = (Pilota) f1Service.findBySearch(search,searchType);
+			request.setAttribute("pilota", pilota);
+			request.getRequestDispatcher("pilota.jsp").forward(request, response);
+			break;
+		case "circuiti":
+			Circuito circuito = (Circuito) f1Service.findBySearch(search,searchType);
+			request.setAttribute("circuito", circuito);
+			request.getRequestDispatcher("circuito.jsp").forward(request, response);
+			break;
+		case "scuderie":
+			Scuderia scuderia = (Scuderia) f1Service.findBySearch(search,searchType);
+			request.setAttribute("scuderia", scuderia);
+			request.getRequestDispatcher("scuderia.jsp").forward(request, response);
+			break;
+			
+		}
+
 	}
 
 }

@@ -5,5 +5,5 @@ import org.generationitaly.f1.entity.Pilota;
 
 public interface PilotaRepository extends CrudRepository<Pilota, Integer> {
 
-	 Pilota findBySearch(String search);
+	 Pilota findBySearchPilota(String search);
 }
