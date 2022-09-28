@@ -23,7 +23,7 @@ public class F1ServiceImpl implements F1Service {
 	private ScuderiaRepository scuderiaRepository = new ScuderiaRepositoryImpl();
 	private PilotaRepository pilotaRepository = new PilotaRepositoryImpl();
 //	private GaraRepository garaRepository = new GaraRepositoryImpl();
-//	private MonopostoRepository monopostoRepository = new MonopostoRepositoryImpl();
+	private MonopostoRepository monopostoRepository = new MonopostoRepositoryImpl();
 	private CircuitoRepository circuitoRepository = new CircuitoRepositoryImpl();
 
 	@Override

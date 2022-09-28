@@ -1,20 +1,13 @@
 package org.generationitaly.f1.entity;
 
 import java.util.Date;
-import java.util.List;
 
-import org.generationitaly.f1.entity.Gara;
 //import org.generationitaly.f1.entity.ClassificaPiloti;
-import org.generationitaly.f1.entity.Scuderia;
-import org.generationitaly.f1.entity.Monoposto;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -61,9 +54,6 @@ public class Pilota {
 
 //	@OneToMany(mappedBy = "pilota", fetch = FetchType.EAGER)
 //	private List<Gara> gare;
-//
-//	@OneToOne(mappedBy = "pilota", fetch = FetchType.EAGER)
-//	private Monoposto monoposto;
 
 //	@OneToOne(mappedBy = "pilota")
 //	private ClassificaPiloti classificaPiloti;
@@ -162,14 +152,6 @@ public class Pilota {
 //
 //	public void setGare(List<Gara> gare) {
 //		this.gare = gare;
-//	}
-//
-//	public Monoposto getMonoposto() {
-//		return monoposto;
-//	}
-//
-//	public void setMonoposto(Monoposto monoposto) {
-//		this.monoposto = monoposto;
 //	}
 
 //	public ClassificaPiloti getClassificaPiloti() {

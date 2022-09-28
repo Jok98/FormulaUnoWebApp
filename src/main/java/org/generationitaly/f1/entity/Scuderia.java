@@ -7,8 +7,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-//import javax.persistence.OneToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -49,6 +50,10 @@ public class Scuderia {
 	@OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
 	private List<Pilota> piloti;
 
+	@OneToOne
+	@JoinColumn(name = "idVettura", nullable = false)
+	private Monoposto monoposto;
+
 	public List<Pilota> getPiloti() {
 		return piloti;
 	}
@@ -57,19 +62,13 @@ public class Scuderia {
 		this.piloti = piloti;
 	}
 
-//	public List<Monoposto> getMonoposti() {
-//		return monoposti;
-//	}
-//
-//	public void setMonoposti(List<Monoposto> monoposti) {
-//		this.monoposti = monoposti;
-//	}
+	public Monoposto getMonoposto() {
+		return monoposto;
+	}
 
-//	@OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
-//	private List<Monoposto> monoposti;
-
-//	@OneToOne(mappedBy="scuderia")
-//	private ClassificaCostruttori classificaCostruttori;
+	public void setMonoposto(Monoposto monoposto) {
+		this.monoposto = monoposto;
+	}
 
 	public String getLogo() {
 		return logo;
@@ -156,7 +155,7 @@ public class Scuderia {
 		return "Scuderia [logo=" + logo + ", nomeScuderia=" + nomeScuderia + ", annoEsordio=" + annoEsordio
 				+ ", nazionalita=" + nazionalita + ", numeroVittorie=" + numeroVittorie + ", primoPilota=" + primoPilota
 				+ ", secondoPilota=" + secondoPilota + ", teamPrincipal=" + teamPrincipal + ", sitoWeb=" + sitoWeb
-				+ ", storia=" + storia + "]";
+				+ ", storia=" + storia + ", piloti=" + piloti + ", monoposto=" + monoposto.getIdVettura() + "]";
 	}
 
 }
