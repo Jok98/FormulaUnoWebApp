@@ -123,11 +123,24 @@ public class F1ServiceImpl implements F1Service {
 	}
 
 	@Override
-	public Pilota findPilotaByNomeECognome(String search) {
-		Pilota pilota = null;
+	public Object findBySearch(String search,String searchType) {
+		
+		Object obj = null;
+		
 		try {
 			PersistenceUtil.beginTransaction();
-			pilota = pilotaRepository.findByNomeECognome(search);
+			switch(searchType){
+			case"piloti":
+				obj = (Pilota)pilotaRepository.findBySearchPilota(search);
+				break;
+			case "circuiti":
+				obj = (Circuito)circuitoRepository.findBySearchCircuito(search);
+				break;
+			case "scuderie":
+				obj = (Scuderia)scuderiaRepository.findBySearchScuderia(search);
+				break;
+				
+			}
 			PersistenceUtil.commitTransaction();
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
@@ -135,7 +148,7 @@ public class F1ServiceImpl implements F1Service {
 		} finally {
 			PersistenceUtil.closeEntityManager();
 		}
-		return pilota;
+		return obj;
 	}
 
 }

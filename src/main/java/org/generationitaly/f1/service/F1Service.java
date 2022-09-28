@@ -20,5 +20,5 @@ public interface F1Service {
 
 	Circuito findCircuitoByNome(String nomeCircuito);
 
-	Pilota findPilotaByNomeECognome(String search);
+	Object findBySearch(String search,String searchType);
 }
