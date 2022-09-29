@@ -45,28 +45,28 @@
 
 	<div class="container-pilota">
 		<div class="row">
-			<div class="col-3 col-sm-6 col-md-4 col-lg-2 colonna-1">
-				<div class="row row-col-1">
-					<img id="imaggineScuderia" src="${ pilota.scuderia.logo}">
+			<div class="col" style="width=30%;">
+				<div class="row-col-1">
+					<img width="100%" height="100%" id="imaggineScuderia" src="${ pilota.scuderia.logo}">
 				</div>
-				<div class="row row-col-1">
-					<h4>Numero pilota</h4>
+				<div class="row-col-1">
+					<h2>Numero pilota</h2>
 					<p class="p-col-1">${pilota.numeroPilota}</p>
 				</div>
-				<div class="row row-col-1">
-					<h4>Titoli Mondiali</h4>
+				<div class="row-col-1">
+					<h2>Titoli Mondiali</h2>
 					<p class="p-col-1">${pilota.titoliMondiali}</p>
 				</div>
-				<div style="word-break: break-all" class="row row-col-1">
+				<div style="word-break: break-all" class="row-col-1">
 					<p class="p-col-1">${pilota.biografia}</p>
 				</div>
 			</div>
-			<div class="col-6 col-sm-10 col-md-8 col-lg-6">
+			<div class="col" style="width=30%">
 				<div id="divImmaginePilota" class="row">
-					<img src="${pilota.foto}" />
+					<img style="border-radius: 50px 50px 50px 50px;" src="${pilota.foto}" />
 				</div>
 			</div>
-			<div class="col-3">col 3</div>
+			<div class="col" style="width=30%">col 3</div>
 		</div>
 	</div>
 	<script
@@ -75,17 +75,16 @@
 		crossorigin="anonymous"></script>
 	<style>
 .row-col-1 {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10vh;
-	margin-top: 10vh;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+    width: 100%;
+    max-width: 100%;
+    margin-top: var(--bs-gutter-y);
 }
 
 .container-pilota {
-	margin-left: 10vw;
-	margin-right: 10vw;
-	margin-bottom: 10vh;
-	margin-top: 10vh;
+	margin-left: 5vw;
+	margin-right: 5vw;
 	background-color: #dedeba;
 }
 
@@ -118,6 +117,9 @@ h4 {
 .colonna-1 {
 	margin-left: 2vw;
 	margin-right: 2vw;
+}
+h2{
+	text-align: center;
 }
 </style>
 </body>
