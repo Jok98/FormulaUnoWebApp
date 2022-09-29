@@ -43,22 +43,26 @@
 						class="nav-link" href="scuderie">Scuderie</a></li>
 					<li class="nav-item" style="padding-right: 60px"><a
 						class="nav-link active" href="piloti">Piloti</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
-						class="nav-link " href="circuiti">Circuiti</a></li>
+					<lass ="nav-item"
+					style="padding-right: 60px"> <a
+						class="nav-link " href="circuiti">Circuiti</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class="container-fluid mt-10">
-		<div class="row row-cols-1 row-cols-md-5 g-4">
+	<div class="container-xxl" style="width: 100%">
+		<div class="row row-cols-1 row-cols-md-5">
 			<%
 			List<Pilota> piloti = (List<Pilota>) request.getAttribute("piloti");
 			for (int i = 0; i < piloti.size(); i += 2) {
 			%>
-			<div class="card">
-				<img src="<%=piloti.get(i).getFoto()%>"> 
-				<img src="<%=piloti.get(i + 1).getFoto()%>">
+			<div class="card" style="margin: 5px;">
+				<div>
+					<img style="width: 50%;" src="<%=piloti.get(i).getFoto()%>"><img
+						style="width: 50%" src="<%=piloti.get(i + 1).getFoto()%>">
+				</div>
 				<form action="scuderia" method="get">
 					<input type="hidden" name="id"
 						value="<%=piloti.get(i).getScuderia().getNomeScuderia()%>">
@@ -66,8 +70,6 @@
 						<%=piloti.get(i).getScuderia().getNomeScuderia()%>
 					</button>
 				</form>
-
-
 			</div>
 			<%
 			}
@@ -84,6 +86,7 @@
 	<!-- 			<button type="submit">Info</button> -->
 	<%-- 		</form> --%>
 	<%-- 	<f:forEach items="${piloti}" var="pilota"> --%>
+
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

@@ -21,8 +21,8 @@
 <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg fixed-top">
-		<div class="container-fluid">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg fixed-top">
 			<a class="navbar-brand" href="#"><img
 				src="https://i.imgur.com/E0yUss8.png" width="95px" height="25px"></a>
 			<button class="navbar-toggler" type="button"
@@ -43,14 +43,12 @@
 						class="nav-link " href="circuiti">Circuiti</a></li>
 				</ul>
 			</div>
-		</div>
-	</nav>
+		</nav>
+	</div>
 
 	<main class="container">
 		<aside class="container__item--sidebar">
-
 			<div id="container">
-
 				<div id="galleryView">
 					<div id="galleryContainer">
 						<div id="leftView"></div>
