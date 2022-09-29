@@ -1,3 +1,4 @@
+
 /* Esta es una manera de hacerlo */
 body{
 background-image: url("https://i.imgur.com/A6TOCIN.jpg");
@@ -10,11 +11,12 @@ background-position: center center;
    --bs-gutter-x: 0;
    --bs-gutter-y: 0;
   display: grid;
-  grid-template-columns: 0.50fr 0.50fr;
+  grid-template-columns: 0.55fr 0.45fr;
   height: 100vh;
 
   /* Puedes limitar la anchura */
   max-width: 100%;
+  
 }
 
 .container__item--sidebar {
@@ -67,14 +69,15 @@ background-position: center center;
 }
 .nav-link {
     color: white;
-    font-family: roboto;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 22px;
+    padding-left: 30px;
 
 
 }
 .nav-link:hover {
-  color:green;
+  color:#DF4444;
 }
 
  /* Carosello */
@@ -136,6 +139,8 @@ background-position: center center;
   align-items: center;
   box-sizing: border-box;
   position: relative;
+  padding-top: 30px;
+  
 }
 
 #toggle {
@@ -160,7 +165,7 @@ background-position: center center;
 #galleryView {
   height: 100vh;
   width: 50vw;
-
+	padding-left:200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +205,7 @@ background-position: center center;
 #mainView {
   height: 750px;
   width: 400px;
-  border-radius: 20px;
+  border-radius: 40px;
   background-color: #eb9100;
   margin-left: 10px;
   margin-right: 10px;
@@ -217,7 +222,7 @@ background-position: center center;
   height: 650px;
   width: 150px;
   opacity: 0.5;
-  border-radius: 20px;
+  border-radius: 40px;
 
   transform-origin: top right;
   background-color: #eb9100;
@@ -236,7 +241,7 @@ background-position: center center;
   height: 650px;
   width: 150px;
   opacity: 0.5;
-  border-radius: 20px;
+  border-radius: 40px;
 
   transform-origin: top left;
   background-color: #eb9100;
@@ -260,13 +265,13 @@ background-position: center center;
   opacity: 0.4;
   background-color: transparent;
 
-  color: green;
+  color: white;
 }
 
 .navBtns:hover {
   opacity: 1;
   transition: all 1s;
-  background-color: #eb9100;
+  background-color: transparent;
 }
 
 #navLeft {
@@ -282,3 +287,4 @@ background-position: center center;
   z-index: 1;
   box-sizing: border-box;
 }
+

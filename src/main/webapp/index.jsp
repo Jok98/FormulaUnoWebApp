@@ -18,13 +18,13 @@
 	crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
-<script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img
-				src="https://i.imgur.com/E0yUss8.png" width="95px" height="25px"></a>
+			<a class="navbar-brand" href="index.jsp"><img
+				src="https://i.imgur.com/E0yUss8.png" width="120px" height="35px"></a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false"
@@ -35,11 +35,11 @@
 				<ul class="navbar-nav">
 					<li class="nav-item" style="padding-right: 30px"><a
 						class="nav-link active" aria-current="page" href="#">Home</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="scuderie">Scuderie</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="piloti">Piloti</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link " href="circuiti">Circuiti</a></li>
 				</ul>
 			</div>
@@ -50,7 +50,15 @@
 		<aside class="container__item--sidebar">
 
 			<div id="container">
-
+				<div id="toggleContainer" style="display: none">
+					<label>Carousel</label>
+					<div id="toggle">
+						<div id="outer3">
+							<div id="slider3"></div>
+						</div>
+						<label>Tiles</label>
+					</div>
+				</div>
 				<div id="galleryView">
 					<div id="galleryContainer">
 						<div id="leftView"></div>
@@ -70,60 +78,30 @@
 					<div id="tilesContainer"></div>
 				</div>
 			</div>
-
-
 		</aside>
 		<div class="container__item--content">
-			<div class="d-grid gap-4 col-10 mx-auto" style="">
-				<h2
-					style="color: #EF0000; text-align: left; font-weight: bold; font-style: italic; font-size: 50px;">
-					I cinque migliori piloti<br> della stagione 2022
+			<div class="d-grid gap-4 col-10 mx-auto" >
+				<h2 style="color: #EF0000;font-family: 'Roboto Condensed', sans-serif; font-style: italic;  font-size: 50px; font-weight: 900">
+					I cinque migliori piloti 
+					<br>
+					della stagione 2022
 				</h2>
 
-				<h4 style="color: grey; padding-bottom: 50px;">
-					--------------------------------------------------<br>
-					--------------------------------------------------
-				</h4>
+				<h3 style="color: white; font-family: 'Roboto Condensed', sans-serif; font-style: italic;">
+					A soli 6 GP dalla fine della stagione, 
+					<br>
+					andiamo a vedere chi sono stati i 5 
+					<br>
+					migliori piloti della stagione.
+				</h3>
 
 			</div>
 		</div>
 	</main>
+	<script type="text/javascript" src="script.js"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
 		crossorigin="anonymous"></script>
 </body>
 </html>
-<!-- 'search' e' il nome del servlet per cercare pilota tramite nome+cognome-->
-<!-- method="get" tipo servlet, name="search" nome variabile da mandare dal form-->
-<!-- <!DOCTYPE html> -->
-<!-- <html> -->
-<!-- <head> -->
-<!-- <meta charset="ISO-8859-1"> -->
-<!-- <title>F1 Home</title> -->
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<!-- <link -->
-<!-- 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" -->
-<!-- 	rel="stylesheet" -->
-<!-- 	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" -->
-<!-- 	crossorigin="anonymous"> -->
-<!-- </head> -->
-<!-- <body> -->
-<!-- 	<a href="scuderie">scuderie</a> -->
-<!-- 	<a href="piloti">piloti</a> -->
-<!-- 	<a href="circuiti">circuiti</a> -->
-<%-- 	<form action="search" method="get"> --%>
-<!-- 		<select name="ricerca" id="ricerca"> -->
-<!-- 			<option value="piloti">Piloti</option> -->
-<!-- 			<option value="circuiti">Circuiti</option> -->
-<!-- 			<option value="scuderie">Scuderie</option> -->
-<!-- 		</select>  -->
-<!-- 			<input type="text" name="search"> -->
-<!-- 			<button type="submit">Search</button> -->
-<%-- 	</form> --%>
-<!-- 	<script -->
-<!-- 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" -->
-<!-- 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" -->
-<!-- 		crossorigin="anonymous"></script> -->
-<!-- </body> -->
-<!-- </html> -->
