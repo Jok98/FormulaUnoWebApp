@@ -38,7 +38,7 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item" style="padding-right: 30px"><a
-						class="nav-link" aria-current="page" href="#">Home</a></li>
+						class="nav-link" aria-current="page" href="index.jsp">Home</a></li>
 					<li class="nav-item" style="padding-right: 60px"><a
 						class="nav-link" href="scuderie">Scuderie</a></li>
 					<li class="nav-item" style="padding-right: 60px"><a
@@ -60,8 +60,13 @@
 			%>
 			<div class="card" style="margin: 5px;">
 				<div>
-					<img style="width: 50%;" src="<%=piloti.get(i).getFoto()%>"><img
-						style="width: 50%" src="<%=piloti.get(i + 1).getFoto()%>">
+					<a style="width: 50%;"
+						href="pilota?numeroPilota=<%=piloti.get(i).getNumeroPilota()%>">
+						<img src="<%=piloti.get(i).getFoto()%>">
+					</a> <a style="width: 50%"
+						href="pilota?numeroPilota=<%=piloti.get(i + 1).getNumeroPilota()%>">
+						<img src="<%=piloti.get(i + 1).getFoto()%>">
+					</a>
 				</div>
 				<form action="scuderia" method="get">
 					<input type="hidden" name="id"
