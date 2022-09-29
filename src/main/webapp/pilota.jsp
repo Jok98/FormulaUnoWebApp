@@ -45,27 +45,28 @@
 
 	<div class="container-pilota">
 		<div class="row">
-			<div class="col-2 col-sm-6 col-md-4 col-lg-2">
-				<div class="row row-col-1">
-					<f:out value="${pilota.biografia}" />
-				</div>
-				<div class="row row-col-1">
-					<f:out value="${pilota.titoliMondiali}" />
-				</div>
-				<div class="row row-col-1">
-					<f:out value="${pilota.numeroPilota}" />
-				</div>
+			<div class="col-3 col-sm-6 col-md-4 col-lg-2 colonna-1">
 				<div class="row row-col-1">
 					<img id="imaggineScuderia" src="${ pilota.scuderia.logo}">
 				</div>
+				<div class="row row-col-1">
+					<h4>Numero pilota</h4>
+					<p class="p-col-1">${pilota.numeroPilota}</p>
+				</div>
+				<div class="row row-col-1">
+					<h4>Titoli Mondiali</h4>
+					<p class="p-col-1">${pilota.titoliMondiali}</p>
+				</div>
+				<div style="word-break: break-all" class="row row-col-1">
+					<p class="p-col-1">${pilota.biografia}</p>
+				</div>
 			</div>
-
-			<div class="col-5">
+			<div class="col-6 col-sm-10 col-md-8 col-lg-6">
 				<div id="divImmaginePilota" class="row">
 					<img src="${pilota.foto}" />
 				</div>
 			</div>
-			<div class="col-5">col 3</div>
+			<div class="col-3">col 3</div>
 		</div>
 	</div>
 	<script
@@ -81,11 +82,11 @@
 }
 
 .container-pilota {
-	margin-left: 5vw;
-	margin-right: 5vw;
-	margin-bottom: 5vh;
-	margin-top: 5vh;
-	background-color: white;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-bottom: 10vh;
+	margin-top: 10vh;
+	background-color: #dedeba;
 }
 
 div {
@@ -103,6 +104,20 @@ div {
 	margin-right: auto;
 	margin-top: 10vh;
 	margin-bottom: 10vh;
+}
+
+h4 {
+	text-align: center;
+}
+
+.p-col-1 {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.colonna-1 {
+	margin-left: 2vw;
+	margin-right: 2vw;
 }
 </style>
 </body>
