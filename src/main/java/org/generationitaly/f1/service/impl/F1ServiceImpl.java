@@ -47,7 +47,7 @@ public class F1ServiceImpl implements F1Service {
 		List<Pilota> piloti = null;
 		try {
 			PersistenceUtil.beginTransaction();
-			piloti = pilotaRepository.findAll();
+			piloti = pilotaRepository.findPilotiOrdinatiByScuderia();
 			PersistenceUtil.commitTransaction();
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
@@ -123,23 +123,23 @@ public class F1ServiceImpl implements F1Service {
 	}
 
 	@Override
-	public Object findBySearch(String search,String searchType) {
-		
+	public Object findBySearch(String search, String searchType) {
+
 		Object obj = null;
-		
+
 		try {
 			PersistenceUtil.beginTransaction();
-			switch(searchType){
-			case"piloti":
-				obj = (Pilota)pilotaRepository.findBySearchPilota(search);
+			switch (searchType) {
+			case "piloti":
+				obj = (Pilota) pilotaRepository.findBySearchPilota(search);
 				break;
 			case "circuiti":
-				obj = (Circuito)circuitoRepository.findBySearchCircuito(search);
+				obj = (Circuito) circuitoRepository.findBySearchCircuito(search);
 				break;
 			case "scuderie":
-				obj = (Scuderia)scuderiaRepository.findBySearchScuderia(search);
+				obj = (Scuderia) scuderiaRepository.findBySearchScuderia(search);
 				break;
-				
+
 			}
 			PersistenceUtil.commitTransaction();
 		} catch (Exception e) {
