@@ -282,3 +282,8 @@ background-position: center center;
   z-index: 1;
   box-sizing: border-box;
 }
+
+.containerScuderie {
+	margin-left: 40px;
+	margin-right: 40px;
+}

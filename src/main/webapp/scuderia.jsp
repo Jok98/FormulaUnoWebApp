@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Scuderie</title>
+<title>Scuderia</title>
 </head>
 <body>
 	<f:out value="${scuderia}"></f:out>
