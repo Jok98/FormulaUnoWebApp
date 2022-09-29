@@ -12,23 +12,24 @@
 -->
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Piloti</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-	crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
-<script type="text/javascript" src="script.js"></script>
-</head>
+	<meta charset="ISO-8859-1">
+	<title>Piloti</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link 
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+		crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	</head>
 <body>
-	<nav class="navbar navbar-expand-lg">
+	<nav class="navbar navbar-expand-lg mb-5">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img
-				src="https://i.imgur.com/E0yUss8.png" width="95px" height="25px"></a>
+			<a class="navbar-brand" href="#">
+				<img src="https://i.imgur.com/E0yUss8.png" width="95px" height="25px">
+			</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false"
@@ -51,37 +52,38 @@
 			</div>
 		</div>
 	</nav>
-	<div style="width:90%; padding-left:5px; padding-rigth:5px; margin-left:auto; margin-rigth:auto">
-	<div class="container-fluid" style="width: 100%">
-		<div class="row row-cols-1 row-cols-md-5">
-			<%
-			List<Pilota> piloti = (List<Pilota>) request.getAttribute("piloti");
-			for (int i = 0; i < piloti.size(); i += 2) {
-			%>
-			<div class="card" style="margin: 5px;">
-				<div>
-					<a
-						href="pilota?numeroPilota=<%=piloti.get(i).getNumeroPilota()%>">
-						<img class="img-fluid" src="<%=piloti.get(i).getFoto()%>">
-					</a> <a style="width: 50%"
-						href="pilota?numeroPilota=<%=piloti.get(i + 1).getNumeroPilota()%>">
-						<img class="img-fluid" src="<%=piloti.get(i + 1).getFoto()%>">
-					</a>
+	<div
+		style="padding-left: auto; padding-rigth: auto;">
+		<div class="container-fluid">
+			<div class="row">
+				<%
+				List<Pilota> piloti = (List<Pilota>) request.getAttribute("piloti");
+				for (int i = 0; i < piloti.size(); i += 2) {
+				%>
+				<div class="mb-5" style="width:20%">
+				<div class="card-group">
+					<div class="card">
+						<a href="pilota?numeroPilota=<%=piloti.get(i).getNumeroPilota()%>">
+							<img class="card-img-top" style="width: 100%;" src="<%=piloti.get(i).getFoto()%>">	
+						</a> 
+					</div>
+					<div class="card">
+						<a href="pilota?numeroPilota=<%=piloti.get(i + 1).getNumeroPilota()%>">
+							<img class="card-img-top" style="width: 100%;" src="<%=piloti.get(i + 1).getFoto()%>">
+						</a>
+					</div>
 				</div>
-				<form action="scuderia" method="get">
-					<input type="hidden" name="id"
-						value="<%=piloti.get(i).getScuderia().getNomeScuderia()%>">
-					<button type="submit">
-						<%=piloti.get(i).getScuderia().getNomeScuderia()%>
-					</button>
-				</form>
+				<a class="card-link" style="text-align:center;display:block;" href="scuderia?id=<%=piloti.get(i).getScuderia().getNomeScuderia()%>">
+					<%=piloti.get(i).getScuderia().getNomeScuderia()%>
+				</a>
+				</div>
+				<%
+				}
+				%>
+				
 			</div>
-			<%
-			}
-			%>
 		</div>
 	</div>
-</div>
 	<%-- 	<f:forEach items="${piloti}" var="pilota"> --%>
 	<%-- 		<f:out value="${pilota}"> --%>
 	<%-- 		</f:out> --%>
