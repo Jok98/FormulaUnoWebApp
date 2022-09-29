@@ -51,8 +51,8 @@
 			</div>
 		</div>
 	</nav>
-
-	<div class="container-xxl" style="width: 100%">
+	<div style="width:90%; padding-left:5px; padding-rigth:5px; margin-left:auto; margin-rigth:auto">
+	<div class="container-fluid" style="width: 100%">
 		<div class="row row-cols-1 row-cols-md-5">
 			<%
 			List<Pilota> piloti = (List<Pilota>) request.getAttribute("piloti");
@@ -60,12 +60,12 @@
 			%>
 			<div class="card" style="margin: 5px;">
 				<div>
-					<a style="width: 50%;"
+					<a
 						href="pilota?numeroPilota=<%=piloti.get(i).getNumeroPilota()%>">
-						<img src="<%=piloti.get(i).getFoto()%>">
+						<img class="img-fluid" src="<%=piloti.get(i).getFoto()%>">
 					</a> <a style="width: 50%"
 						href="pilota?numeroPilota=<%=piloti.get(i + 1).getNumeroPilota()%>">
-						<img src="<%=piloti.get(i + 1).getFoto()%>">
+						<img class="img-fluid" src="<%=piloti.get(i + 1).getFoto()%>">
 					</a>
 				</div>
 				<form action="scuderia" method="get">
@@ -81,7 +81,7 @@
 			%>
 		</div>
 	</div>
-
+</div>
 	<%-- 	<f:forEach items="${piloti}" var="pilota"> --%>
 	<%-- 		<f:out value="${pilota}"> --%>
 	<%-- 		</f:out> --%>
