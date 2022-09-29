@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+#blur {
+-webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 2px 17px 17px 0px #FF0000, 3px 12px 26px 34px rgba(0,0,0,0.51), 3px 12px 26px 34px rgba(0,0,0,0.51); 
+box-shadow: 4px -4px 15px 0px #FF1F1F, 2px 17px 17px 0px #FF0000, 3px 12px 26px 34px rgba(0,0,0,0.51), 3px 12px 26px 34px rgba(0,0,0,0.51);
+background-color:white; height:40px; margin:27px;
+}
+#gpBorder{
+	border-style: solid; 
+	margin: 2px;
+	border-color:white;
+	color:white;
+	text-transform:uppercase;
+	
+}
