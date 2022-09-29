@@ -10,5 +10,7 @@
 </head>
 <body>
 	<f:out value="${scuderia}"></f:out>
+	<img src="${scuderia.piloti.get(0).foto}">
+	<img src="${scuderia.piloti.get(1).foto}">
 </body>
 </html>
