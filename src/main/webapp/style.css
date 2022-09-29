@@ -4,31 +4,27 @@ background-image: url("https://i.imgur.com/A6TOCIN.jpg");
 background-size: cover;
 background-repeat:no-repeat;
 background-position: center center;
+
 }
 
 .container {
-   --bs-gutter-x: 0;
-   --bs-gutter-y: 0;
-  display: grid;
-  grid-template-columns: 0.50fr 0.50fr;
   height: 100vh;
-
-  /* Puedes limitar la anchura */
   max-width: 100%;
+ 
 }
 
-.container__item--sidebar {
-  background-color: transparent;
 
-}
+
 .container__item--content {
 
   background-color: transparent;
 }
 .container__item--sidebar {
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
  }
 
 
@@ -42,6 +38,22 @@ background-position: center center;
 .profile{
 	text-align: center;
 }
+
+.row-cols-md-5>* {
+    flex: 0 0 auto;
+    width: 17%;
+}
+
+.card {
+
+    --bs-card-border-radius: 1.5rem;
+}
+
+.card-img, .card-img-top {
+    border-radius: 1.5rem;
+   	
+}
+
 
 /* navbar*/
 
@@ -62,7 +74,7 @@ background-position: center center;
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: red;
-    padding-right:60px;
+   
 
 }
 .nav-link {
@@ -287,3 +299,4 @@ background-position: center center;
 	margin-left: 40px;
 	margin-right: 40px;
 }
+
