@@ -1,0 +1,4 @@
+@charset "ISO-8859-1";
+.skewX {
+  transform: skewX(-15deg) translateX(-32px);
+}
