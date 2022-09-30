@@ -49,207 +49,208 @@
 	</nav>
 
 
-	<div class="container" style="height: 610px; width: 1560px">
-		<p id="titolo_circuito" style="padding-top: 75px; text-align: center;">CIRCUITI
-			STAGIONE 2022</p>
-		<div class="row" style="height: 420px">
-			<div class="col-2" style="padding-left: 0px; height: 420px">
-
-				<div class="row;">
+	<div class="container-box">
+	<!-- style="height: 610px; width: 1560px" -->
+	
+		<!-- <p id="titolo_circuito" style="padding-top: 75px; text-align: center;">CIRCUITI
+			STAGIONE 2022</p> -->
+		<div class="row justify-content-center" style="margin-left:6vw">
+		<!-- style="height: 420px" -->
+			<div class="col-sx" style="width:10vw"> 
+<!-- 			style="padding-left: 0px; height: 420px">
+ -->
+				<!-- <div class="row;">
 					<h1 style="text-align: centre">_______________</h1>
 				</div>
+ -->
 
-
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/bhr-big.png"
-							alt="Bahrein" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/bhr-big.png">
 						<span display="inline">GP Bahrein</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/sau-big.png"
-							alt="Arabia Saudita" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/sau-big.png">
 						<span display="inline">GP Arabia Saudita</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/aus-big.png"
-							alt="Australia" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/aus-big.png">
 						<span display="inline">GP Australia</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/ita-big.png"
-							alt="Italia" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Emilia Romagna</span>
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/ita-big.png">
+							<span display="inline">GP Emilia Romagna</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/usa-big.png"
-							alt="Stati Uniti" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/usa-big.png">
 						<span display="inline">GP Miami</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/esp-big.png"
-							alt="Spagna" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Spagna</span>
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/esp-big.png">
+							<span display="inline">GP Spagna</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/mco-big.png"
-							alt="Monaco" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Monaco</span>
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/mco-big.png">
+							<span display="inline">GP Monaco</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/aze-big.png"
-							alt="Azerbaijan" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/aze-big.png">
 						<span display="inline">GP Azerbaijan</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/can-big.png"
-							alt="Canada" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Canada</span>
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/can-big.png">
+							<span display="inline">GP Canada</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/gbr-big.png"
-							alt="Gran Bretagna" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/gbr-big.png">
 						<span display="inline">GP Gran Bretagna</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/aut-big.png"
-							alt="Austria" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/aut-big.png">
 						<span display="inline">GP Austria</span>
 					</h6>
 				</div>
 			</div>
-			<div class="col-8" style="height: 420px; width: 1000px">
+			<div class="col-img">
+			<!-- style="height: 420px; width: 1000px"> -->
 				<div class="row">
 					<h3
-						style="text-align: center; color: grey; border: 5px; border-color: white">GP
+						style="text-align: center; color: grey; border: 10px; border-color: white">GP
 						di Monza</h3>
 				</div>
-				<img
-					src="https://www.mmo.it/wp-content/uploads/2019/11/TESO-119-tagliato-1.jpg" />
-
-			</div>
-			<div class="col-2" style="padding-left: 35px; height: 420px">
-
 				<div class="row">
-					<h1 style="text-align: centre">_____________</h1>
+				<img
+					src="https://media.gettyimages.com/photos/drivers-steer-their-cars-during-the-formula-one-bahrain-grand-prix-at-picture-id1134118550?s=612x612" />
 				</div>
-
-				<div class="circuito row" id="gpBorder">
+			</div>
+			<div class="col-dx">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/fra-big.png"
-							alt="France" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Francia</span>
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/fra-big.png">
+							<span display="inline">GP Francia</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/hun-big.png"
-							alt="Ungheria" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/hun-big.png">
 						<span display="inline">GP Ungheria</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/bel-big.png"
-							alt="Belgio" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Belgio</span>
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/bel-big.png">
+							<span display="inline">GP Belgio</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/nld-big.png"
-							alt="Olanda" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Olanda</span>
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/nld-big.png">
+							<span display="inline">GP Olanda</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/ita-big.png"
-							alt="Italia" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Italia</span>
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/ita-big.png">
+							<span display="inline">GP Italia</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/sgp-big.png"
-							alt="Singapore" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/sgp-big.png">
 						<span display="inline">GP Singapore</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/jpn-big.png"
-							alt="Giappone" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/jpn-big.png">
 						<span display="inline">GP Giappone</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/usa-big.png"
-							alt="Stati Uniti" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/usa-big.png">
 						<span display="inline">GP Stati Uniti</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/mex-big.png"
-							alt="Messico" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/mex-big.png">
 						<span display="inline">GP Messico</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/bra-big.png"
-							alt="Brasile" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/bra-big.png">
 						<span display="inline">GP Brasile</span>
 					</h6>
 				</div>
-				<div class="circuito row" id="gpBorder">
+				<div class="row gpBorder" id="gpBorder">
 					<h6>
 						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/are-big.png"
-							alt="Abu Dhabi" height="13px" width="20px" display="inline">
+							class="flag-small"
+							src="https://static.sky.it/images/skysport/configurations/motori/flag/are-big.png">
 						<span display="inline">GP Abu Dhabi</span>
 					</h6>
 				</div>
@@ -257,24 +258,24 @@
 		</div>
 	</div>
 
-	<div class="container"
-		style="padding-left: 115px; padding-right: 20px; height: 300px">
+	<div class="container-box2"
+		style="  width:100vh;margin:auto; height:40vh">
 		<div class="row">
-			<div class="col-2">
+			<div class="col-2 col-lunghezza">
 				<div class="row" id="gpBorder"
 					style="border-style: solid; height: 145px; margin: 10px">LUNGHEZZA</div>
 				<div class="row" id="gpBorder"
 					style="border-style: solid; height: 145px; margin: 10px">NUMERO
 					GIRI</div>
 			</div>
-			<div class="col-3" id="gpBorder"
+			<div class="col col-notizie" id="gpBorder"
 				style="border-style: solid; height: 300px; margin: 10px">NOTIZIE</div>
-			<div class="col-2" id="gpBorder"
+			<div class="col col-info" id="gpBorder"
 				style="border-style: solid; height: 300px; margin: 10px">INFO
 				GEOGRAFICHE</div>
-			<div class="col-2" id="gpBorder"
+			<div class="col col-indirizzo" id="gpBorder"
 				style="border-style: solid; height: 300px; margin: 10px">INDIRIZZO</div>
-			<div class="col-2">
+			<div class="col-2 col-vincitore">
 				<div class="row" id="gpBorder"
 					style="border-style: solid; height: 95px; margin: 10px">VINCITORE</div>
 				<div class="row" id="gpBorder"
