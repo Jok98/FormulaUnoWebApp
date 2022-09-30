@@ -54,7 +54,8 @@
    				 <div class="col-3"> 
      				<div class="text-center">
   						<div style="height:50%; width:50%; margin-left:auto; margin-right:auto">
-  						<img src="${scuderia.piloti.get(0).foto}" class="img-fluid" alt="...">
+  						<a href="pilota?numeroPilota=${scuderia.piloti.get(0).numeroPilota}">
+  						<img src="${scuderia.piloti.get(0).foto}" class="img-fluid" alt="..."></a>
 					</div>
   						 <div>
    							 <p class="h5"><font color=white>La nostra storia</font></p>
@@ -139,7 +140,8 @@
 						</div>
 						</div>
 						<div style="height:50%; width:50%; margin-left:auto; margin-right:auto">
-  						<img src="${scuderia.piloti.get(1).foto}" class="img-fluid" alt="...">
+						<a href="pilota?numeroPilota=${scuderia.piloti.get(1).numeroPilota}">
+  						<img src="${scuderia.piloti.get(1).foto}" class="img-fluid" alt="..."></a>
 					</div>
   			  </div>
 		</div>
