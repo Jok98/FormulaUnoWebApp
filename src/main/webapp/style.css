@@ -57,7 +57,7 @@ body {
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
 	color: red;
-	padding-right: 60px;
+	
 }
 
 .nav-link {
@@ -273,8 +273,10 @@ body {
 	box-sizing: border-box;
 }
 
+
+/* scuderie style*/
 .container-scuderie {
-	height: 100vh;
+	max-height: 100%;
 	max-width: 100%;
 }
 
@@ -282,21 +284,11 @@ body {
 	background-color: transparent;
 }
 
-.containeritem--sidebar {
+.containeritem--sidebar_scuderie {
 	background-color: transparent;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-}
-
-.container__item--content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.profile {
 	text-align: center;
 }
 
@@ -311,4 +303,11 @@ body {
 
 .card-img, .card-img-top {
 	border-radius: 1.5rem;
+}
+
+.g-4, .gy-4 {
+    --bs-gutter-y: 2rem;
+}
+.g-4, .gx-4 {
+    --bs-gutter-x: 0rem;
 }

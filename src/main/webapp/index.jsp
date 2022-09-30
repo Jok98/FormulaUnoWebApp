@@ -33,7 +33,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item" style="padding-right: 30px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link active" aria-current="page" href="#">Home</a></li>
 					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="scuderie">Scuderie</a></li>

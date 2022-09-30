@@ -21,7 +21,7 @@
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg fixed-top">
+	<nav class="navbar navbar-expand-lg">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="index.jsp"><img
 				src="https://i.imgur.com/E0yUss8.png" width="120px" height="35px"></a>
@@ -47,9 +47,9 @@
 	</nav>
 	<main class="container-scuderie">
 
-		<aside class="container__item--sidebar">
+		<aside class="container__item--sidebar_scuderie">
 			<div class="row row-cols-1 row-cols-md-5 g-4"
-				style="padding-top: 170px; padding-left: 240px">
+				style="padding-top:20px; padding-left: 240px">
 				<f:forEach items="${scuderie}" var="scuderia">
 					<div class="col">
 						<div class="card " style="width: 250px; height: 350px;">
