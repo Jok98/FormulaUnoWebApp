@@ -167,4 +167,19 @@ body {
     padding: 3px;
     color: black;
     text-align: center;
+    color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: italic;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    border-radius: 0;
+    height: 12px;
+   
 }

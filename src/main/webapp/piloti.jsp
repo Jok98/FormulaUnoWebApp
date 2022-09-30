@@ -67,16 +67,19 @@
 							<img class="card-img-top" style="width: 100%;"
 							src="<%=piloti.get(i).getFoto()%>">
 						</a>
-						
-						
+
+
 						<div class="card-img-overlay">
-							<img alt="" src="https://i.imgur.com/eSvsHqa.png" width="30px" height="30px">
-							
+							<a href="scuderia?id=<%=piloti.get(i).getScuderia().getNomeScuderia() %>">
+							<img alt="" src="<%=piloti.get(i).getScuderia().getIcona() %>" width="40px"
+								height="40px"></a>
+
 						</div>
-						
-						
+
+
 						<div class="card-body">
-							<p class="card-text">Pilota 1</p>
+							<p class="card-text"><%=piloti.get(i).getNome()%>
+								<%=piloti.get(i).getCognome()%></p>
 						</div>
 
 					</div>
@@ -88,7 +91,8 @@
 							src="<%=piloti.get(i + 1).getFoto()%>">
 						</a>
 						<div class="card-body">
-							<p class="card-text">Pilota 2</p>
+							<p class="card-text"><%=piloti.get(i + 1).getNome()%>
+								<%=piloti.get(i + 1).getCognome()%></p>
 						</div>
 					</div>
 

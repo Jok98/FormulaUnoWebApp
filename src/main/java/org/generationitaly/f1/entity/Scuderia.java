@@ -47,6 +47,9 @@ public class Scuderia {
 	@Column(name = "storia", length = 6000, nullable = false)
 	private String storia;
 
+	@Column(name = "icona", length = 1000, nullable = false)
+	private String icona;
+
 	@OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
 	private List<Pilota> piloti;
 
@@ -148,6 +151,14 @@ public class Scuderia {
 
 	public void setMonoposto(Monoposto monoposto) {
 		this.monoposto = monoposto;
+	}
+
+	public String getIcona() {
+		return icona;
+	}
+
+	public void setIcona(String icona) {
+		this.icona = icona;
 	}
 
 	@Override
