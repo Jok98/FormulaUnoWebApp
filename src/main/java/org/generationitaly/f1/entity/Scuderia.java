@@ -16,157 +16,168 @@ import javax.persistence.Table;
 @Table(name = "scuderia")
 public class Scuderia {
 
-	@Column(name = "logo", length = 6000, nullable = false)
-	private String logo;
+    @Column(name = "logo", length = 6000, nullable = false)
+    private String logo;
 
-	@Id
-	@Column(name = "nome_scuderia", length = 45, nullable = false)
-	private String nomeScuderia;
+    @Id
+    @Column(name = "nome_scuderia", length = 45, nullable = false)
+    private String nomeScuderia;
 
-	@Column(name = "anno_esordio", nullable = false)
-	private int annoEsordio;
+    @Column(name = "anno_esordio", nullable = false)
+    private int annoEsordio;
 
-	@Column(name = "nazionalita", length = 45, nullable = false)
-	private String nazionalita;
+    @Column(name = "nazionalita", length = 45, nullable = false)
+    private String nazionalita;
 
-	@Column(name = "numero_vittorie", nullable = false)
-	private int numeroVittorie;
+    @Column(name = "numero_vittorie", nullable = false)
+    private int numeroVittorie;
 
-	@Column(name = "primo_pilota", length = 45, nullable = false)
-	private String primoPilota;
+    @Column(name = "primo_pilota", length = 45, nullable = false)
+    private String primoPilota;
 
-	@Column(name = "secondo_pilota", length = 45, nullable = false)
-	private String secondoPilota;
+    @Column(name = "secondo_pilota", length = 45, nullable = false)
+    private String secondoPilota;
 
-	@Column(name = "team_principal", length = 45, nullable = false)
-	private String teamPrincipal;
+    @Column(name = "team_principal", length = 45, nullable = false)
+    private String teamPrincipal;
 
-	@Column(name = "sito_web", length = 6000, nullable = false)
-	private String sitoWeb;
+    @Column(name = "sito_web", length = 6000, nullable = false)
+    private String sitoWeb;
 
-	@Column(name = "storia", length = 6000, nullable = false)
-	private String storia;
+    @Column(name = "storia", length = 6000, nullable = false)
+    private String storia;
 
-	@Column(name = "icona", length = 1000, nullable = false)
-	private String icona;
+    @Column(name = "icona", length = 1000, nullable = false)
+    private String icona;
 
-	@OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
-	private List<Pilota> piloti;
+    @Column(name = "prima_vittoria", nullable = false)
+    private int primaVittoria;
 
-	@OneToOne
-	@JoinColumn(name = "id_vettura", referencedColumnName = "id_vettura", nullable = false)
-	private Monoposto monoposto;
+    @OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
+    private List<Pilota> piloti;
 
-	public String getLogo() {
-		return logo;
-	}
+    @OneToOne
+    @JoinColumn(name = "id_vettura", referencedColumnName = "id_vettura", nullable = false)
+    private Monoposto monoposto;
 
-	public void setLogo(String logo) {
-		this.logo = logo;
-	}
+    public int getPrimaVittoria() {
+        return primaVittoria;
+    }
 
-	public String getNomeScuderia() {
-		return nomeScuderia;
-	}
+    public void setPrimaVittoria(int primaVittoria) {
+        this.primaVittoria = primaVittoria;
+    }
 
-	public void setNomeScuderia(String nomeScuderia) {
-		this.nomeScuderia = nomeScuderia;
-	}
+    public String getLogo() {
+        return logo;
+    }
 
-	public int getAnnoEsordio() {
-		return annoEsordio;
-	}
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
 
-	public void setAnnoEsordio(int annoEsordio) {
-		this.annoEsordio = annoEsordio;
-	}
+    public String getNomeScuderia() {
+        return nomeScuderia;
+    }
 
-	public String getNazionalita() {
-		return nazionalita;
-	}
+    public void setNomeScuderia(String nomeScuderia) {
+        this.nomeScuderia = nomeScuderia;
+    }
 
-	public void setNazionalita(String nazionalita) {
-		this.nazionalita = nazionalita;
-	}
+    public int getAnnoEsordio() {
+        return annoEsordio;
+    }
 
-	public int getNumeroVittorie() {
-		return numeroVittorie;
-	}
+    public void setAnnoEsordio(int annoEsordio) {
+        this.annoEsordio = annoEsordio;
+    }
 
-	public void setNumeroVittorie(int numeroVittorie) {
-		this.numeroVittorie = numeroVittorie;
-	}
+    public String getNazionalita() {
+        return nazionalita;
+    }
 
-	public String getPrimoPilota() {
-		return primoPilota;
-	}
+    public void setNazionalita(String nazionalita) {
+        this.nazionalita = nazionalita;
+    }
 
-	public void setPrimoPilota(String primoPilota) {
-		this.primoPilota = primoPilota;
-	}
+    public int getNumeroVittorie() {
+        return numeroVittorie;
+    }
 
-	public String getSecondoPilota() {
-		return secondoPilota;
-	}
+    public void setNumeroVittorie(int numeroVittorie) {
+        this.numeroVittorie = numeroVittorie;
+    }
 
-	public void setSecondoPilota(String secondoPilota) {
-		this.secondoPilota = secondoPilota;
-	}
+    public String getPrimoPilota() {
+        return primoPilota;
+    }
 
-	public String getTeamPrincipal() {
-		return teamPrincipal;
-	}
+    public void setPrimoPilota(String primoPilota) {
+        this.primoPilota = primoPilota;
+    }
 
-	public void setTeamPrincipal(String teamPrincipal) {
-		this.teamPrincipal = teamPrincipal;
-	}
+    public String getSecondoPilota() {
+        return secondoPilota;
+    }
 
-	public String getSitoWeb() {
-		return sitoWeb;
-	}
+    public void setSecondoPilota(String secondoPilota) {
+        this.secondoPilota = secondoPilota;
+    }
 
-	public void setSitoWeb(String sitoWeb) {
-		this.sitoWeb = sitoWeb;
-	}
+    public String getTeamPrincipal() {
+        return teamPrincipal;
+    }
 
-	public String getStoria() {
-		return storia;
-	}
+    public void setTeamPrincipal(String teamPrincipal) {
+        this.teamPrincipal = teamPrincipal;
+    }
 
-	public void setStoria(String storia) {
-		this.storia = storia;
-	}
+    public String getSitoWeb() {
+        return sitoWeb;
+    }
 
-	public List<Pilota> getPiloti() {
-		return piloti;
-	}
+    public void setSitoWeb(String sitoWeb) {
+        this.sitoWeb = sitoWeb;
+    }
 
-	public void setPiloti(List<Pilota> piloti) {
-		this.piloti = piloti;
-	}
+    public String getStoria() {
+        return storia;
+    }
 
-	public Monoposto getMonoposto() {
-		return monoposto;
-	}
+    public void setStoria(String storia) {
+        this.storia = storia;
+    }
 
-	public void setMonoposto(Monoposto monoposto) {
-		this.monoposto = monoposto;
-	}
+    public List<Pilota> getPiloti() {
+        return piloti;
+    }
 
-	public String getIcona() {
-		return icona;
-	}
+    public void setPiloti(List<Pilota> piloti) {
+        this.piloti = piloti;
+    }
 
-	public void setIcona(String icona) {
-		this.icona = icona;
-	}
+    public Monoposto getMonoposto() {
+        return monoposto;
+    }
 
-	@Override
-	public String toString() {
-		return "Scuderia [logo=" + logo + ", nomeScuderia=" + nomeScuderia + ", annoEsordio=" + annoEsordio
-				+ ", nazionalita=" + nazionalita + ", numeroVittorie=" + numeroVittorie + ", primoPilota=" + primoPilota
-				+ ", secondoPilota=" + secondoPilota + ", teamPrincipal=" + teamPrincipal + ", sitoWeb=" + sitoWeb
-				+ ", storia=" + storia + ", monoposto=" + monoposto + "]";
-	}
+    public void setMonoposto(Monoposto monoposto) {
+        this.monoposto = monoposto;
+    }
+
+    public String getIcona() {
+        return icona;
+    }
+
+    public void setIcona(String icona) {
+        this.icona = icona;
+    }
+
+    @Override
+    public String toString() {
+        return "Scuderia [logo=" + logo + ", nomeScuderia=" + nomeScuderia + ", annoEsordio=" + annoEsordio
+                + ", nazionalita=" + nazionalita + ", numeroVittorie=" + numeroVittorie + ", primoPilota=" + primoPilota
+                + ", secondoPilota=" + secondoPilota + ", teamPrincipal=" + teamPrincipal + ", sitoWeb=" + sitoWeb
+                + ", storia=" + storia + ", monoposto=" + monoposto + "]";
+    }
 
 }

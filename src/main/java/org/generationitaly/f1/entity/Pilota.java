@@ -51,8 +51,19 @@ public class Pilota {
 	@ManyToOne
 	@JoinColumn(name = "nome_scuderia", nullable = false)
 	private Scuderia scuderia;
+	
+	@Column(name = "bandiera", length = 1000, nullable = false)
+	private String bandiera;
 
-	public String getFoto() {
+	public String getBandiera() {
+        return bandiera;
+    }
+
+    public void setBandiera(String bandiera) {
+        this.bandiera = bandiera;
+    }
+
+    public String getFoto() {
 		return foto;
 	}
 

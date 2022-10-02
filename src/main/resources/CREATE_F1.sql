@@ -42,6 +42,8 @@ CREATE TABLE IF NOT EXISTS `F1`.`scuderia` (
   `secondo_pilota` VARCHAR(45) NOT NULL,
   `id_vettura` VARCHAR(45) NOT NULL,
   `nazionalita` varchar(45) not null,
+  `icona` varchar(1000) not null,
+  `prima_vittoria` int not null,
   PRIMARY KEY (`nome_scuderia`),
   INDEX `fk_Scuderia_Monoposto1_idx` (`id_vettura` ASC) VISIBLE,
   CONSTRAINT `fk_Scuderia_Monoposto1`
@@ -67,6 +69,7 @@ CREATE TABLE IF NOT EXISTS `F1`.`pilota` (
   `biografia` VARCHAR(6000) NOT NULL,
   `titoli_mondiali` INT NOT NULL,
   `nome_scuderia` VARCHAR(45) NOT NULL,
+  `bandiera` varchar(1000) not null,
   PRIMARY KEY (`numero_pilota`),
   INDEX `fk_Pilota_Scuderia1_idx` (`nome_scuderia` ASC) VISIBLE,
   CONSTRAINT `fk_Pilota_Scuderia1`

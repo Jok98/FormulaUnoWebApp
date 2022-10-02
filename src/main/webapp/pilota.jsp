@@ -45,28 +45,39 @@
 
 	<div class="container-pilota">
 		<div class="row">
-			<div class="col" style="width=30%;">
-				<div class="row-col-1">
-					<img width="100%" height="100%" id="imaggineScuderia" src="${ pilota.scuderia.logo}">
+			<div class="col" >
+				<div class="center-col" style="margin-top: 6vh">
+					<h2 style="background-color: #E41015; transform: skew(-15deg); margin-bottom: 1em"> Scuderia </h2>
+					<img class="immagineScuderia" src="${ pilota.scuderia.logo}">
 				</div>
-				<div class="row-col-1">
-					<h2>Numero pilota</h2>
-					<p class="p-col-1">${pilota.numeroPilota}</p>
+				<div class="center-col">
+					<h2 style="background-color: white; color: #E41015; transform: skew(-15deg); font-weight: 600; padding-right: 4em; padding-left: 4em; padding-bottom: 3px;" >Titoli Mondiali : ${pilota.titoliMondiali}</h2>
 				</div>
-				<div class="row-col-1">
-					<h2>Titoli Mondiali</h2>
-					<p class="p-col-1">${pilota.titoliMondiali}</p>
-				</div>
-				<div style="word-break: break-all" class="row-col-1">
-					<p class="p-col-1">${pilota.biografia}</p>
+				<div style="word-break: break-all" class="center-col">
+					<p style="padding-right:4em; padding-left:4em; font-size: 1em">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
 				</div>
 			</div>
-			<div class="col" style="width=30%">
+			<div class="col" >
 				<div id="divImmaginePilota" class="row">
-					<img style="border-radius: 50px 50px 50px 50px;" src="${pilota.foto}" />
+					<img style="border-radius: 50px 50px 50px 50px; max-width: fit-content; width: auto; height: 100%" src="${pilota.foto }" />
 				</div>
 			</div>
-			<div class="col" style="width=30%">col 3</div>
+			<div class="col">
+				<div class="center-col" style="margin-top: 6vh">
+					<h2 style="padding-left: 1em ;font-size:3em ;margin-bottom:1px ;padding-right: 1em;background-color: #E41015; transform: skew(-15deg) translateX(-25%); text-align: center; max-width: fit-content;"> ${pilota.nome } </h2>
+					<h2 style="padding-right: 1em;padding-left: 1em ;font-weight:600 ;font-size:3em;color: #E41015; background-color: white; transform: skew(-15deg) translateX(25%); text-align: center; max-width: fit-content;"> ${pilota.cognome } </h2>
+				</div>
+				<div class="center-col" style="margin-left: auto; margin-top: 6vh">
+					<h4 style="text-align: start"> ${pilota.dataNascita }, ${pilota.luogoNascita }</h4> <br>
+					<h4 style="text-align: start"> ${pilota.nazionalita } </h4> 
+					<img style="width: 70%; height: 70%;" src="${pilota.bandiera }">
+				</div>
+				<div class="row" style="margin-left: auto; margin-right: auto; width: fit-content;margin-top: 6vh">
+					<a style="text-decoration:none ;font-weight:600 ;font-size:2em;color: #E41015; background-color: white; transform: skew(-15deg) translateX(25%); text-align: center; " target="_blank" href="${pilota.profiloSocial }">Social</a> 
+					<br> <br>
+					<a style="color:white ;text-decoration:none ;font-size:2em ;background-color: #E41015; transform: skew(-15deg) translateX(-25%); text-align: center;" target="_blank" href="${pilota.biografia }">Wikipedia</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script
@@ -74,35 +85,37 @@
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
 		crossorigin="anonymous"></script>
 	<style>
-.row-col-1 {
-	margin-bottom: 5vh;
-	margin-top: 5vh;
-    width: 100%;
-    max-width: 100%;
+.center-col {
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+    max-width: fit-content;
     margin-top: var(--bs-gutter-y);
 }
 
 .container-pilota {
-	margin-left: 5vw;
-	margin-right: 5vw;
-	background-color: #dedeba;
+	margin-left: 2em;
+	margin-right: 2em;
+	color: white;
+	font-family:Roboto Condensed, sans-serif;
+	font-style: italic;
 }
 
-div {
-	border: 1px solid #000000;
+.immagineScuderia {
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 2em;
+	padding-left: auto;
+	padding-right: auto;
+	display: block;
 }
 
-#immagineScuderia {
-	margin: auto;
-}
-
-#divImmaginPilota {
-	width: 60%;
-	height: 60%;
+#divImmaginePilota {
+	width: 100%;
+	height: 100%;
+	max-width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10vh;
-	margin-bottom: 10vh;
 }
 
 h4 {
