@@ -1,6 +1,7 @@
 package org.generationitaly.f1.entity;
 
 import java.util.List;
+import java.util.jar.Attributes.Name;
 
 //import org.generationitaly.f1.entity.ClassificaCostruttori;
 import javax.persistence.Column;
@@ -50,8 +51,8 @@ public class Scuderia {
     @Column(name = "icona", length = 1000, nullable = false)
     private String icona;
 
-    @Column(name = "prima_vittoria", nullable = false)
-    private int primaVittoria;
+    @Column(name = "primo_mondiale", nullable = false)
+    private int primoMondiale;
 
     @OneToMany(mappedBy = "scuderia", fetch = FetchType.EAGER)
     private List<Pilota> piloti;
@@ -59,13 +60,46 @@ public class Scuderia {
     @OneToOne
     @JoinColumn(name = "id_vettura", referencedColumnName = "id_vettura", nullable = false)
     private Monoposto monoposto;
+    
+    @Column(name = "direttore_tecnico", length = 45, nullable = false)
+    private String direttoreTecnico;
 
-    public int getPrimaVittoria() {
-        return primaVittoria;
+    @Column(name = "bio_vettura", length = 500, nullable = false)
+    private String bioVettura;
+
+    @Column(name = "info", length = 500, nullable = false)
+    private String info;
+    
+    public int getPrimoMondiale() {
+        return primoMondiale;
     }
 
-    public void setPrimaVittoria(int primaVittoria) {
-        this.primaVittoria = primaVittoria;
+    public void setPrimoMondiale(int primoMondiale) {
+        this.primoMondiale = primoMondiale;
+    }
+
+    public String getDirettoreTecnico() {
+        return direttoreTecnico;
+    }
+
+    public void setDirettoreTecnico(String direttoreTecnico) {
+        this.direttoreTecnico = direttoreTecnico;
+    }
+
+    public String getBioVettura() {
+        return bioVettura;
+    }
+
+    public void setBioVettura(String bioVettura) {
+        this.bioVettura = bioVettura;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
     }
 
     public String getLogo() {

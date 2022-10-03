@@ -43,8 +43,41 @@ public class Circuito {
 
 	@Column(name = "indirizzo", length = 100, nullable = false)
 	private String indirizzo;
+	
+	@Column(name = "sito_web", length = 100, nullable = false)
+	private String sitoWeb;
 
-	@Override
+	@Column(name = "notizie", length = 500, nullable = false)
+	private String notizie;
+	
+	@Column(name = "contatti", length = 20, nullable = false)
+	private String contatti;
+	
+	public String getSitoWeb() {
+        return sitoWeb;
+    }
+
+    public void setSitoWeb(String sitoWeb) {
+        this.sitoWeb = sitoWeb;
+    }
+
+    public String getNotizie() {
+        return notizie;
+    }
+
+    public void setNotizie(String notizie) {
+        this.notizie = notizie;
+    }
+
+    public String getContatti() {
+        return contatti;
+    }
+
+    public void setContatti(String contatti) {
+        this.contatti = contatti;
+    }
+
+    @Override
 	public String toString() {
 		return "Circuito [nomeCircuito=" + nomeCircuito + ", lunghezza=" + lunghezza + ", citta=" + citta + ", nazione="
 				+ nazione + ", migliorTempo=" + migliorTempo + ", fotoCircuito=" + fotoCircuito + ", numeroGiri="

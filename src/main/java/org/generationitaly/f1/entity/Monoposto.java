@@ -26,8 +26,19 @@ public class Monoposto {
 
 	@Column(name = "foto_motore", length = 6000, nullable = false)
 	private String fotoMotore;
+	
+	@Column(name = "storia", length = 500, nullable = false)
+	private String storia;
 
-	@OneToOne(mappedBy = "monoposto")
+	public String getStoria() {
+        return storia;
+    }
+
+    public void setStoria(String storia) {
+        this.storia = storia;
+    }
+
+    @OneToOne(mappedBy = "monoposto")
 	private Scuderia scuderia;
 
 	public String getIdVettura() {

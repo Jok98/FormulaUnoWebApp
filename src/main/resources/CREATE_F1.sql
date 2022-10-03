@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS `F1`.`monoposto` (
   `anno_produzione` INT NOT NULL,
   `foto_monoposto` VARCHAR(6000) NOT NULL,
   `foto_motore` VARCHAR(6000) NOT NULL,
+  `storia` varchar(500) not null,
   PRIMARY KEY (`id_vettura`))
 ENGINE = InnoDB;
 
@@ -43,7 +44,10 @@ CREATE TABLE IF NOT EXISTS `F1`.`scuderia` (
   `id_vettura` VARCHAR(45) NOT NULL,
   `nazionalita` varchar(45) not null,
   `icona` varchar(1000) not null,
-  `prima_vittoria` int not null,
+  `direttore_tecnico` varchar(45) not null,
+  `primo_mondiale` int not null,
+  `bio_vettura` varchar(500) not null,
+  `info` varchar(500) not null,
   PRIMARY KEY (`nome_scuderia`),
   INDEX `fk_Scuderia_Monoposto1_idx` (`id_vettura` ASC) VISIBLE,
   CONSTRAINT `fk_Scuderia_Monoposto1`
@@ -70,6 +74,8 @@ CREATE TABLE IF NOT EXISTS `F1`.`pilota` (
   `titoli_mondiali` INT NOT NULL,
   `nome_scuderia` VARCHAR(45) NOT NULL,
   `bandiera` varchar(1000) not null,
+  `foto_grande` varchar(45) not null,
+  `foto_card` varchar(45) not null,
   PRIMARY KEY (`numero_pilota`),
   INDEX `fk_Pilota_Scuderia1_idx` (`nome_scuderia` ASC) VISIBLE,
   CONSTRAINT `fk_Pilota_Scuderia1`
@@ -93,7 +99,10 @@ CREATE TABLE IF NOT EXISTS `F1`.`circuito` (
   `miglior_tempo` FLOAT NOT NULL,
   `pole_position` VARCHAR(45) NOT NULL,
   `vincitore` VARCHAR(45) NOT NULL,
-   `indirizzo` varchar(100) not null,
+  `indirizzo` varchar(100) not null,
+  `sito_web` varchar(100) not null,
+  `notizie` varchar(500) not null,
+  `contatti` varchar(20) not null,
   PRIMARY KEY (`nome_circuito`))
 ENGINE = InnoDB;
 

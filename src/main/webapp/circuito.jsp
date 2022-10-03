@@ -42,7 +42,7 @@
 					<li class="nav-item" style="padding-right: 60px"><a
 						class="nav-link" href="piloti">Piloti</a></li>
 					<li class="nav-item" style="padding-right: 60px"><a
-						class="nav-link active" href="circuiti.jsp">Circuiti</a></li>
+						class="nav-link active" href="circuiti">Circuiti</a></li>
 				</ul>
 			</div>
 		</div>

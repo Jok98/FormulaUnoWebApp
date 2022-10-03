@@ -47,18 +47,37 @@ public class Pilota {
 
 	@Column(name = "biografia", length = 6000, nullable = false)
 	private String biografia;
-	
-	@Column(name = "foto_card", length = 100, nullable = false)
-	private String fotoCard;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "nome_scuderia", nullable = false)
 	private Scuderia scuderia;
 	
 	@Column(name = "bandiera", length = 1000, nullable = false)
 	private String bandiera;
+	
+	@Column(name = "foto_grande", length = 45, nullable = false)
+	private String fotoGrande;
+	
+	@Column(name = "foto_card", length = 45, nullable = false)
+    private String fotoCard;
 
-	public String getBandiera() {
+	public String getFotoGrande() {
+        return fotoGrande;
+    }
+
+    public void setFotoGrande(String fotoGrande) {
+        this.fotoGrande = fotoGrande;
+    }
+
+    public String getFotoCard() {
+        return fotoCard;
+    }
+
+    public void setFotoCard(String fotoCard) {
+        this.fotoCard = fotoCard;
+    }
+
+    public String getBandiera() {
         return bandiera;
     }
 
@@ -152,14 +171,6 @@ public class Pilota {
 
 	public void setScuderia(Scuderia scuderia) {
 		this.scuderia = scuderia;
-	}
-	
-	public String getFotoCard() {
-		return fotoCard;
-	}
-
-	public void setFotoCard(String fotoCard) {
-		this.fotoCard = fotoCard;
 	}
 
 	@Override
