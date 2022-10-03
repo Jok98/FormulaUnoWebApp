@@ -63,21 +63,25 @@
 		<div class="row" style = "margin-bottom: -20vh">
    			 <div class="col-2" style = "padding-left: 5%">
     			  <div class="row" id="gpBorder"
-					style="border-style: solid; height: 145px; margin: 10px">LUNGHEZZA</div>
+					style="border-style: solid; height: 145px; margin: 10px">LUNGHEZZA: ${circuito.lunghezza}</div>
+					
 					<div class="row" id="gpBorder"
 					style="border-style: solid; height: 145px; margin: 10px">NUMERO
-					GIRI</div>
+					GIRI: ${circuito.numeroGiri}</div>
+					
+					
    			</div>
    			 <div class="col-8">
    				  <img src="${circuito.fotoCircuito}" class="center" style = "display: block; margin-left: auto; margin-right: auto;
    				   height:60%; width: 80%">
+   				   <p style = "text-align:center; color: white"><small>Miglior tempo del circuito: ${circuito.migliorTempo}</small></p>
   			  </div>
-   			 <div class="col-2" style = "padding-right: 5%">>
+   			 <div class="col-2" style = "padding-right: 5%">
     			  <div class="row" id="gpBorder"
-					style="border-style: solid; height: 145px; margin: 10px">VINCITORE</div>
+					style="border-style: solid; height: 145px; margin: 10px;">VINCITORE: ${circuito.vincitore}</div>
 				<div class="row" id="gpBorder"
 					style="border-style: solid; height: 145px; margin: 10px">POLE
-					POSITION</div>
+					POSITION: ${circuito.polePosition }</div>
    			 </div>
 		  </div>
 		  <div class="row">
@@ -87,8 +91,13 @@
 		   </div>
 		    <div class="col-5">
 			     <div class="col col-info" id="gpBorder"
-					style="border-style: solid; height: 190px; margin: 10px">INFO
-					GEOGRAFICHE</div>
+					style="border-style: solid; height: 190px; margin: 10px">
+					<ul>
+					<li>Nazione: ${circuito.nazione}</li>
+					<li>Città: ${circuito.citta}</li>
+					<li>Indirizzo: ${circuito.indirizzo}</li>
+					</ul>
+					</div>
 		   </div>
 		  </div>
 	<script
