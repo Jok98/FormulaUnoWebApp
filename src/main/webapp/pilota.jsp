@@ -107,20 +107,14 @@ h2 {
 			<div class="col-4">
 				<div class="center-col" style="margin-top: 4vh">
 					<h2 style="background-color: #E41015; transform: skew(-15deg); margin-bottom: 1em; text-align: center; padding-left: 10px">Scuderia</h2>
-					<img class="immagineScuderia" src="${ pilota.scuderia.logo}">
+					<a href="scuderia?id=${pilota.scuderia.nomeScuderia}"><img class="immagineScuderia" src="${ pilota.scuderia.logo}"> </a>
 				</div>
 				<div class="center-col">
 					<h2	style="background-color: white; color: #E41015; transform: skew(-15deg); font-weight: 600; padding-right: 0.5em; padding-left: 0.5em;">
 						Titoli Mondiali : ${pilota.titoliMondiali}</h2>
 				</div>
 				<div style="word-break: break-all" class="center-col">
-					<p style="padding-right: 6em; padding-left: 6em; font-size: 1em">Lorem
-						ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-						ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-						magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-						felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-						consequat massa quis enim. Donec pede justo, fringilla vel,
-						aliquet nec, vulputate</p>
+					<p style="padding-right: 6em; padding-left: 6em; font-size: 1em">${pilota.storia }</p>
 				</div>
 			</div>
 			<div class="col-4">

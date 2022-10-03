@@ -1,81 +1,81 @@
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/Kp7hILL.png","https://i.imgur.com/to0gkQ7.jpg","https://i.imgur.com/gJwHhRH.png","Lewis", "Hamilton", "1985-1-7", "Stevenage", "Inglese","44", "7","https://www.instagram.com/lewishamilton/", "https://it.wikipedia.org/wiki/Lewis_Hamilton", "Mercedes AMG Petronas",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Regno-Unito.webp");
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Regno-Unito.webp", "Lewis Carl Davidson Hamilton; Stevenage, 7 gennaio 1985) è un pilota automobilistico britannico, cinque volte campione del mondo di Formula 1, nel 2008 con la McLaren e nel 2014, 2015, 2017 e 2018 con la Mercedes.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/BaKqovJ.png","https://i.imgur.com/Nj6iEm9.jpg","https://i.imgur.com/qwkR6dr.png","George", "Russel", "1998-2-15", "King's Lynn", "Inglese","63", "0","https://www.instagram.com/georgerussell63/", "https://it.wikipedia.org/wiki/George_Russell_(pilota_automobilistico)", "Mercedes AMG Petronas" ,
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Regno-Unito.webp");
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Regno-Unito.webp", "Russell entra a far parte del programma giovani della Mercedes nel gennaio 2017, e fa il suo debutto in una monoposto di Formula 1 il 1º agosto nei test di Budapest della stagione 2017 con la W08, disputando entrambi i giorni di test. Partecipa inoltre alle ultime due sessioni di prove libere del campionato 2017 con la Force India. Viene confermato anche per il 2018 come collaudatore Mercedes.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/SutsmUR.png","https://i.imgur.com/IEOVpS0.jpg","https://i.imgur.com/R7y5YjW.png","Max", "Verstappen", "1997-9-30", "Hasselt", "Belga","1", "1","https://www.instagram.com/maxverstappen1/", "https://it.wikipedia.org/wiki/Max_Verstappen" ,"Red Bull Racing" ,
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Belgio.webp");
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Belgio.webp", "Debutta in Formula 1 nel 2015 al volante della Toro Rosso con la quale gareggia anche per i primi quattro Gran Premi del 2016, per poi essere promosso a seconda guida Red Bull, team con il quale diventa il più giovane pilota ad aver vinto una gara del campionato del mondo di Formula 1 a soli 18 anni, 7 mesi e 15 giorni (battendo il precedente record di Sebastian Vettel), nonché il primo olandese a trionfare nella massima competizione.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/JMur8Jt.png","https://i.imgur.com/FYp1CkS.jpg","https://i.imgur.com/LPgTOnV.png","Sergio", "Perez", "1990-1-26", "Guadalajara", "Messicano","11", "0", "https://www.instagram.com/schecoperez/", "https://it.wikipedia.org/wiki/Sergio_P%C3%A9rez_(pilota_automobilistico)", "Red Bull Racing", 
-"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Messico.webp" );
+"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Messico.webp" , "Il 4 ottobre 2010 la Sauber annunciò l'ingaggio di Pérez per le successive due stagioni di Formula 1, al fianco del giapponese Kamui Kobayashi. Il pilota messicano portò al team svizzero l'appoggio economico della Telmex, che lo aveva sostenuto per gran parte della sua carriera.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/ILWzmh7.png","https://i.imgur.com/SldO7Hz.jpg","https://i.imgur.com/OOXEdDK.png","Carlos", "Sainz", "1994-9-1", "Madrid", "Spagnolo","55", "0", "https://www.instagram.com/carlossainz55/", "https://it.wikipedia.org/wiki/Carlos_Sainz_Jr.", "Ferrari", 
-"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Spagna.webp");
+"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Spagna.webp", "Nel 2010 entra a far parte del Red Bull Junior Team e, contemporaneamente, partecipa al campionato europeo di Formula BMW con una vettura del team EuroInternational, ottenendo il titolo di Rookie Cup e vincendo il prestigioso Gran Premio di Macao.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/BmAwu7B.png","https://i.imgur.com/H8UoWvO.jpg","https://i.imgur.com/v4cfBbq.png","Charles", "Leclerc", "1997-10-16", "Monaco", "Monegasco","16", "0", "https://www.instagram.com/charles_leclerc/", "https://it.wikipedia.org/wiki/Charles_Leclerc", "Ferrari", 
-"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Monaco.webp");
+"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Monaco.webp", "Nel 2014, Leclerc passò alle monoposto, correndo nella Formula Renault 2.0 Alps per la squadra britannica Fortec Motorsports. Durante la stagione ottenne sette podi, tra i quali due vittorie, una delle quali a Monza, mentre l'altra arrivò nel round finale a Jerez, dove precedette il russo Matevos Isaakyan. Concluse il campionato al 2º posto, alle spalle di Nyck de Vries su Koiranen.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/MiBbG5r.png","https://i.imgur.com/zLyodhR.jpg","https://i.imgur.com/BPemkQ8.png","Lando", "Norris", "1999-11-13", "Bristol", "Inglese","4", "0","https://www.instagram.com/landonorris/", "https://it.wikipedia.org/wiki/Lando_Norris", "McLaren F1", 
-"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Regno-Unito.webp");
+"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Regno-Unito.webp", "Il 22 febbraio 2017 viene annunciato il suo ingresso nel programma per giovani piloti del team McLaren di Formula 1. Il 2 agosto 2017 fa il suo debutto in una monoposto di Formula 1 ai test di Budapest nel circuito dell'Hungaroring, ottenendo il secondo miglior tempo alle spalle di Sebastian Vettel.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/3Q1nw8i.png","https://i.imgur.com/InAnd6w.jpg","https://i.imgur.com/WnfQuPN.png","Daniel", "Ricciardo", "1989-7-1", "Perth", "Australiano","3", "0", "https://www.instagram.com/danielricciardo/", "https://it.wikipedia.org/wiki/Daniel_Ricciardo", "McLaren F1",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Australia.webp");
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Australia.webp", "Ricciardo fece il suo esordio con una vettura di Formula 1 quando partecipò con la Red Bull Racing al test per giovani piloti tenutosi sul circuito di Jerez dal 1º al 3 dicembre 2009. Il giorno finale fece segnare il tempo migliore, l'unico sotto l'1'18".");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/9TajKMN.png","https://i.imgur.com/0F9UDaI.jpg","https://i.imgur.com/fSwXs9T.png","Fernando", "Alonso", "1981-7-29", "Oviedo", "Spagnolo","14", "2", "https://www.instagram.com/fernandoalo_oficial/", "https://it.wikipedia.org/wiki/Fernando_Alonso", "BWT Alpine F1",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Spagna.webp");
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Spagna.webp", "È stato considerato da parte della stampa, da parte dei tifosi e colleghi, nonché dagli esperti come uno dei più grandi talenti di sempre nelle corse automobilistiche, secondo la rivista statunitense Sports Illustrated nel 2013 figurava al terzo posto fra gli sportivi più ricchi e pagati del mondo. Il suo numero di gara è il 14.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/R34PWRx.png","https://i.imgur.com/ouwOqRw.jpg","https://i.imgur.com/QAWoZSv.png","Esteban", "Ocon", "1996-9-17", "Évreux", "Francese","31", "0","https://www.instagram.com/estebanocon/", "https://it.wikipedia.org/wiki/Esteban_Ocon", "BWT Alpine F1",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Francia.webp");
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Francia.webp", "Nel 2012 Ocon fece il suo debutto sulle monoposto, prendendo parte alla Eurocup Formula Renault 2.0 con la Koiranen Motorsport. Finì quattordicesimo arrivando a punti quattro volte, compreso un podio al suo Gran Premio di casa al Paul Ricard. Ha inoltre disputato una parte del campionato di Formula Renault 2.0 Alps con la Koiranen, finendo settimo con due podi, entrambi conquistati al Red Bull Ring.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/p5E5vzp.png","https://i.imgur.com/5sikSmV.jpg","https://i.imgur.com/JjysjzW.png","Pierre", "Gasly",  "1996-2-7", "Rouen", "Francese","10", "0", "https://www.instagram.com/pierregasly/", "https://it.wikipedia.org/wiki/Pierre_Gasly", "Scuderia AlphaTauri Honda",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Francia.webp" );
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Francia.webp", "Gasly passò alla Formula Renault 2.0 nel 2012, guidando per R-Ace GP. Concluse 10º con sei arrivi a punti, tra i quali vi sono podi a Spa e al Nürburgring. Partecipò anche a sei gare di Formula Renault 2.0 Northern European Cup con la stessa squadra, arrivando a podio al Nürburgring-" );
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/F455J53.png","https://i.imgur.com/GnyYSu3.jpg","https://i.imgur.com/INJEc4X.png","Yuki ", "Tsunoda", "2000-5-11", "Sagamihara", "Giapponese","22", "0", "https://www.instagram.com/yukitsunoda0511/", "https://it.wikipedia.org/wiki/Yuki_Tsunoda", "Scuderia AlphaTauri Honda",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Giappone.webp" );
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Giappone.webp", "Nel 2016 Tsunoda fece il suo debutto con le monoposto, prendendo parte a due gare del campionato giapponese di F4; nella gara di esordio, sul circuito di Suzuka, chiuse in seconda posizione. L'anno seguente Tsunoda partecipò al campionato completo, terminando in quarta posizione assoluta." );
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/500o3WO.png","https://i.imgur.com/iH5hs28.jpg","https://i.imgur.com/cpAUFog.png","Sebastian", "Vettel", "1987-7-3", "Heppenheim", "Tedesco","5", "4", "https://www.instagram.com/sebastianvettel/", "https://it.wikipedia.org/wiki/Sebastian_Vettel", "Aston Martin Cognizant F1 Team",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Germania.webp");
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Germania.webp", "Detiene anche il record del maggior numero di pole position in una singola stagione (15, nel 2011), di gran premi vinti in una stagione (13, nel 2013, record condiviso con Michael Schumacher), di gran premi vinti consecutivamente (9 nel 2013) ed è il terzo pilota per numero di vittorie (52) dietro a Michael Schumacher (91) e Lewis Hamilton (73). Il suo numero di gara è il 5.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/8GGs0nl.png","https://i.imgur.com/7PlfZlW.jpg","https://i.imgur.com/ewIykfN.png","Lance", "Stroll", "1998-10-19", "Montreal", "Canadese","18", "0", "https://www.instagram.com/lance__stroll/", "https://it.wikipedia.org/wiki/Lance_Stroll", "Aston Martin Cognizant F1 Team",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Canada.webp" );
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Canada.webp" , "Nel 2014 debuttò in monoposto, partecipando prima alla Florida Winter Series e poi alla Formula 4 italiana con i colori della Prema Powerteam, con la quale fece sue quattro gare, sette podi, quattro pole e tre giri veloci, issandosi in testa alla classifica.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/cRJnbtY.png","https://i.imgur.com/ltMTr2F.jpg","https://i.imgur.com/rZ1HP9x.png","Nicholas", "Latifi", "1995-6-29", "Montreal", "Canadese","6", "0", "https://www.instagram.com/nicholaslatifi/", "https://it.wikipedia.org/wiki/Nicholas_Latifi", "Williams Racing", 
-"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Canada.webp" );
+"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Canada.webp" , "Il 14 marzo 2016 Latifi viene ufficializzato come Test Driver per Renault in F1. Il 1º agosto 2017 prende parte alla sessione di test sul circuito dell'Hungaroring al volante di una Renault R.S.17. Per la stagione successiva viene invece scelto come Collaudatore e pilota di riserva dalla Force India, con cui prende parte alle prime prove libere del Gran Premio del Canada e di altri tre Gran Premi.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/cUUd69u.png","https://i.imgur.com/m8nWksD.jpg","https://i.imgur.com/n8geQkb.png","Alexander", "Albon", "1996-3-23", "Londra", "Thailandese","23", "0", "https://www.instagram.com/alex_albon/", "https://it.wikipedia.org/wiki/Alexander_Albon", "Williams Racing",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Thailandia.webp" );
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Thailandia.webp", "Albon debutta nelle monoposto nel 2012, anno in cui entra a far parte del Red Bull Junior Team. Gareggia nella Eurocup Formula Renault 2.0 dal 2012 al 2014. Nel suo primo anno corre con la Epic Racing[4], terminando 38º e senza ottenere punti. Nel 2013, dopo essere entrato a far parte del programma Lotus F1 Junior Team, passa al team KTR di Kurt Mollekens." );
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/p5LkdTg.png","https://i.imgur.com/NSl3035.jpg","https://i.imgur.com/hgqRT1y.png","Zhou", "Guanyu", "1999-5-30", "Shanghai", "Cinese","24", "0", "https://www.instagram.com/zhouguanyu24/", "https://it.wikipedia.org/wiki/Zhou_Guanyu", "Alfa Romeo F1 Team ORLEN", 
-"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Cina.webp" );
+"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Cina.webp", "Il 16 novembre 2021 l'Alfa Romeo Racing annuncia Zhou come pilota titolare per la stagione 2022 al posto di Antonio Giovinazzi, in coppia con il finlandese Valtteri Bottas; al debutto, Zhou diventerebbe il primo pilota cinese a prendere parte a un Gran Premio di Formula 1" );
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/Fmdh2C6.png","https://i.imgur.com/POdsvA5.jpg","https://i.imgur.com/lYvGeFG.png","Valtteri", "Bottas", "1989-8-28", "Nastola", "Finlandese","77", "0", "https://www.instagram.com/valtteribottas/", "https://it.wikipedia.org/wiki/Valtteri_Bottas", "Alfa Romeo F1 Team ORLEN",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Finlandia.webp");
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Finlandia.webp", "Passato a correre nel 2009 per il team ART Grand Prix in Formula 3 Euroseries, pur non vincendo alcuna gara, è arrivato terzo in campionato, conquistando anche due pole position. Nel 2010 è diventato terzo pilota della Williams e ha corso nuovamente in F3 Euro Series, chiudendo al terzo posto finale con due vittorie all'attivo.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/xgtdzgi.png","https://i.imgur.com/3F2isMv.jpg","https://i.imgur.com/5UJLMPC.png","Kevin", "Magnussen", "1992-10-5", "Roskilde", "Danese","20", "0", "https://www.instagram.com/kevinmagnussen/", "https://it.wikipedia.org/wiki/Kevin_Magnussen" , "Haas F1 Team", 
-"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Danimarca.webp");
+"https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Danimarca.webp", "Dopo aver vinto il titolo della Formula Renault 3.5 Series, il 14 novembre 2013 viene ufficializzato il suo ingaggio come pilota della McLaren in Formula 1 per il 2014 al posto del partente Sergio Pérez.");
 
-INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera)
+INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/zpUJyeq.png ","https://i.imgur.com/jXCw9g7.jpg","https://i.imgur.com/rDJC6wb.png","Mick ", "Schumacher", "1999-3-22", "Vufflens-le-Château", "Tedesco","47", "0", "https://www.instagram.com/mickschumacher/", "https://it.wikipedia.org/wiki/Mick_Schumacher" , "Haas F1 Team",
- "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Germania.webp" );
+ "https://www.viaggiaregratis.eu/wp-content/uploads/2021/12/Bandiera-Germania.webp", "Il 2 dicembre 2020 viene nuovamente annunciato il suo debutto in Formula 1 al volante della Haas VF-20 di Kevin Magnussen durante la prima sessione di prove libere del Gran Premio di Abu Dhabi. Lo stesso giorno viene annunciato alla guida del team statunitense a partire dal 2021, dopo aver siglato un contratto pluriennale" );
 
 

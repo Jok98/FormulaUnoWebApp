@@ -60,6 +60,17 @@ public class Pilota {
 	
 	@Column(name = "foto_card", length = 45, nullable = false)
     private String fotoCard;
+	
+	@Column(name = "storia", length = 400, nullable = false)
+	private String storia;
+
+	public String getStoria() {
+		return storia;
+	}
+
+	public void setStoria(String storia) {
+		this.storia = storia;
+	}
 
 	public String getFotoGrande() {
         return fotoGrande;

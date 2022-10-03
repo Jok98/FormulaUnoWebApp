@@ -80,13 +80,7 @@
 						</div>
 						<p style="text-align: left; padding: 10px">
 							<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white; ">
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat.exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat.laboris nisi ut aliquip ex ea commodo
-								consequat</font>
+								${scuderia.info }</font>
 						</p>
 					</div>
 
@@ -128,7 +122,7 @@
 					<div class="nostra-historia-titolo" style="padding-left: 35px;">
 						<div class="skewX transform" style=" background-color: #E41015; width: 200px;">
 						<p class="h3" style="text-align: left; padding-left: 10px">
-							<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;">Team principale</font>
+							<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;">Team principal</font>
 						</p>
 						</div>
 						</div>
@@ -146,7 +140,7 @@
 							src="https://i.imgur.com/LP5HIYc.png">
 						<div class="col-4" class="text-center">
 							<p>
-								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;"> Aggiungere direttore tecnico </font>
+								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;"> ${scuderia.direttoreTecnico } </font>
 							<p>
 						</div>
 					</div>
@@ -193,7 +187,7 @@
 								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;">PRIMA VITTORIA</font>
 							</h5>
 							<p style="text-align: left">
-								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;"> --(da inserire )-- </font>
+								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;"> ${scuderia.primoMondiale } </font>
 							</p>
 						</div>
 					</div>
@@ -217,10 +211,7 @@
 							
 							<p class="card-text" style="text-align: left; padding: 10px">
 								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-									dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco labori</font>
+									${scuderia.bioVettura }</font>
 							</p>
 						</div>
 						<img src="${scuderia.monoposto.fotoMotore}"
