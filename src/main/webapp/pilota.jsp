@@ -125,7 +125,7 @@ h2 {
 			</div>
 			<div class="col-4">
 				<div id="divImmaginePilota" class="row">
-					<img style="border-radius: 50px 50px 50px 50px; max-width: fit-content; width: auto; height: 100%; " src="${pilota.foto }" /> 
+					<img style="border-radius: 50px 50px 50px 50px; max-width: 135%; width: auto; height: 100%; " src="${pilota.fotoGrande }" /> 
 <!-- 					<img style="border-radius: 50px 50px 50px 50px; max-width: 135%; width: auto; height: 100%; " src="https://i.imgur.com/NSl3035.jpg" /> -->
 				</div>
 			</div>
