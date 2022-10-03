@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+.skewX {
+  transform: skewX(-15deg) translateX(-32px);
+}
+
+.card-img, .card-img-top {
+    border-radius: 1.5rem;
+    width: 900px;
+    height: 450px;
+}
+.card {
+    --bs-card-border-radius: 1.5rem;
+    background-color: transparent;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 0px;
+    color: var(--bs-card-color);
+}
