@@ -61,41 +61,66 @@
 		</div>
 		</div>
 		<div class="row" style = "margin-bottom: -20vh">
-   			 <div class="col-2" style = "padding-left: 5%">
-    			  <div class="row" id="gpBorder"
-					style="border-style: solid; height: 145px; margin: 10px">LUNGHEZZA: ${circuito.lunghezza}</div>
-					
+   			 <div class="col-2" style = "font-family:Roboto Condensed, sans-serif;
+    					font-style: italic; padding-left: 5%">
+    			  <div class="row" id="gpBorder"style="border-style: solid; height: 145px; margin: 10px">
+					<h4 style="color:#E41015; text-align: center;" >LUNGHEZZA</h4>
+					<br>
+					<h4 style="color:white; text-align: center; text-transform: lowercase;"> ${circuito.lunghezza} metri </h4>
+					</div>
 					<div class="row" id="gpBorder"
-					style="border-style: solid; height: 145px; margin: 10px">NUMERO
-					GIRI: ${circuito.numeroGiri}</div>
-					
-					
+					style="border-style: solid; height: 145px; margin: 10px">
+					<h4 style="color:#E41015; text-align: center" > NUMERO GIRI</h4>
+					<br>
+					<h4 style="color:white; text-align: center">${circuito.numeroGiri}</h4>				
+					</div>
    			</div>
+   			
    			 <div class="col-8">
-   				  <img src="${circuito.fotoCircuito}" class="center" style = "display: block; margin-left: auto; margin-right: auto;
+   				  <img src="${circuito.fotoCircuito}" class="center" style = "background-color: #E41015; display: block; margin-left: auto; margin-right: auto;
    				   height:60%; width: 80%">
-   				   <p style = "text-align:center; color: white"><small>Miglior tempo del circuito: ${circuito.migliorTempo}</small></p>
+   				  <p style = "text-align:center; color: white; font-family:Roboto Condensed, sans-serif;
+    					font-style: italic"><small>Miglior tempo del circuito: ${circuito.migliorTempo}</small></p>
   			  </div>
-   			 <div class="col-2" style = "padding-right: 5%">
+  			  
+   			 <div class="col-2" style = "padding-right: 5%; font-family:Roboto Condensed, sans-serif;
+    					font-style: italic">
     			  <div class="row" id="gpBorder"
-					style="border-style: solid; height: 145px; margin: 10px;">VINCITORE: ${circuito.vincitore}</div>
+					style="border-style: solid; height: 145px; margin: 10px;">
+					<h4 style="color:#E41015; text-align: center;" >VINCITORE</h4>
+					<br>
+					<h4 style="color:white; text-align: center;"> ${circuito.vincitore}</h4>
+					</div>
 				<div class="row" id="gpBorder"
-					style="border-style: solid; height: 145px; margin: 10px">POLE
-					POSITION: ${circuito.polePosition }</div>
+					style="border-style: solid; height: 145px; margin: 10px">
+					<h4 style="color:#E41015; text-align: center;" >POLE POSITION</h4>
+					<br>
+					<h4 style="color:white; text-align: center;">${circuito.polePosition }</h4>
+					</div>
    			 </div>
+   			 
 		  </div>
 		  <div class="row">
 		   <div class="col-7">
 		 	  <div class="col col-notizie" id="gpBorder"
-					style="border-style: solid; height: 190px; margin: 10px">NOTIZIE</div>
+					style="font-family:Roboto Condensed, sans-serif;
+    					font-style: italic; border-style: solid; height: 190px; margin: 10px">
+						<h4 style= "color:#E41015; text-align:center;  padding-top: 1vh " >NOTIZIE</h4>
+						<h5 style = "text-align:start; color: white;"> Il circuito Gilles Villeneuve si trovà sull'isola di Notre Dame vicino il centro di Montreal. 
+						Raggiungere l'impianto dall'aereoporto internazionale Mirabel à facile. Per arrivare sull'isola à possibile usare la metropolitana o usare il ponte Jacques Cartier, sul fiume Saint-Laurent.</h5>
+
+				</div>
 		   </div>
 		    <div class="col-5">
 			     <div class="col col-info" id="gpBorder"
-					style="border-style: solid; height: 190px; margin: 10px">
+					style="border-style: solid; height: 190px; margin: 10px; color: white; font-family:Roboto Condensed, sans-serif;
+    					font-style: italic; padding-top: 1vh ">
+    					<h4 style= "color:#E41015; text-align:center " >INFO</h4>
 					<ul>
-					<li>Nazione: ${circuito.nazione}</li>
-					<li>Città: ${circuito.citta}</li>
-					<li>Indirizzo: ${circuito.indirizzo}</li>
+					<li><h5>Nazione: ${circuito.nazione}</h5></li>
+					<li><h5>Città: ${circuito.citta}</h5></li>
+					<li><h5>Indirizzo: ${circuito.indirizzo}</h5></li>
+					<li><h5><a style="color:#E41015" href="tel:123-456-7890">123-456-7890</a></h5></li>
 					</ul>
 					</div>
 		   </div>
