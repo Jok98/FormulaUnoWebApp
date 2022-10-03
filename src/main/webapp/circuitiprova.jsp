@@ -45,11 +45,11 @@
 	</nav>
 
 	<div class="container" style="">
-        <p id="titolo_circuiti"
-            style="padding-top: 120px;padding-left: 150px; text-align: center; color: white; font-size: 50px; margin: 0px">CIRCUITI
+		
+		<p  style="padding-top: 120px;padding-left: 150px; text-align: center; color: white; font-size: 50px; margin: 0px">CIRCUITI
             STAGIONE 2022</p>
-        <div class="row"
-            style="padding-left: 20vw; padding-right: 0px; width: 30vw">
+        <div class="row nomi_circuiti"
+            style="padding-left: 510px; padding-right: 0px; width: 1761px">
             <div class="col-3" style="border: 5px; text-align: center">
                 <f:forEach items="${circuiti }" var="circuito" begin="0" end="10">
                     <div id="blur" class="row" style="maring-top: 0px">
@@ -58,7 +58,7 @@
                 </f:forEach>
             </div>
             <div class="col-3"
-                style="border: 2vw; text-align: center; content-align: center">
+                style="border: 5px; text-align: center; content-align: center">
                 <f:forEach items="${circuiti }" var="circuito" begin="11" end="21">
                     <div id="blur" class="row" style="maring-top: 0px">
                         <p><a class="nomi-circuiti" href="circuito?nomeCircuito=${circuito.nomeCircuito }">${circuito.nomeCircuito }</a></p>
@@ -66,16 +66,49 @@
                 </f:forEach>
             </div>
         </div>
-    </div>
+		
+		
+		
+		
+		
+		
+		<p id="titolo_circuiti" style="padding-top: 70px; text-align: center; color:white; font-size: 50px; margin:0px">CIRCUITI
+			STAGIONE 2022</p>
+		<div class="row" style="padding-left:510px; padding-right:0px; width:1761px">
+			<div class="col-5" style="border:5px; text-align: center">
+			<div id="blur" class="row" style=" maring-top:0px;"><h3>18-20 marzo GP Bahrain</h3></div>
+			<div id="blur" class="row"><h3>25-27 marzo GP Arabia Saudita</h3></div>
+			<div id="blur" class="row"><h3>8-10 aprile GP Australia</h3></div>
+			<div id="blur" class="row"><h3>22-24 aprile GP Emilia Romagna</h3></div>
+			<div id="blur" class="row"><h3>6-8 maggio GP Miami</h3></div>
+			<div id="blur" class="row"><h3>20-22 maggio GP Spagna</h3></div>
+			<div id="blur" class="row"><h3>27-29 maggio GP Monaco</h3></div>
+			<div id="blur" class="row"><h3>10-12 giugno GP Azerbaijan</h3></div>
+			<div id="blur" class="row"><h3>17-19 giugno GP Canada</h3></div>
+			<div id="blur" class="row"><h3>1-3 luglio GP Gran Bretagna</h3></div>
+			<div id="blur" class="row"><h3>8-10 luglio GP Austria</h3></div></div>
+			<div class="col-5" style="border:5px; text-align: center; content-align: center">
+			<div id="blur" class="row" style="maring-top:0px"><h3>22-24 luglio GP Francia</h3></div>
+			<div id="blur" class="row"><h3>29-31 luglio GP Ungheria</h3></div>
+			<div id="blur" class="row"><h3>26-28 agosto GP Belgio</h3></div>
+			<div id="blur" class="row"><h3>2-4 settembre GP Olanda</h3></div>
+			<div id="blur" class="row"><h3>9-11 settembre GP Italia</h3></div>
+			<div id="blur" class="row"><h3>30 set-2 ottobre GP Singapore</h3></div>
+			<div id="blur" class="row"><h3>7-9 ottbre GP Giappone</h3></div>
+			<div id="blur" class="row"><h3>21-23 ottobre GP Stati Uniti</h3></div>
+			<div id="blur" class="row"><h3>28-30 ottobre GP Messico</h3></div>
+			<div id="blur" class="row"><h3>11-13 novembre GP Brasile</h3></div>
+			<div id="blur" class="row"><h3>18-20 novembre GP Abu Dhabi</h3></div>
+			</div></div></div>
 
 
 
 
-	<%-- 	<f:out value="${circuito}"></f:out>
+			<%-- 	<f:out value="${circuito}"></f:out>
  --%>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-		crossorigin="anonymous"></script>
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+				crossorigin="anonymous"></script>
 </body>
 </html>

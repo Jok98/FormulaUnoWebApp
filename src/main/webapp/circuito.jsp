@@ -48,251 +48,83 @@
 		</div>
 	</nav>
 
-
-	<div class="container" style="height: 610px; width: 1560px">
-		<p id="titolo_circuito" style="padding-top: 75px; text-align: center;">CIRCUITI
-			STAGIONE 2022</p>
-		<div class="row" style="height: 420px">
-			<div class="col-2" style="padding-left: 0px; height: 420px">
-
-				<div class="row;">
-					<h1 style="text-align: centre">_______________</h1>
-				</div>
-
-
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/bhr-big.png"
-							alt="Bahrein" height="13px" width="20px" display="inline">
-						<span display="inline">GP Bahrein</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/sau-big.png"
-							alt="Arabia Saudita" height="13px" width="20px" display="inline">
-						<span display="inline">GP Arabia Saudita</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/aus-big.png"
-							alt="Australia" height="13px" width="20px" display="inline">
-						<span display="inline">GP Australia</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/ita-big.png"
-							alt="Italia" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Emilia Romagna</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/usa-big.png"
-							alt="Stati Uniti" height="13px" width="20px" display="inline">
-						<span display="inline">GP Miami</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/esp-big.png"
-							alt="Spagna" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Spagna</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/mco-big.png"
-							alt="Monaco" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Monaco</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/aze-big.png"
-							alt="Azerbaijan" height="13px" width="20px" display="inline">
-						<span display="inline">GP Azerbaijan</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/can-big.png"
-							alt="Canada" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Canada</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/gbr-big.png"
-							alt="Gran Bretagna" height="13px" width="20px" display="inline">
-						<span display="inline">GP Gran Bretagna</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/aut-big.png"
-							alt="Austria" height="13px" width="20px" display="inline">
-						<span display="inline">GP Austria</span>
-					</h6>
-				</div>
-			</div>
-			<div class="col-8" style="height: 420px; width: 1000px">
-				<div class="row">
-					<h3
-						style="text-align: center; color: grey; border: 5px; border-color: white">GP
-						di Monza</h3>
-				</div>
-				<img
-					src="https://www.mmo.it/wp-content/uploads/2019/11/TESO-119-tagliato-1.jpg" />
-
-			</div>
-			<div class="col-2" style="padding-left: 35px; height: 420px">
-
-				<div class="row">
-					<h1 style="text-align: centre">_____________</h1>
-				</div>
-
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/fra-big.png"
-							alt="France" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Francia</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/hun-big.png"
-							alt="Ungheria" height="13px" width="20px" display="inline">
-						<span display="inline">GP Ungheria</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/bel-big.png"
-							alt="Belgio" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Belgio</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/nld-big.png"
-							alt="Olanda" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Olanda</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/ita-big.png"
-							alt="Italia" height="13px" width="20px" display="inline"> <span
-							display="inline">GP Italia</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/sgp-big.png"
-							alt="Singapore" height="13px" width="20px" display="inline">
-						<span display="inline">GP Singapore</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/jpn-big.png"
-							alt="Giappone" height="13px" width="20px" display="inline">
-						<span display="inline">GP Giappone</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/usa-big.png"
-							alt="Stati Uniti" height="13px" width="20px" display="inline">
-						<span display="inline">GP Stati Uniti</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/mex-big.png"
-							alt="Messico" height="13px" width="20px" display="inline">
-						<span display="inline">GP Messico</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/bra-big.png"
-							alt="Brasile" height="13px" width="20px" display="inline">
-						<span display="inline">GP Brasile</span>
-					</h6>
-				</div>
-				<div class="circuito row" id="gpBorder">
-					<h6>
-						<img
-							src="https://static.sky.it/images/skysport/configurations/motori/flag/are-big.png"
-							alt="Abu Dhabi" height="13px" width="20px" display="inline">
-						<span display="inline">GP Abu Dhabi</span>
-					</h6>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container"
-		style="padding-left: 115px; padding-right: 20px; height: 300px">
+	<div class="container-fluid">
+	<!-- style="height: 610px; width: 1560px" -->
+	
+		<!-- <p id="titolo_circuito" style="padding-top: 75px; text-align: center;">CIRCUITI
+			STAGIONE 2022</p> -->
 		<div class="row">
-			<div class="col-2">
-				<div class="row" id="gpBorder"
-					style="border-style: solid; height: 145px; margin: 10px">LUNGHEZZA</div>
-				<div class="row" id="gpBorder"
-					style="border-style: solid; height: 145px; margin: 10px">NUMERO
-					GIRI</div>
-			</div>
-			<div class="col-3" id="gpBorder"
-				style="border-style: solid; height: 300px; margin: 10px">NOTIZIE</div>
-			<div class="col-2" id="gpBorder"
-				style="border-style: solid; height: 300px; margin: 10px">INFO
-				GEOGRAFICHE</div>
-			<div class="col-2" id="gpBorder"
-				style="border-style: solid; height: 300px; margin: 10px">INDIRIZZO</div>
-			<div class="col-2">
-				<div class="row" id="gpBorder"
-					style="border-style: solid; height: 95px; margin: 10px">VINCITORE</div>
-				<div class="row" id="gpBorder"
-					style="border-style: solid; height: 190px; margin: 10px">POLE
-					POSITION</div>
-			</div>
+		<!-- style="height: 420px" -->
+		<h3	style="text-align: center; color: grey; border: 10px; border-color: white">${circuito.nomeCircuito}</h3>
+			<div class="col-sx" style="width:10vw"> 
 		</div>
-	</div>
+		</div>
+		</div>
+		<div class="row" style = "margin-bottom: -20vh">
+   			 <div class="col-2" style = "font-family:Roboto Condensed, sans-serif;
+    					font-style: italic; padding-left: 5%">
+    			  <div class="row" id="gpBorder"style="border-style: solid; height: 145px; margin: 10px">
+					<h4 style="color:#E41015; text-align: center;" >LUNGHEZZA</h4>
+					<br>
+					<h4 style="color:white; text-align: center; text-transform: lowercase;"> ${circuito.lunghezza} metri </h4>
+					</div>
+					<div class="row" id="gpBorder"
+					style="border-style: solid; height: 145px; margin: 10px">
+					<h4 style="color:#E41015; text-align: center" > NUMERO GIRI</h4>
+					<br>
+					<h4 style="color:white; text-align: center">${circuito.numeroGiri}</h4>				
+					</div>
+   			</div>
+   			
+   			 <div class="col-8">
+   				  <img src="${circuito.fotoCircuito}" class="center" style = "background-color: #E41015; display: block; margin-left: auto; margin-right: auto;
+   				   height:60%; width: 80%">
+   				  <p style = "text-align:center; color: white; font-family:Roboto Condensed, sans-serif;
+    					font-style: italic"><small>Miglior tempo del circuito: ${circuito.migliorTempo}</small></p>
+  			  </div>
+  			  
+   			 <div class="col-2" style = "padding-right: 5%; font-family:Roboto Condensed, sans-serif;
+    					font-style: italic">
+    			  <div class="row" id="gpBorder"
+					style="border-style: solid; height: 145px; margin: 10px;">
+					<h4 style="color:#E41015; text-align: center;" >VINCITORE</h4>
+					<br>
+					<h4 style="color:white; text-align: center;"> ${circuito.vincitore}</h4>
+					</div>
+				<div class="row" id="gpBorder"
+					style="border-style: solid; height: 145px; margin: 10px">
+					<h4 style="color:#E41015; text-align: center;" >POLE POSITION</h4>
+					<br>
+					<h4 style="color:white; text-align: center;">${circuito.polePosition }</h4>
+					</div>
+   			 </div>
+   			 
+		  </div>
+		  <div class="row">
+		   <div class="col-7">
+		 	  <div class="col col-notizie" id="gpBorder"
+					style="font-family:Roboto Condensed, sans-serif;
+    					font-style: italic; border-style: solid; height: 190px; margin: 10px">
+						<h4 style= "color:#E41015; text-align:center;  padding-top: 1vh " >NOTIZIE</h4>
+						<h5 style = "text-align:start; color: white;"> Il circuito Gilles Villeneuve si trovà sull'isola di Notre Dame vicino il centro di Montreal. 
+						Raggiungere l'impianto dall'aereoporto internazionale Mirabel à facile. Per arrivare sull'isola à possibile usare la metropolitana o usare il ponte Jacques Cartier, sul fiume Saint-Laurent.</h5>
 
-
-	<%-- <f:forEach items="${circuiti}" var="circuito">
-		<f:out value="${circuito}" />
-		<form action="circuito" method="get">
-			<input type="hidden" name="nomeCircuito"
-				value="${circuito.nomeCircuito}">
-			<button type="submit">Info</button>
-		</form>
-	</f:forEach> --%>
+				</div>
+		   </div>
+		    <div class="col-5">
+			     <div class="col col-info" id="gpBorder"
+					style="border-style: solid; height: 190px; margin: 10px; color: white; font-family:Roboto Condensed, sans-serif;
+    					font-style: italic; padding-top: 1vh ">
+    					<h4 style= "color:#E41015; text-align:center " >INFO</h4>
+					<ul>
+					<li><h5>Nazione: ${circuito.nazione}</h5></li>
+					<li><h5>Città: ${circuito.citta}</h5></li>
+					<li><h5>Indirizzo: ${circuito.indirizzo}</h5></li>
+					<li><h5><a style="color:#E41015" href="tel:123-456-7890">123-456-7890</a></h5></li>
+					</ul>
+					</div>
+		   </div>
+		  </div>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
