@@ -31,7 +31,9 @@ public class SearchServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String search = request.getParameter("search");
+		System.out.println(search);
 		String searchType= request.getParameter("ricerca");
+		System.out.println(searchType);
 		switch(searchType){
 		case "piloti":
 			List<Pilota> piloti = new ArrayList<Pilota>();
@@ -55,6 +57,7 @@ public class SearchServlet extends HttpServlet {
 			request.setAttribute("result", scuderie);
 			break;
 		}
+		request.setAttribute("searchType", searchType);
 		request.getRequestDispatcher("results.jsp").forward(request, response);
 	}
 

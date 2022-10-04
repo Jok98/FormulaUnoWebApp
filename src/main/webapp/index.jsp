@@ -41,6 +41,21 @@
 						class="nav-link" href="piloti">Piloti</a></li>
 					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link " href="circuiti">Circuiti</a></li>
+					<li>
+						<div class="wrapper">
+      <div class="search-input">
+        <form action="search" method="get">
+        <select name="ricerca" id="ricerca">
+		  <option value="piloti">Piloti</option>
+		  <option value="circuiti">Circuiti</option>
+		  <option value="scuderie">Scuderie</option>
+		</select>
+        <input name="search" id="searchText" type="text" placeholder="Type to search..">
+        <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+					</li>
 				</ul>
 			</div>
 		</div>

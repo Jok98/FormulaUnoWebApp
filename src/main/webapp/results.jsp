@@ -8,28 +8,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="wrapper">
-      <div class="search-input">
-        <form action="search" method="get">
-        <select name="ricerca" id="ricerca">
-		  <option value="piloti">Piloti</option>
-		  <option value="circuiti">Circuiti</option>
-		  <option value="scuderie">Scuderie</option>
-		</select>
-        <input name="search" id="searchText" type="text" placeholder="Type to search..">
-        <button type="submit">Submit</button>
-        </form>
-        <label></label>
-        <div class="icon"><i class="fas fa-search"></i></div>
-      </div>
-    </div>
-    <f:forEach items="${risultati }" var="risultato">
-    	<f:out value="${risultato.toString() }"/>
-    </f:forEach>
-    <script type="text/javascript">
-    	function form() {
-			
-		}
-    </script>
+<%-- 	<f:out value="${searchType }"/> --%>
+   	<f:if test="${searchType == 'piloti'}">
+   		<f:forEach items="${result}" var="risultato"> 
+    		<a href="pilota?numeroPilota=${risultato.numeroPilota }">${risultato}</a>
+    	</f:forEach>
+   	</f:if>
+   	<f:if test="${searchType == 'scuderie'}">
+   		<f:forEach items="${result}" var="risultato"> 
+    		<a href="scuderia?id=${risultato.nomeScuderia }">${risultato}</a>
+    	</f:forEach>
+   	</f:if>
+   	<f:if test="${searchType == 'circuiti'}">
+   		<f:forEach items="${result}" var="risultato"> 
+    		<a href="circuito?nomeCircuito=${risultato.nomeCircuito }">${risultato}</a>
+    	</f:forEach>
+   	</f:if>
+    	
 </body>
 </html>

@@ -17,8 +17,8 @@ public class ScuderiaRepositoryImpl extends CrudRepositoryImpl<Scuderia, String>
 	@Override
 	public List<Scuderia> findBySearchScuderia(String search) {
 		EntityManager em = PersistenceUtil.getEntityManager();
-		return em.createQuery("select s from Scuderia s where s.nomeScuderia like:search%", Scuderia.class)
-				.setParameter("search", search).getResultList();
+		return em.createQuery("select s from Scuderia s where s.nomeScuderia like:search", Scuderia.class)
+				.setParameter("search", search + "%").getResultList();
 		
 	}
 

@@ -19,8 +19,8 @@ public class PilotaRepositoryImpl extends CrudRepositoryImpl<Pilota, Integer> im
 		EntityManager em = PersistenceUtil.getEntityManager();
 		System.out.println();
 		return em
-				.createQuery("select p from Pilota p where p.nome like:search% or p.cognome like:search%", Pilota.class)
-				.setParameter("search", search).getResultList();
+				.createQuery("select p from Pilota p where p.nome like :search or p.cognome like :search", Pilota.class)
+				.setParameter("search", search + "%").getResultList();
 
 	}
 

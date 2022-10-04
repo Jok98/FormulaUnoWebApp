@@ -18,8 +18,8 @@ public class CircuitoRepositoryImpl extends CrudRepositoryImpl<Circuito, String>
 		EntityManager em = PersistenceUtil.getEntityManager();
 		System.out.println();
 		return (List<Circuito>) em
-				.createQuery("select c from Circuito c where c.nomeCircuito like:search%", Circuito.class)
-				.setParameter("search", search).getResultList();
+				.createQuery("select c from Circuito c where c.nomeCircuito like :nome", Circuito.class).setParameter("nome", search + "%")
+				.getResultList();
 
 	}
 
