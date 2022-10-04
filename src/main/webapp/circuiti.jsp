@@ -12,8 +12,9 @@
 	rel="stylesheet"
 	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="stylekev.css">
+<link rel="stylesheet" href="style.css">
+
 <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </head>
@@ -21,8 +22,7 @@
 
 	<nav class="navbar navbar-expand-lg">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img
-				src="https://i.imgur.com/E0yUss8.png" width="95px" height="25px"></a>
+			<a class="navbar-brand" href="index.jsp"><img src="https://i.imgur.com/E0yUss8.png" width="120px" height="35px"></a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false"
@@ -31,13 +31,13 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item" style="padding-right: 30px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" aria-current="page" href="index.jsp">Home</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="scuderie">Scuderie</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="piloti">Piloti</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link active" href="circuiti">Circuiti</a></li>
 				</ul>
 			</div>
@@ -51,25 +51,24 @@
 				style="max-width: 55%; text-align: center; color: white; background-color: #E41015; transform: skew(-15deg); font-weight: 600">CIRCUITI
 				STAGIONE 2022</h1>
 		</div>
+		
 		<div class="row" style="content-align: center;">
+		
 			<div class="col-4" style="border: 2vw; text-align: center">
 				<f:forEach items="${circuiti }" var="circuito" begin="0" end="10">
-					<div class="row blur" style="maring-top: 0px">
-						<a class="nomi-circuiti"
-							href="circuito?nomeCircuito=${circuito.nomeCircuito }">${circuito.nomeCircuito }</a>
+					<div  class="row blur"  style="maring-top: 0px;font-size: 1.5em; color: #E41015; background-color: transparent; transform: skew(-15deg) translateX(5%); text-align: right; max-width: 450px;">
+						<a class="nomi-circuiti" href="circuito?nomeCircuito=${circuito.nomeCircuito }">${circuito.nomeCircuito }</a>
 					</div>
 				</f:forEach>
 			</div>
-			<div
-				style="margin-top: 2vh; margin-bottom: 2vh; background-color: #E41015; display: flex; justify-content: center; align-items: center;"
-				class="col-4">
+			
+			
+			<div style="margin-top: 2vh; margin-bottom: 2vh; background-color: transparent; display: flex; justify-content: center; align-items: center;" class="col-4">
 				<div id="carouselExampleControls" class="carousel slide"
 					data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img
-								src="https://www.autodromoimola.it/wp-content/uploads/2021/10/245670714_2260104744146495_4447027275948681958_n-819x1024.png"
-								class="d-block w-100">
+							<img src="https://www.autodromoimola.it/wp-content/uploads/2021/10/245670714_2260104744146495_4447027275948681958_n-819x1024.png" class="d-block w-100">
 						</div>
 						<f:forEach items="${circuiti }" var="circuito">
 							<div class="carousel-item">
@@ -90,11 +89,10 @@
 					</button>
 				</div>
 			</div>
-			<div class="col-4" style="border: 2vw; text-align: center;">
+			<div class="col-4" style="border: 2vw; text-align: center">
 				<f:forEach items="${circuiti }" var="circuito" begin="11" end="21">
-					<div class="row blur" style="maring-top: 0px">
-						<a class="nomi-circuiti"
-							href="circuito?nomeCircuito=${circuito.nomeCircuito }">${circuito.nomeCircuito }
+					<div class="row blur"  style="maring-top: 0px;font-size: 1.5em; color: white; background-color: transparent; transform: skew(-15deg) translateX(5%); text-align: left; max-width: 450px;padding-left: 50px">
+						<a class="nomi-circuiti" href="circuito?nomeCircuito=${circuito.nomeCircuito }">${circuito.nomeCircuito }
 						</a>
 					</div>
 				</f:forEach>

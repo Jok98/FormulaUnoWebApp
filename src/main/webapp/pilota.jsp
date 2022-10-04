@@ -89,13 +89,13 @@ h2 {
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item" style="padding-right: 30px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" aria-current="page" href="index.jsp">Home</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="scuderie">Scuderie</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link active" href="piloti">Piloti</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link " href="circuiti">Circuiti</a></li>
 				</ul>
 			</div>
@@ -131,11 +131,9 @@ h2 {
 			</div>
 			<div class="col-4">
 				<div class="center-col" style="margin-top: 19vh; margin-left: 100px">
-					<h2
-						style="padding-left: 1em; font-size: 3em; margin-bottom: 1px; padding-right: 1em; background-color: #E41015; transform: skew(-15deg) translateX(-25%); text-align: center; max-width: fit-content;">
+					<h2	style="padding-left: 1em; font-size: 3em; margin-bottom: 1px; padding-right: 1em; background-color: #E41015; transform: skew(-15deg) translateX(-25%); text-align: center; max-width: fit-content;">
 						${pilota.nome }</h2>
-					<h2
-						style="padding-right: 1em; padding-left: 1em; font-weight: 600; font-size: 3em; color: #E41015; background-color: white; transform: skew(-15deg) translateX(-5%); text-align: center; max-width: fit-content;">
+					<h2	style="padding-right: 1em; padding-left: 1em; font-weight: 600; font-size: 3em; color: #E41015; background-color: white; transform: skew(-15deg) translateX(-5%); text-align: center; max-width: fit-content;">
 						${pilota.cognome }</h2>
 				</div>
 				<div class="center-col" style="margin-left: 205px; margin-top: 0vh">
