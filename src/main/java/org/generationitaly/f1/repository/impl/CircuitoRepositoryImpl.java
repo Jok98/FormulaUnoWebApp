@@ -1,5 +1,7 @@
 package org.generationitaly.f1.repository.impl;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 
 import org.generationitaly.f1.entity.Circuito;
@@ -12,14 +14,13 @@ public class CircuitoRepositoryImpl extends CrudRepositoryImpl<Circuito, String>
 		super(Circuito.class);
 	}
 
-	@Override
-	public Circuito findBySearchCircuito(String search) {
-
+	public List<Circuito> findBySearchCircuito(String search) {
 		EntityManager em = PersistenceUtil.getEntityManager();
-		String nome = search;
 		System.out.println();
-		return (Circuito) em.createQuery("select p from Circuito p where p.nomeCircuito=:nome ", Circuito.class)
-				.setParameter("nome", nome).getSingleResult();
+		return (List<Circuito>) em
+				.createQuery("select c from Circuito c where c.nomeCircuito like:search%", Circuito.class)
+				.setParameter("search", search).getResultList();
+
 	}
 
 }

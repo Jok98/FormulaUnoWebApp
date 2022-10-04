@@ -1,5 +1,6 @@
 package org.generationitaly.f1.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.generationitaly.f1.entity.Circuito;
@@ -123,21 +124,27 @@ public class F1ServiceImpl implements F1Service {
 	}
 
 	@Override
-	public Object findBySearch(String search, String searchType) {
+	public List<Object> findBySearch(String search, String searchType) {
 
-		Object obj = null;
+		List<Object> obj = new ArrayList<Object>();
 
 		try {
 			PersistenceUtil.beginTransaction();
 			switch (searchType) {
 			case "piloti":
-				obj = (Pilota) pilotaRepository.findBySearchPilota(search);
+				for (Pilota pilota : pilotaRepository.findBySearchPilota(search)) {
+					obj.add(pilota);
+				}
 				break;
 			case "circuiti":
-				obj = (Circuito) circuitoRepository.findBySearchCircuito(search);
+				for (Circuito circuito : circuitoRepository.findBySearchCircuito(search)) {
+					obj.add(circuito);
+				}
 				break;
 			case "scuderie":
-				obj = (Scuderia) scuderiaRepository.findBySearchScuderia(search);
+				for (Scuderia scuderia : scuderiaRepository.findBySearchScuderia(search)) {
+					obj.add(scuderia);
+				}
 				break;
 
 			}

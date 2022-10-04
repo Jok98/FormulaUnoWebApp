@@ -1,6 +1,7 @@
 package org.generationitaly.f1.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -32,24 +33,29 @@ public class SearchServlet extends HttpServlet {
 		String search = request.getParameter("search");
 		String searchType= request.getParameter("ricerca");
 		switch(searchType){
-		case"piloti":
-			Pilota pilota = (Pilota) f1Service.findBySearch(search,searchType);
-			request.setAttribute("pilota", pilota);
-			request.getRequestDispatcher("pilota.jsp").forward(request, response);
+		case "piloti":
+			List<Pilota> piloti = new ArrayList<Pilota>();
+			for (Object obj : f1Service.findBySearch(search, searchType)) {
+				piloti.add((Pilota)obj);
+			}
+			request.setAttribute("result", piloti);
 			break;
 		case "circuiti":
-			Circuito circuito = (Circuito) f1Service.findBySearch(search,searchType);
-			request.setAttribute("circuito", circuito);
-			request.getRequestDispatcher("circuito.jsp").forward(request, response);
+			List<Circuito> circuiti = new ArrayList<Circuito>();
+			for (Object obj : f1Service.findBySearch(search, searchType)) {
+				circuiti.add((Circuito)obj);
+			}
+			request.setAttribute("result", circuiti);
 			break;
 		case "scuderie":
-			Scuderia scuderia = (Scuderia) f1Service.findBySearch(search,searchType);
-			request.setAttribute("scuderia", scuderia);
-			request.getRequestDispatcher("scuderia.jsp").forward(request, response);
+			List<Scuderia> scuderie = new ArrayList<Scuderia>();
+			for (Object obj : f1Service.findBySearch(search, searchType)) {
+				scuderie.add((Scuderia)obj);
+			}
+			request.setAttribute("result", scuderie);
 			break;
-			
 		}
-
+		request.getRequestDispatcher("results.jsp").forward(request, response);
 	}
 
 }

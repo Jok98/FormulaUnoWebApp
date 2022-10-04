@@ -1,6 +1,8 @@
 package org.generationitaly.f1.repository.impl;
 
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 
 import org.generationitaly.f1.entity.Scuderia;
@@ -13,12 +15,10 @@ public class ScuderiaRepositoryImpl extends CrudRepositoryImpl<Scuderia, String>
 		super(Scuderia.class);
 	}
 	@Override
-	public Scuderia findBySearchScuderia(String search) {
+	public List<Scuderia> findBySearchScuderia(String search) {
 		EntityManager em = PersistenceUtil.getEntityManager();
-		String nome = search;
-		System.out.println();
-		return (Scuderia) em.createQuery("select p from Scuderia p where p.nomeScuderia=:nome ", Scuderia.class)
-				.setParameter("nome", nome).getSingleResult();
+		return em.createQuery("select s from Scuderia s where s.nomeScuderia like:search%", Scuderia.class)
+				.setParameter("search", search).getResultList();
 		
 	}
 

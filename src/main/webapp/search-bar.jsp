@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="search-bar.css">
 </head>
 <body>
-       <div class="wrapper">
+      <div class="wrapper">
       <div class="search-input">
         <form id="form" action="search" method="get">
         <select name="ricerca" id="ricerca">
@@ -17,6 +17,7 @@
 		  <option value="scuderie">Scuderie</option>
 		</select>
         <input id="searchText" type="text" onchange="searchBar()" placeholder="Type to search..">
+        <button type="submit">Search</button>
         <div class="autocom-box">
           <!-- here list are inserted from javascript -->
         </div>

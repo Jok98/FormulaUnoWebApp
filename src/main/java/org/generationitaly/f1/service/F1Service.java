@@ -20,5 +20,5 @@ public interface F1Service {
 
 	Circuito findCircuitoByNome(String nomeCircuito);
 
-	Object findBySearch(String search,String searchType);
+	List<Object> findBySearch(String search,String searchType);
 }
