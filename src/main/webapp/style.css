@@ -4,6 +4,9 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	height: 100vh;
+	max-width: 100%;
+	background-attachment: fixed;
 }
 
 .container { 
@@ -157,6 +160,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-top: 35px;
 }
 
 #outer3 {

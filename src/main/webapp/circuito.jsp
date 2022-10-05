@@ -142,7 +142,7 @@
 							</p>
 						</div>
 					</div>
-						<h5 style = "text-align:start; color: white;">${circuito.notizie } </h5>
+						<h5 style = "text-align:start; color: white; padding-right: 15px">${circuito.notizie } </h5>
 
 				</div>
 		   </div>

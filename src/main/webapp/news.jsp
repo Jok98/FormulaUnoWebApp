@@ -37,15 +37,15 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item" style="padding-right: 30px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" aria-current="page" href="index.jsp">Home</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="scuderie">Scuderie</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="piloti">Piloti</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="circuiti">Circuiti</a></li>
-					<li class="nav-item" style="padding-right: 60px"><a
+					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link active" href="news.jsp">News</a></li>
 				</ul>
 			</div>
@@ -56,9 +56,9 @@
 
 		
 		<div class="row">
-			<div class="col-2" style="margin-left: auto; margin-right: auto">
+			<div class="col-2" style="margin-left: 850px; margin-right: auto">
 				<h1
-					style="max-width: 55%; text-align: center; color: white; background-color: #E41015; transform: skew(-15deg); font-weight: 600">
+					style="max-width: 55%; text-align: center; color: white; background-color: #E41015; transform: skew(-15deg); font-weight: 500">
 					NEWS</h1>
 			</div>
 		</div>
@@ -118,7 +118,7 @@
 					
 					let divRow = document.createElement('div');
 					divRow.className="row";
-					divRow.setAttribute('style', 'border: 8px inset #D30000');
+					divRow.setAttribute('style', 'border-top: 2px inset #D30000');
 					
 					let divCol4 = document.createElement('div');
 					divCol4.className="col-4";
