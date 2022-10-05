@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `F1`.`circuito` (
   PRIMARY KEY (`nome_circuito`))
 ENGINE = InnoDB;
 
-
+/*
 -- -----------------------------------------------------
 -- Table `F1`.`Gara`
 -- -----------------------------------------------------
@@ -206,7 +206,7 @@ CREATE TABLE IF NOT EXISTS `F1`.`Admin` (
   `userId` INT NOT NULL,
   `password` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`userId`))
-ENGINE = InnoDB;
+ENGINE = InnoDB;*/
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
