@@ -92,26 +92,6 @@
 			
 			<div class="col-1"></div>
 
-			<div class="col-5">
-				<div class="row" style="border: 8px inset #D30000 ;">
-					<div class="col-4" style=" ">
-						<img
-							src="https://images.unsplash.com/photo-1619591489746-0e19d75ecb9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMG1lZ2FwaXhlbHxlbnwwfHwwfHw%3D&w=1000&q=80"
-							class="card" style="width: 18rem; ">
-					</div>
-					<div class="col-8"
-						style="padding-rigth: 3vw; padding-top: 2vh; padding-left: 3vw ;color:white">
-						<h3> Titolo notizia</h3>
-						Leclerc took his second-straight Singapore Grand Prix pole
-						position on Saturday but ended up losing out to Sergio Perez at
-						the start of the race, with the Red Bull man going on to win
-						despite taking a five-second post-race penalty for a Safety Car
-						infringement. </div>
-						
-					
-					
-				</div>
-			</div>
 			
 			<div class="col"></div>
 	</div>
@@ -130,17 +110,46 @@
 			}).then((data)=>{
 				console.log(data)
 				data.articles.forEach(article=>{
-// 					containerForEach.innerHTML = '<div class="col-5" style="width:40vw; weigth: 10vh"><div class="row" style="border: 8px inset #D30000 "><div class="col-4" style=" "><img src= "'+articles.urlToImage+'"class="card" style="width: 18rem; "></div><div class="col-8" style="padding-rigth: 3vw; padding-top: 2vh; padding-left: 3vw; color:white"><h3>'+articolo.title+'</h3>'+articolo.description+'</div></div></div>';
 					let li = document.createElement('li');
-					let a = document.createElement('a');
+					
+					let divCol5 = document.createElement('div');
+					divCol5.className="col-5";
+					divCol5.setAttribute('style', 'width:40vw ; weigth: 10vh');
+					
+					let divRow = document.createElement('div');
+					divRow.className="row";
+					divRow.setAttribute('style', 'border: 8px inset #D30000');
+					
+					let divCol4 = document.createElement('div');
+					divCol4.className="col-4";
+					
 					let img = document.createElement('img');
+					img.className="card";
+					img.setAttribute('src', article.urlToImage);
+					img.setAttribute('style', 'width: 18rem');
+					
+					
+					let divCol8 = document.createElement('div');
+					divCol8.className="col-8";
+					divCol8.setAttribute('style', 'padding-rigth: 3vw; padding-top: 2vh; padding-left: 3vw; color:white');
+					
+// 					let h3 = document.createElement('h3');
+// 					h3.setAttribute('href', article.url);
+// 					h3.setAttribute('target', '_blank');
+// 					h3.textContent = article.title;
+
+					let a = document.createElement('a');
 					a.setAttribute('href', article.url);
 					a.setAttribute('target', '_blank');
 					a.textContent = article.title;
-					img.setAttribute('src', article.urlToImage);
-					img.setAttribute('style', 'width:10%; height:auto');
-					li.appendChild(img);
-					li.appendChild(a);
+					
+					li.appendChild(divCol5);
+					divCol5.appendChild(divRow);
+					divRow.appendChild(divCol4);
+					divCol4.appendChild(img);
+					divRow.appendChild(divCol8);
+					divCol8.appendChild(a);
+					
 					newsList.appendChild(li);
 				})
 			})
