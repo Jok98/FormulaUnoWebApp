@@ -9,7 +9,7 @@
 <meta name="viewport"
 	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>f1</title>
+<title>Ricerca</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -41,16 +41,17 @@
 					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link " href="circuiti">Circuiti</a></li>
 					<li>
-						<div class="wrapper">
-      <div class="search-input">
-        <form action="search" method="get">
-        <select name="ricerca" id="ricerca">
-		  <option value="piloti">Piloti</option>
-		  <option value="circuiti">Circuiti</option>
-		  <option value="scuderie">Scuderie</option>
-		</select>
-        <input name="search" id="searchText" type="text" placeholder="Type to search..">
-        <button type="submit">Submit</button>
+					<div class="wrapper" style = "padding-top: 8px; font-family: 'Roboto Condensed', sans-serif; font-style: italic; font-size: 22px">
+    	  <div class="search-input">
+      	  <form action="search" method="get">
+      		  <select name="ricerca" id="ricerca" style = "background-color: transparent; color: white; height: 30px; border: 1px solid white">
+				  <option value="piloti" style = "background-color: black">Piloti</option>
+				  <option value="circuiti" style = "background-color: black">Circuiti</option>
+				  <option value="scuderie" style = "background-color: black">Scuderie</option>
+			  </select>
+        <input name="search" id="searchText" type="text" placeholder="Type to search.."  style = "background-color: transparent; color: white;
+        margin-left: 5px; margin-right: 20px; border: 1px solid white; height: 30px">
+        <button type="submit" style = "background-color: #E41015; border: none; color: white; font-weight: 600; height: 35px">Submit</button>
         </form>
       </div>
     </div>
@@ -96,7 +97,6 @@
 		 </table> 	
 		 </div>
 		 </div>
-	</div>		   	
-    	
+	</div>	
 </body>
 </html>
