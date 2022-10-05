@@ -8,10 +8,10 @@
 		<!-- Persistence provider -->
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<!-- Entity classes -->
+		<class>org.generationitaly.f1.entity.Circuito</class>
+		<class>org.generationitaly.f1.entity.Monoposto</class>
 		<class>org.generationitaly.f1.entity.Scuderia</class>
 		<class>org.generationitaly.f1.entity.Pilota</class>
-		<class>org.generationitaly.f1.entity.Monoposto</class>
-		<class>org.generationitaly.f1.entity.Circuito</class>
 		<!-- <class>org.generationitaly.f1.entity.Admin</class> -->
 		<!-- <class>org.generationitaly.f1.entity.Gara</class> -->
 		<properties>
