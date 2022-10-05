@@ -113,35 +113,42 @@
 					let li = document.createElement('li');
 					
 					let divCol5 = document.createElement('div');
-					divCol5.setAttribute('class', 'col-5');
+					divCol5.className="col-5";
 					divCol5.setAttribute('style', 'width:40vw ; weigth: 10vh');
 					
 					let divRow = document.createElement('div');
-					divRow.setAttribute('class', 'row');
+					divRow.className="row";
 					divRow.setAttribute('style', 'border: 8px inset #D30000');
 					
 					let divCol4 = document.createElement('div');
-					divCol4.setAttribute('class', 'col-4');
+					divCol4.className="col-4";
 					
 					let img = document.createElement('img');
+					img.className="card";
 					img.setAttribute('src', article.urlToImage);
-					img.setAttribute('style', 'width:10%; height:auto');
+					img.setAttribute('style', 'width: 18rem');
+					
 					
 					let divCol8 = document.createElement('div');
-					divCol8.setAttribute('class', 'col-8');
+					divCol8.className="col-8";
 					divCol8.setAttribute('style', 'padding-rigth: 3vw; padding-top: 2vh; padding-left: 3vw; color:white');
 					
-					let h3 = document.createElement('h3');
-					h3.setAttribute('href', article.url);
-					
-					h3.textContent = article.title;
+// 					let h3 = document.createElement('h3');
+// 					h3.setAttribute('href', article.url);
+// 					h3.setAttribute('target', '_blank');
+// 					h3.textContent = article.title;
+
+					let a = document.createElement('a');
+					a.setAttribute('href', article.url);
+					a.setAttribute('target', '_blank');
+					a.textContent = article.title;
 					
 					li.appendChild(divCol5);
 					divCol5.appendChild(divRow);
 					divRow.appendChild(divCol4);
 					divCol4.appendChild(img);
-					divCol4.appendChild(divCol8);
-					divCol8.appendChild(h3);
+					divRow.appendChild(divCol8);
+					divCol8.appendChild(a);
 					
 					newsList.appendChild(li);
 				})
