@@ -65,3 +65,55 @@ Haas: https://i.imgur.com/QfiK4Mc.png
 McLaren: https://i.imgur.com/Y95kveW.png
 Redbull: https://i.imgur.com/qzE5b5T.png
 Williams: https://i.imgur.com/nKjLblC.png
+
+
+Usa circuit of the americas: https://i.imgur.com/1DEHMZV.png
+Netherlands Circuit Zandvoort: https://i.imgur.com/upUZCOV.png
+Japan Suzuka international: https://i.imgur.com/17kfdVQ.png
+Spain Barcelona: https://i.imgur.com/VsrZm74.png
+British Silverstone: https://i.imgur.com/TIW9fgC.png
+Canada Gilles: https://i.imgur.com/kXbmGZK.png
+Arabia Saudi Jeddah Street: https://i.imgur.com/THDGKmL.png
+Singapore MArina Bay: https://i.imgur.com/RdhK4zY.png
+Monaco Monte carlo: https://i.imgur.com/hh4e0ZK.png
+Italy Monza: https://i.imgur.com/ixrBvsS.png
+Belgium Spa Francochamps: https://i.imgur.com/1m0Tcpt.png
+Hungary Hungaroring: https://i.imgur.com/L0QMYCj.png
+Brazil Jose carlos: https://i.imgur.com/z7ox8ML.png
+Australia Melbourne Grand Prix: https://i.imgur.com/bIhwW7Z.png
+Mexico hermanos rodriguez: https://i.imgur.com/zLir5Qz.png
+Azerbaijan baku city: https://i.imgur.com/56Hvxhy.png
+Abudhabi yas marina: https://i.imgur.com/6S7iKJ1.png
+Bahrain international: https://i.imgur.com/I87gOUK.png
+Austria Red bull: https://i.imgur.com/0z3OqaI.png
+Miami International: https://i.imgur.com/UwiIetO.png
+Imola GP autodromo enzo e dino ferrari: https://i.imgur.com/t3mw43J.png
+France Circuit Paul ricard: https://i.imgur.com/LD2NT0z.png
+
+Circuito - foto pagina circuito orizzontale
+@Column(name = "foto_orizzontale", length = 100, nullable = false)
+	private String fotoOrizzontale;
+
+
+Usa circuit of the americas: https://i.imgur.com/9A9BfzZ.png
+Netherlands Circuit Zandvoort: https://i.imgur.com/pq2Si6o.png
+Japan Suzuka international: https://i.imgur.com/g259sDs.png
+Spain Barcelona: https://i.imgur.com/gdBoTyL.png
+British Silverstone: https://i.imgur.com/wpX7lZM.png
+Canada Gilles: https://i.imgur.com/peXDz7Z.png
+Arabia Saudi Jeddah Street: https://i.imgur.com/gjrB7Xf.png
+Singapore MArina Bay: https://i.imgur.com/vmiVCh2.png
+Monaco Monte carlo: https://i.imgur.com/W2SgU1x.png
+Italy Monza: https://i.imgur.com/Zh7Wnjm.png
+Belgium Spa Francochamps: https://i.imgur.com/DcZaWSl.png
+Hungary Hungaroring: https://i.imgur.com/l05dHA6.png
+Brazil Jose carlos: https://i.imgur.com/vIGTPy1.png
+Australia Melbourne Grand Prix: https://i.imgur.com/xh4oN9X.png
+Mexico hermanos rodriguez: https://i.imgur.com/dRfsc8f.png
+Azerbaijan baku city: https://i.imgur.com/QO1xUXk.png
+Abudhabi yas marina: https://i.imgur.com/qv3ubsx.png
+Bahrain international: https://i.imgur.com/b7qjsy1.png
+Austria Red bull: https://i.imgur.com/AzfyO7B.png
+Miami International: https://i.imgur.com/TsjlxKS.png
+Imola GP autodromo enzo e dino ferrari: https://i.imgur.com/oCAa3Ls.png
+France Circuit Paul ricard: https://i.imgur.com/AG9pldo.png

@@ -104,6 +104,7 @@ CREATE TABLE IF NOT EXISTS `F1`.`circuito` (
   `sito_web` varchar(100) not null,
   `notizie` varchar(500) not null,
   `contatti` varchar(20) not null,
+  `foto_orizzontale` varchar(100) not null,
   PRIMARY KEY (`nome_circuito`))
 ENGINE = InnoDB;
 
