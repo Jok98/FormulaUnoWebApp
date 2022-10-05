@@ -108,8 +108,8 @@
 						<tbody style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;">
 							<tr>
 								<td><font color=white>${scuderia.numeroVittorie}</font></td>
-								<td><font color=white>numPole</font></td>
-								<td><font color=white>numPart</font></td>
+								<td><font color=white>${scuderia.polePositions }</font></td>
+								<td><font color=white>${scuderia.numeroPartecipazioni }</font></td>
 							</tr>
 						</tbody>
 					</table>
@@ -189,7 +189,12 @@
 								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;">PRIMA VITTORIA</font>
 							</h5>
 							<p style="text-align: left">
-								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;"> ${scuderia.primoMondiale } </font>
+								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;"> 
+									<f:choose>
+										<f:when test="${scuderia.primoMondiale == 0}">Nessuna Vittoria</f:when>
+										<f:when test="${scuderia.primoMondiale != 0}">${scuderia.primoMondiale }</f:when>
+									</f:choose>
+								</font>
 							</p>
 						</div>
 					</div>

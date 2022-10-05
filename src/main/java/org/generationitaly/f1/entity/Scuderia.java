@@ -70,7 +70,29 @@ public class Scuderia {
     @Column(name = "info", length = 500, nullable = false)
     private String info;
     
-    public int getPrimoMondiale() {
+    @Column(name = "pole_positions", nullable = false)
+    private int polePositions;
+    
+    @Column(name = "numero_partecipazioni", nullable = false)
+    private int numeroPartecipazioni;
+    
+    public int getPolePositions() {
+		return polePositions;
+	}
+
+	public void setPolePositions(int polePositions) {
+		this.polePositions = polePositions;
+	}
+
+	public int getNumeroPartecipazioni() {
+		return numeroPartecipazioni;
+	}
+
+	public void setNumeroPartecipazioni(int numeroPartecipazioni) {
+		this.numeroPartecipazioni = numeroPartecipazioni;
+	}
+
+	public int getPrimoMondiale() {
         return primoMondiale;
     }
 

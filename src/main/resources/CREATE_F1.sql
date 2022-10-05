@@ -48,6 +48,8 @@ CREATE TABLE IF NOT EXISTS `F1`.`scuderia` (
   `primo_mondiale` int not null,
   `bio_vettura` varchar(500) not null,
   `info` varchar(500) not null,
+  `pole_positions` int not null,
+  `numero_partecipazioni` int not null,
   PRIMARY KEY (`nome_scuderia`),
   INDEX `fk_Scuderia_Monoposto1_idx` (`id_vettura` ASC) VISIBLE,
   CONSTRAINT `fk_Scuderia_Monoposto1`
@@ -361,81 +363,81 @@ VALUES("FW44","Mercedes-AMG M13 E Performance","2022","https://i.imgur.com/fLhpc
 Il telaio è il primo ad essere sviluppato interamente sotto la nuova proprietà.");
 
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/eprWbxq.png","Mercedes AMG Petronas","1954","Germania","115","Lewis Hamilton","George Russell","Toto Wolff", "Mike Elliott",
 "https://www.mercedesamgf1.com/en/","https://it.wikipedia.org/wiki/Mercedes_AMG_F1","W13", "https://i.imgur.com/xrLNwsk.png", "1954","La Mercedes ha svelato la W13 il 18 febbraio, vettura a bordo della quale Lewis Hamilton e George Russell inseguiranno il nono successo consecutivo nel campionato costruttori di Formula 1. 
 Presenti all'evento entrambi i piloti e il CEO Toto Wolff.","La Mercedes AMG F1 è una scuderia tedesca di Formula 1 con sede a Brackley, nel Regno Unito.
  Dal 2020 viene iscritta al campionato mondiale di Formula 1 con il nome di Mercedes-AMG Petronas F1 Team, in base all'accordo di sponsorizzazione con l'azienda malese Petronas.
-La Mercedes partecipò vittoriosamente al campionato mondiale di Formula 1 nel biennio 1954-1955 ottenendo due titoli mondiali piloti prima di ritirarsi. È poi ritornata in Formula 1 come fornitore di motori dal 1993.");
+La Mercedes partecipò vittoriosamente al campionato mondiale di Formula 1 nel biennio 1954-1955 ottenendo due titoli mondiali piloti prima di ritirarsi. È poi ritornata in Formula 1 come fornitore di motori dal 1993.", "136", "266");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/eyVVbny.png","Red Bull Racing","2005","Austria","75","Max Verstappen","Sergio Perez","Christian Horner","Pierre Waché",
 "https://www.redbullracing.com/int-en","https://www.redbull.com/it-it/red-bull-racing-storia-f1","RB18", "https://i.imgur.com/qzE5b5T.png", "2010","La Red Bull ha svelato la nuova monoposto 2022, 
 la RB18 giorno 9 febbraio annunciando una modifica al nome della propria squadra in vista della prossima stagione. 
 Il team sarà ora conosciuto come Oracle Red Bull Racing dopo aver accolto il marchio informatico Oracle come nuovo title sponsor.","La Red Bull Racing è una scuderia austriaca di Formula 1 con sede a Milton Keynes, 
 nel Regno Unito, di proprietà della società Red Bull (azienda produttrice della omonima bevanda energetica e già sponsor, in precedenza, di altre squadre da corsa), dopo che questa ha rilevato il team inglese Jaguar Racing. 
-Dal 2022 viene iscritta al campionato mondiale di Formula 1 con il nome di Oracle Red Bull Racing, per motivi di sponsorizzazione.");
+Dal 2022 viene iscritta al campionato mondiale di Formula 1 con il nome di Oracle Red Bull Racing, per motivi di sponsorizzazione.", "78", "342");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/eSvsHqa.png","Ferrari","1950","Italia","239","Charles Leclerc","Carlos Saniz","Mattia Binotto","Enrico Cardile",
 "https://www.ferrari.com/it-IT/formula1","https://www.ferrari.com/it-IT/formula1/storia","F1-75", "https://i.imgur.com/3zpxF1d.png", "1952","La F1-75, la vettura della Ferrari per la stagione 2022 di Formula 1,
  è stata svelata tramite diretta streaming il 17 febbraio. Presenti Mattia Binotto, Charles Leclerc e Carlos Sainz", "Fondata da Enzo Ferrari nel 1929, nel corso dei decenni si è imposta come una delle più note e 
 titolate squadre nel panorama dell'automobilismo sportivo mondiale. Ha principalmente legato il suo nome al Campionato del Mondo di Formula Uno, 
-in cui è presente fin dalla sua istituzione e in cui ha conquistato 15 volte il Titolo Piloti e 16 quello Costruttori.");
+in cui è presente fin dalla sua istituzione e in cui ha conquistato 15 volte il Titolo Piloti e 16 quello Costruttori.", "241", "1047");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/pZpIlyZ.png","McLaren F1","1966","Gran Bretagna","182","Lando Norris","Daniel Richardo","Andreas Seidl","James Key",
 "https://www.mclaren.com/racing/","https://it.wikipedia.org/wiki/McLaren_F1","MCL36", "https://i.imgur.com/Y95kveW.png", "1974","La nuova MCL36 è stata presentata presso il McLaren Technology Centre giorno 11 febbraio.
  La vettura che il team di Woking ha preparato per Lando Norris e Daniel Ricciardo per il campionato mondiale di F1 2022, 
 sfoggia una livrea leggermente diversa da quella della scorsa stagione con l'azzurro a rubare molto spazio all'arancione papaia.","La McLaren è una scuderia britannica di Formula 1 con sede a Woking. 
 Dal 2018 viene iscritta al Campionato mondiale di Formula 1 con il nome di McLaren F1 Team.Fondata il 2 settembre 1963 dal pilota neozelandese Bruce McLaren (1937-1970), 
-esordì nel 1966 ed è, insieme alla Williams, una delle più prestigiose scuderie britanniche della massima formula ancora in attività.");
+esordì nel 1966 ed è, insieme alla Williams, una delle più prestigiose scuderie britanniche della massima formula ancora in attività.", "156", "919");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/fisKlcS.png","BWT Alpine F1","1977","Francia","20","Fernando Alonso","Esteban Ocon","Otmar Szafnauer","Pat Fry",
 "https://alpinecars.it","https://it.wikipedia.org/wiki/Renault_F1","A522", "https://i.imgur.com/NaWu21k.png", "2005","La scuderia francese ha presentato l'A522 il 21 febbraio a pochi giorni dall'inizio dei test invernali di Barcellona,
  con una diretta streaming", "La Renault F1 è una scuderia francese di Formula 1 con sede a Enstone, nel Regno Unito.  Dal 2022 viene iscritta al campionato mondiale di Formula 1 con il nome di BWT Alpine F1 Team.
-È stata presente nella massima categoria in tre fasi distinte: dal 1977 al 1985 in cui introdusse l'innovazione del motore con turbocompressore; dal 2002 al 2011 e dal 2016 sempre come costruttore a tempo pieno.");
+È stata presente nella massima categoria in tre fasi distinte: dal 1977 al 1985 in cui introdusse l'innovazione del motore con turbocompressore; dal 2002 al 2011 e dal 2016 sempre come costruttore a tempo pieno.", "51", "439");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/wj12HQK.png","Scuderia AlphaTauri Honda","2006","Italia","2","Pierre Gasly","Yuki Tsunoda","Franz Tost","Jody Egginton",
 "https://scuderia.alphatauri.com/it/","https://scuderia.alphatauri.com/it/la-storia-di-honda-in-f1/","AT03", "https://i.imgur.com/tdW6k5r.png", "0","La scuderia faentina ha rivelato l'AT03, con un evento online il 14 febbraio 2022, 
 il giorno di San Valentino. ","La Scuderia AlphaTauri, nota dal 2006 al 2019 come Scuderia Toro Rosso, è una squadra corse italiana di Formula 1 con sede a Faenza, 
 erede della Minardi dopo l'acquisto da parte dell'azienda austriaca Red Bull. Dal 2020 viene iscritta al Campionato mondiale di Formula 1 con il nome di Scuderia AlphaTauri Honda, 
-in seguito al cambio di denominazione avvenuto nello stesso anno, e all'accordo di motorizzazione con la Honda iniziato nel 2018.");
+in seguito al cambio di denominazione avvenuto nello stesso anno, e all'accordo di motorizzazione con la Honda iniziato nel 2018.", "1", "324");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/ElMMEfo.png","Aston Martin Cognizant F1 Team","2018","Regno Unito","0","Lance Stroll","Sebastian Vettel", "Mike Krack","Andrew Green",
 "https://www.astonmartinf1.com/en-GB/","https://it.wikipedia.org/wiki/Aston_Martin_F1_Team","AMR 22", "https://i.imgur.com/ZM6M5Zo.png", "0","L'Aston Martin F1 Team ha svelato la sua monoposto per la stagione 2022, la AMR22, 
 con una diretta streaming Youtube dalla sede di Silverstone. La AMR22 è stata presentata da Lawrance Stroll, in diretta dallo stabilimento di Silverstone. 
 Sul palco oltre alla nuova monoposto coperta da una grande bandiera inglese anche altre supercar della Aston Martin. ","L’Aston Martin F1 Team, nota dal 2019 al 2020 come Racing Point,
  è una scuderia britannica di Formula 1 con sede a Silverstone. Dal 2022 viene iscritta al campionato mondiale di Formula 1 con il nome di Aston Martin Aramco Cognizant F1 Team,
  in base all'accordo di sponsorizzazione con l'azienda statunitense Cognizant iniziato nel 2021.
-Nel corso della stagione 2018, il canadese Lawrence Stroll rileva la scuderia Force India, in difficoltà finanziarie, diventandone il nuovo proprietario.");
+Nel corso della stagione 2018, il canadese Lawrence Stroll rileva la scuderia Force India, in difficoltà finanziarie, diventandone il nuovo proprietario.", "1", "77");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/bXE35Dr.png","Williams Racing","1973","Regno Unito","114","Nicolas Latifi","Alexander Albon","Jost Capito","François-Xavier Demaison",
 "https://www.williamsf1.com/","https://it.wikipedia.org/wiki/Williams_F1","FW44", "https://i.imgur.com/nKjLblC.png", "1980","La FW44, che speriamo abbia scelto soluzioni vincenti, 
 rappresenta sicuramente una interpretazione molto particolare del nuovo regolamento. La forma dei sidepod, il gande canale per l'aria tra questi ed il fondo, 
 la pancia estremamente sottile in prossimità dell'uscita dei canali di Venturi sono soluzioni estreme scelte da Williams per esaltare l'effetto suolo ed affrontare la stagione del grande cambimento tecnico.", 
 "La Williams F1 è una scuderia britannica di Formula 1 con sede a Grove, fondata nel 1977 da Sir Frank Williams e da Sir Patrick Head. Dal 2020 viene iscritta al Campionato mondiale di Formula 1 con il nome di Williams Racing.
-Terza scuderia nella storia per numero di successi, vanta un totale di sedici titoli mondiali, nove costruttori e sette piloti. Il 21 agosto 2020 viene venduta ufficialmente al fondo di investimento statunitense Dorilton Capital.");
+Terza scuderia nella storia per numero di successi, vanta un totale di sedici titoli mondiali, nove costruttori e sette piloti. Il 21 agosto 2020 viene venduta ufficialmente al fondo di investimento statunitense Dorilton Capital.", "128", "783");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/quGjTQU.png","Alfa Romeo F1 Team ORLEN","1993","Svizzera","0","Zhou Guanyu","Valtteri Bottas","Frédéric Vasseur","Jan Monchaux",
 "https://www.alfaromeo.it/alfa-romeo-racing","https://it.wikipedia.org/wiki/Sauber_F1_Team","Alfa Romeo Racing C42", "https://i.imgur.com/ETVa98f.png", "0","L'Alfa Romeo è stata l'ultima scuderia a presentare la sua vettura 2022
  di Formula 1, avendo disputato anche i test a Barcellona con una livrea mimetica. La presentazione è stata affidata ad un evento streaming il 27 febbraio,
  con la pubblicazione contemporanea delle immagini e di un video della C42 con la nuova livrea","La Sauber F1 Team è una scuderia svizzera di Formula 1 e precedentemente di vetture sport, 
 impegnate tra l'altro nel Campionato del mondo sport prototipi, fondata da Peter Sauber e con sede a Hinwil. Dal 2020 viene iscritta al Campionato mondiale di Formula 1 con il nome di Alfa Romeo Racing ORLEN,
- in seguito all'accordo di sponsorizzazione con la casa automobilistica italiana iniziato nel 2018 e a quello con l'azienda polacca diventata co-title sponsor dal 2020.");
+ in seguito all'accordo di sponsorizzazione con la casa automobilistica italiana iniziato nel 2018 e a quello con l'azienda polacca diventata co-title sponsor dal 2020.", "12", "110");
 
-INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info)
+INSERT INTO scuderia(logo,nome_scuderia,anno_esordio,nazionalita,numero_vittorie,primo_pilota,secondo_pilota,team_principal, direttore_tecnico, sito_web,storia,id_vettura, icona, primo_mondiale, bio_vettura, info, pole_positions, numero_partecipazioni)
 VALUES("https://i.imgur.com/inGG4Fx.png","Haas F1 Team","2016","USA","0","Kevin Magnussen","Mick Schumacher","Gunther Steiner", "Simone Resta",
 "https://www.haasf1team.com/","https://it.wikipedia.org/wiki/Haas_F1_Team","VF-22", "https://i.imgur.com/QfiK4Mc.png", "0","La VF-22 è il primo progetto uscito dal nuovo ufficio di progettazione del team americano a Maranello,
 guidato dal direttore tecnico Simone Resta. Un nuovo team tecnico è stato inserito nel tessuto esistente della squadra, che ora entra nella sua settima stagione in Formula 1, ed ha portato alla progettazione della VF-22, 
 un'auto che ha la sua genesi in un regolamento completamente nuovo.","La Haas F1 Team è una scuderia statunitense di Formula 1 con sede a Banbury, nel Regno Unito, di proprietà della Haas Automation.
 La città britannica rappresenta una sede distaccata del team, in precedenza appartenuta alla Marussia, come appoggio per le gare europee del campionato.
-Fondata da Gene Haas, già cofondatore della scuderia del campionato NASCAR Stewart-Haas Racing, anch'essa con sede a Kannapolis, fa il suo debutto nel campionato mondiale di Formula 1 2016. ");
+Fondata da Gene Haas, già cofondatore della scuderia del campionato NASCAR Stewart-Haas Racing, anch'essa con sede a Kannapolis, fa il suo debutto nel campionato mondiale di Formula 1 2016. ", "0", "139");
 
 INSERT INTO pilota (foto, foto_grande, foto_card, nome,cognome,data_nascita,luogo_nascita,nazionalita,numero_pilota,titoli_mondiali,profilo_social,biografia,nome_scuderia, bandiera, storia)
 VALUES("https://i.imgur.com/Kp7hILL.png","https://i.imgur.com/to0gkQ7.jpg","https://i.imgur.com/gJwHhRH.png","Lewis", "Hamilton", "1985-1-7", "Stevenage", "Inglese","44", "7","https://www.instagram.com/lewishamilton/", "https://it.wikipedia.org/wiki/Lewis_Hamilton", "Mercedes AMG Petronas",
