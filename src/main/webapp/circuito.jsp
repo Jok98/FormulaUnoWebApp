@@ -98,45 +98,62 @@
    			</div>
    			
    			 <div class="col-8">
-   				  <img src="${circuito.fotoCircuito}" class="center" style = "background-color: #E41015; display: block; margin-left: auto; margin-right: auto;
-   				   height:500px; width: 1200px;">
+   				  <img src="${circuito.fotoOrizzontale}" class="center" style = "background-color: transparent; display: block; margin-left: auto; margin-right: auto; height:500px; width: 1200px;">
    				  <p style = "text-align:center; color: white; font-family:Roboto Condensed, sans-serif; font-style: italic; padding-top: 10px">Miglior tempo del circuito: ${circuito.migliorTempo}</p>
   			  </div>
   			  
   			  
    			 <div class="col-2" style = "padding-right: 5%; font-family:Roboto Condensed, sans-serif;
     					font-style: italic">
-    			  <div class="row" id="gpBorder"
-					style=" height: 145px; margin: 10px;  padding-top: 50px">
-					<h4 style="color:#E41015; text-align: center;" >VINCITORE</h4>
-					<br>
-					<h4 style="color:white; text-align: center;"> ${circuito.vincitore}</h4>
+    			  <div class="row" id="gpBorder" style=" height: 145px; margin: 10px;  padding-top: 50px">
+					<div class="skewX transform" style="padding-left: 20px;">
+						<div style="background-color: #E41015; width: 150px;">
+							<p class="h4" style="font-family: 'Roboto Condensed', sans-serif;font-style: italic; margin-left: 1vw">
+								<font color="white" >Vincitore</font>
+							</p>
+						</div>
 					</div>
-				<div class="row" id="gpBorder"
-					style="height: 145px; margin: 10px; padding-top: 170px">
-					<h4 style="color:#E41015; text-align: center;" >POLE POSITION</h4>
 					<br>
-					<h4 style="color:white; text-align: center;">${circuito.polePosition }</h4>
+					<h4 style="color:white; text-align: Left;"> ${circuito.vincitore}</h4>
+					</div>
+				<div class="row" id="gpBorder" style="height: 145px; margin: 10px; padding-top: 170px">
+					<div class="skewX transform" style="padding-left: 20px;">
+						<div style="background-color: #E41015; width: 170px;">
+							<p class="h4" style="font-family: 'Roboto Condensed', sans-serif;font-style: italic; margin-left: 1vw">
+								<font color="white" >Pole Position</font>
+							</p>
+						</div>
+					</div>
+					<br>
+					<h4 style="color:white; text-align: left;padding-top: 10px">${circuito.polePosition }</h4>
 					</div>
    			 </div>
    			 
 		  </div>
 		  <div class="row" style="padding-top: 200px">
 		   <div class="col-7">
-		 	  <div class="col col-notizie" id="gpBorder"
-					style="font-family:Roboto Condensed, sans-serif;
-    					font-style: italic; height: 190px; margin: 10px">
-						<h4 style= "color:#E41015; text-align:left;  padding-top: 1vh " >NOTIZIE</h4>
+		 	  <div class="col col-notizie" id="gpBorder" style="font-family:Roboto Condensed, sans-serif; font-style: italic; height: 190px; margin: 10px">
+						<div class="skewX transform" style="padding-left: 20px;">
+						<div style="background-color: #E41015; width: 150px;">
+							<p class="h4" style="font-family: 'Roboto Condensed', sans-serif;font-style: italic; margin-left: 1vw">
+								<font color="white" >Notizie</font>
+							</p>
+						</div>
+					</div>
 						<h5 style = "text-align:start; color: white;"> Il circuito Gilles Villeneuve si trovà sull'isola di Notre Dame vicino il centro di Montreal. 
 						Raggiungere l'impianto dall'aereoporto internazionale Mirabel à facile. Per arrivare sull'isola à possibile usare la metropolitana o usare il ponte Jacques Cartier, sul fiume Saint-Laurent.</h5>
 
 				</div>
 		   </div>
 		    <div class="col-5">
-			     <div class="col col-info" id="gpBorder"
-					style=" height: 190px; margin: 10px; color: white; font-family:Roboto Condensed, sans-serif;
-    					font-style: italic; padding-top: 1vh ">
-    					<h4 style= "color:#E41015; text-align:left " >INFO</h4>
+			     <div class="col col-info" id="gpBorder" style=" height: 190px; margin: 10px; color: white; font-family:Roboto Condensed, sans-serif; font-style: italic; padding-top: 1vh ">
+    					<div class="skewX transform" style="padding-left: 20px;">
+						<div style="background-color: #E41015; width: 100px;">
+							<p class="h4" style="font-family: 'Roboto Condensed', sans-serif;font-style: italic; margin-left: 1vw">
+								<font color="white" >Info</font>
+							</p>
+						</div>
+					</div>
 					<ul>
 					<li><h5>Nazione: ${circuito.nazione}</h5></li>
 					<li><h5>Città: ${circuito.citta}</h5></li>

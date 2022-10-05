@@ -53,6 +53,9 @@ public class Circuito {
 	@Column(name = "contatti", length = 20, nullable = false)
 	private String contatti;
 	
+	@Column(name = "foto_orizzontale", length = 100, nullable = false)
+	private String fotoOrizzontale;
+	
 	public String getSitoWeb() {
         return sitoWeb;
     }
@@ -164,4 +167,13 @@ public class Circuito {
 	public void setIndirizzo(String indirizzo) {
 		this.indirizzo = indirizzo;
 	}
+
+	public String getFotoOrizzontale() {
+		return fotoOrizzontale;
+	}
+
+	public void setFotoOrizzontale(String fotoOrizzontale) {
+		this.fotoOrizzontale = fotoOrizzontale;
+	}
+	
 }
