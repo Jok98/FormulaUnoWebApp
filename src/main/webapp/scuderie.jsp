@@ -41,6 +41,8 @@
 						class="nav-link" href="piloti">Piloti</a></li>
 					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link " href="circuiti">Circuiti</a></li>
+					<li class="nav-item" style="padding-right: 60px"><a
+						class="nav-link" href="news.jsp">News</a></li>
 				</ul>
 			</div>
 		</div>

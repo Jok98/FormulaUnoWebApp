@@ -43,6 +43,8 @@
 						class="nav-link" href="piloti">Piloti</a></li>
 					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link active" href="circuiti">Circuiti</a></li>
+					<li class="nav-item" style="padding-right: 60px"><a
+						class="nav-link" href="news.jsp">News</a></li>
 				</ul>
 			</div>
 		</div>
@@ -140,8 +142,7 @@
 							</p>
 						</div>
 					</div>
-						<h5 style = "text-align:start; color: white;"> Il circuito Gilles Villeneuve si trovà sull'isola di Notre Dame vicino il centro di Montreal. 
-						Raggiungere l'impianto dall'aereoporto internazionale Mirabel à facile. Per arrivare sull'isola à possibile usare la metropolitana o usare il ponte Jacques Cartier, sul fiume Saint-Laurent.</h5>
+						<h5 style = "text-align:start; color: white;">${circuito.notizie } </h5>
 
 				</div>
 		   </div>
@@ -158,7 +159,7 @@
 					<li><h5>Nazione: ${circuito.nazione}</h5></li>
 					<li><h5>Città: ${circuito.citta}</h5></li>
 					<li><h5>Indirizzo: ${circuito.indirizzo}</h5></li>
-					<li><h5><a style="color:#E41015" href="tel:123-456-7890">123-456-7890</a></h5></li>
+					<li><h5><a style="color:#E41015" href="tel:${circuito.contatti }">${circuito.contatti }</a></h5></li>
 					</ul>
 					</div>
 		   </div>

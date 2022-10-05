@@ -40,6 +40,8 @@
 						class="nav-link" href="piloti">Piloti</a></li>
 					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link " href="circuiti">Circuiti</a></li>
+						<li class="nav-item" style="padding-right: 60px"><a
+						class="nav-link" href="news.jsp">News</a></li>
 					<li>
 					<div class="wrapper" style = "padding-top: 8px; font-family: 'Roboto Condensed', sans-serif; font-style: italic; font-size: 22px">
     	  <div class="search-input">
