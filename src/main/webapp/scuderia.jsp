@@ -80,8 +80,8 @@
 						</p>
 						</div>
 						</div>
-						<p style="text-align: left; padding: 10px">
-							<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white; ">
+						<p style="text-align: left; padding: 6px">
+							<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white; font-size:12px">
 								${scuderia.info }</font>
 						</p>
 					</div>
@@ -211,8 +211,8 @@
 						</div>
 						</div>
 							
-							<p class="card-text" style="text-align: left; padding: 10px">
-								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white">
+							<p class="card-text" style="text-align: left; padding: 6px">
+								<font style="font-family: 'Roboto Condensed', sans-serif; font-style: italic; color:white;font-size:12px">
 									${scuderia.bioVettura }</font>
 							</p>
 						</div>
