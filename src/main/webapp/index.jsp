@@ -42,17 +42,16 @@
 					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link " href="circuiti">Circuiti</a></li>
 					<li>
-		<div class="wrapper" style = "padding-top: 8px; font-family: 'Roboto Condensed', sans-serif; font-style: italic; font-size: 22px">
+		<div class="wrapper" style = "padding-top: 8px;">
     	  <div class="search-input">
       	  <form action="search" method="get">
-      		  <select name="ricerca" id="ricerca" style = "background-color: transparent; color: white; height: 30px; border: 1px solid white">
+      		  <select name="ricerca" id="ricerca" style = "background-color: transparent; color: white; height: 30px; border: 1px solid white; font-family: 'Roboto Condensed', sans-serif; font-style: italic; font-size: 20px">
 				  <option value="piloti" style = "background-color: black">Piloti</option>
 				  <option value="circuiti" style = "background-color: black">Circuiti</option>
 				  <option value="scuderie" style = "background-color: black">Scuderie</option>
 			  </select>
-        <input name="search" id="searchText" type="text" placeholder="Type to search.."  style = "background-color: transparent; color: white;
-        margin-left: 5px; margin-right: 20px; border: 1px solid white; height: 30px">
-        <button type="submit" style = "background-color: #E41015; border: none; color: white; font-weight: 600; height: 35px">Submit</button>
+        <input name="search" id="searchText" type="text" placeholder="Type to search.."  style = "background-color: transparent; color: white; margin-left: 5px; margin-right: 20px; border: 1px solid white; height: 30px; font-family: 'Roboto Condensed', sans-serif; font-style: italic; font-size: 20px">
+        <button type="submit" style = "background-color: #E41015; border: none; color: white; font-weight: 500; height: 35px;font-family: 'Roboto Condensed', sans-serif; font-style: italic; font-size: 20px">Submit</button>
         </form>
       </div>
     </div>
@@ -62,7 +61,7 @@
 		</div>
 	</nav>
 
-	<main class="container">
+	<main class="container" >
 		<aside class="container__item--sidebar">
 
 			<div id="container">
