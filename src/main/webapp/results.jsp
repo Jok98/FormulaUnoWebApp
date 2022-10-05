@@ -33,7 +33,7 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item" style="padding-right: 90px"><a
-						class="nav-link active" aria-current="page" href="#">Home</a></li>
+						class="nav-link active" aria-current="page" href="index.jsp">Home</a></li>
 					<li class="nav-item" style="padding-right: 90px"><a
 						class="nav-link" href="scuderie">Scuderie</a></li>
 					<li class="nav-item" style="padding-right: 90px"><a
