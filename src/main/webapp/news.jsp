@@ -11,7 +11,7 @@
 <head>
 
 <meta charset="ISO-8859-1">
-<title>Info Circuito</title>
+<title>News</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -44,7 +44,9 @@
 					<li class="nav-item" style="padding-right: 60px"><a
 						class="nav-link" href="piloti">Piloti</a></li>
 					<li class="nav-item" style="padding-right: 60px"><a
-						class="nav-link active" href="circuiti">Circuiti</a></li>
+						class="nav-link" href="circuiti">Circuiti</a></li>
+					<li class="nav-item" style="padding-right: 60px"><a
+						class="nav-link active" href="news.jsp">News</a></li>
 				</ul>
 			</div>
 		</div>
@@ -54,13 +56,11 @@
 
 		
 		<div class="row">
-			<div class="col-5" style="backgroud-color: red">ciao</div>
-			<div class="col-2" style="margin-left: 3vw">
+			<div class="col-2" style="margin-left: auto; margin-right: auto">
 				<h1
 					style="max-width: 55%; text-align: center; color: white; background-color: #E41015; transform: skew(-15deg); font-weight: 600">
 					NEWS</h1>
 			</div>
-			<div class="col" style="backgroud-color: red">ciao</div>
 		</div>
 
 
@@ -104,7 +104,7 @@
 		function retrieve(e) {
 			const API = '1100c2b22c154be9bd95b202a739eb82';
 			
-			let url = 'https://newsapi.org/v2/everything?q=F1&language=it&apiKey='+API;
+			let url = 'https://newsapi.org/v2/everything?q=f1&language=it&apiKey='+API;
 			fetch(url).then((res)=>{
 				return res.json()
 			}).then((data)=>{
@@ -112,9 +112,9 @@
 				data.articles.forEach(article=>{
 					let li = document.createElement('li');
 					
-					let divCol5 = document.createElement('div');
-					divCol5.className="col-5";
-					divCol5.setAttribute('style', 'width:40vw ; weigth: 10vh');
+					let divCol12 = document.createElement('div');
+					divCol12.className="col-12";
+					divCol12.setAttribute('style', 'width:60vw; margin-left:auto; margin-right:auto');
 					
 					let divRow = document.createElement('div');
 					divRow.className="row";
@@ -122,11 +122,12 @@
 					
 					let divCol4 = document.createElement('div');
 					divCol4.className="col-4";
+					divCol4.setAttribute("style", "padding-top:12px; padding-bottom:12px");
 					
 					let img = document.createElement('img');
 					img.className="card";
 					img.setAttribute('src', article.urlToImage);
-					img.setAttribute('style', 'width: 18rem');
+					img.setAttribute('style', 'width: 18rem; padding-top:5px; padding-bottom:5px');
 					
 					
 					let divCol8 = document.createElement('div');
@@ -141,14 +142,28 @@
 					let a = document.createElement('a');
 					a.setAttribute('href', article.url);
 					a.setAttribute('target', '_blank');
+					a.setAttribute("style", "text-decoration: none; color:#E41015; font-weight:500; font-size:3ch");
 					a.textContent = article.title;
 					
-					li.appendChild(divCol5);
-					divCol5.appendChild(divRow);
+					let aDescription = document.createElement('a');
+					aDescription.setAttribute('href', article.url);
+					aDescription.setAttribute('target', '_blank');
+					aDescription.setAttribute("style", "text-decoration: none; color:white; font-weight:500");
+					aDescription.textContent = article.description;
+					
+					let br = document.createElement("br");
+					let br2 = document.createElement("br");
+					
+					
+					li.appendChild(divCol12);
+					divCol12.appendChild(divRow);
 					divRow.appendChild(divCol4);
 					divCol4.appendChild(img);
 					divRow.appendChild(divCol8);
 					divCol8.appendChild(a);
+					divCol8.appendChild(br);
+					divCol8.appendChild(br2);
+					divCol8.appendChild(aDescription);
 					
 					newsList.appendChild(li);
 				})
