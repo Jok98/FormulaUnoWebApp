@@ -72,23 +72,7 @@
 			<ul class="news-list">
 				
 			</ul>
-<!-- 			<div  class=" col-5 " style="width:40vw ; weigth: 10vh "  > -->
-<!-- 				<div class="row" style="border: 8px inset #D30000 "> -->
-<!-- 					<div class="col-4" style=" "> -->
-<!-- 						<img -->
-<!-- 							src="https://images.unsplash.com/photo-1619591489746-0e19d75ecb9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMG1lZ2FwaXhlbHxlbnwwfHwwfHw%3D&w=1000&q=80" -->
-<!-- 							class="card" style="width: 18rem; "> -->
-<!-- 					</div> -->
-<!-- 					<div class="col-8"  -->
-<!-- 						style="padding-rigth: 3vw; padding-top: 2vh; padding-left: 3vw; color:white"> -->
-<!-- 						<h3> Titolo notizia</h3> -->
-<!-- 						Leclerc took his second-straight Singapore Grand Prix pole -->
-<!-- 						position on Saturday but ended up losing out to Sergio Perez at -->
-<!-- 						the start of the race, with the Red Bull man going on to win -->
-<!-- 						despite taking a five-second post-race penalty for a Safety Car -->
-<!-- 						infringement.bsg bgsf s fgfgdsrea ef adsf de wf efw aewf effae awe fawe f ewaf ea</div> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
+
 			
 			<div class="col-1"></div>
 
@@ -104,7 +88,7 @@
 		function retrieve(e) {
 			const API = '1100c2b22c154be9bd95b202a739eb82';
 			
-			let url = 'https://newsapi.org/v2/everything?q=f1&language=it&apiKey='+API;
+			let url = 'https://newsapi.org/v2/everything?q=f1&sortBy=publishedAt&language=it&apiKey='+API;
 			fetch(url).then((res)=>{
 				return res.json()
 			}).then((data)=>{
